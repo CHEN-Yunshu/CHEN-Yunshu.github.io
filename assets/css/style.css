@@ -2373,3 +2373,7 @@ body > p:first-child { background: hsl(204, 100%, 32%) !important; color: hsl(0,
 @media (min-width: 768px) {
   .track-cards { grid-template-columns: 1fr 1fr; }
 }
+
+/* the headline breaks before "real clinical use", never inside it */
+.claim-line em { white-space: nowrap; }
+@media (max-width: 400px) { .claim-line em { white-space: normal; } }
