@@ -120,7 +120,7 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item"><button class="navbar-link active" data-nav-link data-i18n data-en="About" data-zh="关于">About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Research" data-zh="履历">Research</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Experience" data-zh="履历">Experience</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Projects" data-zh="项目">Projects</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Papers" data-zh="论文">Papers</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Contact" data-zh="联系">Contact</button></li>
@@ -305,10 +305,126 @@
       </article>
 
 
-      <!--=================== RESEARCH (resume) ===================-->
+      <!--=================== EXPERIENCE ===================-->
       <article class="resume" data-page="research">
 
-        <header><h2 class="h2 article-title" data-i18n data-en="Research" data-zh="履历">Research</h2></header>
+        <header><h2 class="h2 article-title" data-i18n data-en="Experience" data-zh="履历">Experience</h2></header>
+
+        <section class="stance">
+          <p class="stance-lead" data-i18n
+             data-en="I work in the space between a research question and a system somebody can actually use. The research half asks whether a model is validated at the level that changes a decision. The engineering half makes sure the answer survives a hospital network, a machine with no GPU, and a clinician who is short of time. Most of my projects need both halves, so the two tracks below are the same work seen from two sides."
+             data-zh="我的工作处在「一个研究问题」和「一个真能被人用起来的系统」之间。研究的那一半在问：模型有没有在真正影响决策的层面被验证。工程的那一半负责让答案扛得住医院内网、没有 GPU 的机器，以及一位没时间的临床医生。我的项目大多两边都需要，所以下面这两条线其实是同一份工作的两个侧面。">
+          </p>
+
+          <ul class="track-cards">
+            <li class="track-card">
+              <p class="tc-label" data-i18n data-en="As a researcher" data-zh="作为研究者">As a researcher</p>
+              <ul class="tc-points">
+                <li data-i18n data-en="Three first-author papers under review, all on validation rather than architecture." data-zh="三篇一作论文在投，主题都是验证，而不是新架构。">Three first-author papers under review, all on validation rather than architecture.</li>
+                <li data-i18n data-en="For coronary IVUS I moved evaluation from pixel overlap to clinical measurement agreement: CCC 0.94 and 0.96 against expert readings, and 84% agreement on the threshold that decides treatment." data-zh="在冠脉 IVUS 上，我把评估从像素重叠换成了临床测量一致性：与专家读数 CCC 0.94 与 0.96，决定是否治疗的阈值上一致率 84%。">For coronary IVUS I moved evaluation from pixel overlap to clinical measurement agreement: CCC 0.94 and 0.96 against expert readings, and 84% agreement on the threshold that decides treatment.</li>
+                <li data-i18n data-en="Pre-training an ultrasound foundation model on 49.6M frames drawn from 13 years of clinical acquisition." data-zh="正在用 13 年临床采集、4,960 万帧数据预训练一个超声基础模型。">Pre-training an ultrasound foundation model on 49.6M frames drawn from 13 years of clinical acquisition.</li>
+                <li data-i18n data-en="I publish what did not work too: five explicitly falsified directions shipped with the tracking paper." data-zh="我也写没走通的部分：追踪那篇附了五个被明确证伪的方向。">I publish what did not work too: five explicitly falsified directions shipped with the tracking paper.</li>
+              </ul>
+            </li>
+            <li class="track-card">
+              <p class="tc-label" data-i18n data-en="As an engineer" data-zh="作为工程师">As an engineer</p>
+              <ul class="tc-points">
+                <li data-i18n data-en="I came to research from software engineering, and I build for the machine the work has to land on." data-zh="我是从软件工程转到研究的，写代码时想的是这套东西最后要落在什么机器上。">I came to research from software engineering, and I build for the machine the work has to land on.</li>
+                <li data-i18n data-en="A distilled segmentation model 2.6× smaller and 3× faster on CPU, so a hospital without GPUs can still run it." data-zh="一个蒸馏后小 2.6 倍、CPU 快 3 倍的分割模型，让没有 GPU 的医院也跑得动。">A distilled segmentation model 2.6× smaller and 3× faster on CPU, so a hospital without GPUs can still run it.</li>
+                <li data-i18n data-en="A cell analysis platform in daily production use by an industry partner, with LoRA adaptation to a new cell type from 5 to 10 samples." data-zh="一个产业合作方每天在用的细胞分析平台，用 LoRA 只需 5 到 10 个样本就能适配新细胞类型。">A cell analysis platform in daily production use by an industry partner, with LoRA adaptation to a new cell type from 5 to 10 samples.</li>
+                <li data-i18n data-en="Infrastructure that is not glamorous but decides whether the science holds: versioned data lineage, crash-safe multi-GPU evaluation, and audits that caught duplication and corruption inside widely used public datasets." data-zh="以及不好看但决定科学结论是否成立的基础设施：版本化数据血统、崩溃安全的多卡评测，以及在被广泛使用的公开数据集里查出重复与损坏的审计。">Infrastructure that is not glamorous but decides whether the science holds: versioned data lineage, crash-safe multi-GPU evaluation, and audits that caught duplication and corruption inside widely used public datasets.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="cv-links">
+            <a href="./assets/Yunshu_Chen_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span data-i18n data-en="Research CV (PDF)" data-zh="研究版简历 PDF">Research CV (PDF)</span>
+            </a>
+            <a href="./assets/Yunshu_Chen_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+              <ion-icon name="briefcase-outline"></ion-icon>
+              <span data-i18n data-en="Industry résumé (PDF)" data-zh="业界版简历 PDF">Industry résumé (PDF)</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="flask-outline"></ion-icon></div>
+            <h3 class="h3" data-i18n data-en="Research" data-zh="研究经历">Research</h3>
+          </div>
+          <p class="tl-note" data-i18n data-en="Roles and collaborations. The work itself is on the Projects page." data-zh="这里是角色与合作关系，工作内容本身在「项目」页。">Roles and collaborations. The work itself is on the Projects page.</p>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Coronary IVUS segmentation and clinical measurement validation" data-zh="冠脉 IVUS 分割与临床测量验证">Coronary IVUS segmentation and clinical measurement validation</h4>
+              <span>Jun 2025 – Present</span>
+              <p class="timeline-text" data-i18n
+                 data-en="Monash University with the Victorian Heart Institute, on the CARAT and Huygens cohorts. End-to-end pullback analysis: quality control, side-branch detection, lumen and vessel segmentation, plaque progression. Statistically indistinguishable from nnU-Net at a fraction of the inference cost."
+                 data-zh="蒙纳士大学与维多利亚心脏研究所合作，基于 CARAT 与 Huygens 两个队列。端到端的回撤分析：质控、侧支检测、管腔与血管壁分割、斑块进展。与 nnU-Net 无统计学差异，但推理成本只有其一小部分。">
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Ultrasound foundation model, multi-scale vendor-locked supervision" data-zh="超声基础模型：多尺度 vendor-locked 监督">Ultrasound foundation model, multi-scale vendor-locked supervision</h4>
+              <span>Mar 2026 – Present</span>
+              <p class="timeline-text" data-i18n
+                 data-en="49.6M frames, 28,753 pullbacks, two vendor platforms, 13 years of clinical acquisition. I built the pre-training infrastructure end to end: a large-scale DICOM to tensor pipeline, md5-versioned data lineage and multi-GPU training."
+                 data-zh="4,960 万帧、28,753 个 pullback、两个厂商平台、13 年临床采集跨度。预训练基础设施由我从零搭起：大规模 DICOM 转张量管线、md5 版本化数据血统、多卡训练。">
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="LLM-orchestrated clinical decision support" data-zh="LLM 编排的临床决策支持">LLM-orchestrated clinical decision support</h4>
+              <span>2026 – Present</span>
+              <p class="timeline-text" data-i18n
+                 data-en="Clinician-reviewed across 35 cases. The architectural guarantee is that every number in a report comes from an algorithm and none from the language model. Hosted locally on Qwen2.5-7B and vLLM because patient data cannot leave the network."
+                 data-zh="已由医生复核 35 例。架构上的保证是：报告里每个数字都来自算法，没有一个来自语言模型。因为患者数据不能出内网，整套跑在本地的 Qwen2.5-7B 与 vLLM 上。">
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Multi-scale cell instance segmentation foundation model" data-zh="多尺度细胞实例分割基础模型">Multi-scale cell instance segmentation foundation model</h4>
+              <span>Feb 2025 – Feb 2026</span>
+              <p class="timeline-text" data-i18n
+                 data-en="Monash University in collaboration with Lead Healthcare. 100K+ images and 8M+ instances across four imaging modalities, 89% mAP, ahead of four published SAM-family models across 12 benchmarks. Deployed as a production web application."
+                 data-zh="蒙纳士大学与 Lead Healthcare 合作。10 万+ 图像、800 万+ 实例、四种成像模态，89% mAP，在 12 个基准上优于四个已发表的 SAM 系模型。已部署为生产环境 web 应用。">
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Time-lapse cell tracking and zebrafish myotome segmentation" data-zh="时序细胞追踪与斑马鱼肌节分割">Time-lapse cell tracking and zebrafish myotome segmentation</h4>
+              <span>Apr 2024 – Present</span>
+              <p class="timeline-text" data-i18n
+                 data-en="Zebrafish work is with the Australian Regenerative Medicine Institute, and I delivered a PyQt analysis interface so the biologists can run it themselves. The tracking work replaced a state-of-the-art tracker's learned association module with SAM2 memory, winning on 6 of 6 fields of view with no retraining."
+                 data-zh="斑马鱼方向与澳大利亚再生医学研究所合作，我交付了一个 PyQt 分析界面，让生物学家自己就能跑。追踪方向用 SAM2 的记忆机制替换了 SOTA 追踪器的学习式关联模块，在 6/6 个视野上胜出，且完全不需要重训。">
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3" data-i18n data-en="Industry" data-zh="业界经历">Industry</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Speech Recognition Algorithm Engineer, Intern (Full-time), NIO" data-zh="语音识别算法工程师（全职实习）· 蔚来">Speech Recognition Algorithm Engineer, Intern (Full-time), NIO</h4>
+              <span>Jul 2022 – Dec 2022</span>
+              <p class="timeline-text" data-i18n
+                 data-en="Intelligent Cockpit and Software Development, Shanghai. Improved multilingual recognition accuracy by 5% across Chinese and European languages, built automated diagnostics that resolved 60+ production failures, and shipped models into production vehicle systems alongside product, UX and NLU teams."
+                 data-zh="智能座舱与软件开发部门，上海。将中文与欧洲语系的多语种识别准确率提升 5%，搭建自动化诊断解决了 60+ 个量产问题，并与产品、UX、NLU 团队一起把模型送进了量产车系统。">
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Research Intern, Institute of Psychology, Chinese Academy of Sciences" data-zh="研究实习生 · 中国科学院心理研究所">Research Intern, Institute of Psychology, Chinese Academy of Sciences</h4>
+              <span>Mar 2022 – Jul 2022</span>
+              <p class="timeline-text" data-i18n
+                 data-en="Pain Comprehensive Imaging Laboratory, Beijing. MRI experiment design, an automated small-sample MRI pipeline in Python and FSL, and few-shot learning under real data scarcity."
+                 data-zh="疼痛综合影像实验室，北京。参与 MRI 实验设计，用 Python 与 FSL 搭建小样本 MRI 自动化流程，并在数据真实稀缺的条件下应用小样本学习。">
+              </p>
+            </li>
+          </ol>
+        </section>
 
         <section class="timeline">
           <div class="title-wrapper">
@@ -321,54 +437,16 @@
               <h4 class="h4 timeline-item-title" data-i18n data-en="PhD, Data Science &amp; Artificial Intelligence, Monash University" data-zh="博士 · 数据科学与人工智能 · 蒙纳士大学">PhD, Data Science &amp; Artificial Intelligence, Monash University</h4>
               <span>Oct 2023 – Apr 2027 (expected)</span>
               <p class="timeline-text" data-i18n
-                 data-en="Multi-modal imaging analysis, vision-language models, and segmentation. Supervised by Dr Deval Mehta, with Prof Guanliang Chen and Dr Litao Yang. Monash Medical AI group. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute."
+                 data-en="Multi-modal imaging analysis, vision-language models, and segmentation. Supervised by Dr Deval Mehta, with Prof Guanliang Chen and Dr Litao Yang. Monash Medical AI. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute."
                  data-zh="多模态影像分析、视觉语言模型与图像分割。主导师 Deval Mehta，副导师 Guanliang Chen、Litao Yang，Monash Medical AI 课题组。合作方：维多利亚心脏研究所、Apollo 医学影像、Lead Healthcare、澳大利亚再生医学研究所。">
               </p>
             </li>
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title" data-i18n data-en="BAdvComputing (Honours II-1), The University of Sydney" data-zh="高级计算学士（荣誉二等一级）· 悉尼大学">BAdvComputing (Honours II-1), The University of Sydney</h4>
               <span>Feb 2019 – Jun 2023</span>
               <p class="timeline-text" data-i18n
-                 data-en="Major in Software Development and Computational Data Science. Honours thesis on End-to-Same-End Encryption: a cross-platform blind-cloud-storage app built with React Native, Spring Boot, AWS S3 and Jenkins CI/CD."
-                 data-zh="主修软件开发与计算数据科学。荣誉论文方向为端到同端加密：用 React Native、Spring Boot、AWS S3 与 Jenkins CI/CD 构建的跨平台盲云存储应用。">
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
-            <h3 class="h3" data-i18n data-en="Experience" data-zh="工作经历">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Teaching Assistant (Sessional Academic), Monash University" data-zh="兼职助教 · 蒙纳士大学">Teaching Assistant (Sessional Academic), Monash University</h4>
-              <span>Jul 2025 – Present</span>
-              <p class="timeline-text" data-i18n
-                 data-en="FIT5196 Data Wrangling and FIT5145 Introduction to Data Science. Weekly tutorials and labs for 60+ postgraduate students; 92/100 student satisfaction."
-                 data-zh="FIT5196 数据整理与 FIT5145 数据科学导论。每周为 60+ 名研究生带 tutorial 与 lab；学生满意度 92/100。">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Speech Recognition Algorithm Engineer, Intern (Full-time), NIO" data-zh="语音识别算法工程师（全职实习）· 蔚来">Speech Recognition Algorithm Engineer, Intern (Full-time), NIO</h4>
-              <span>Jul 2022 – Dec 2022</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Multilingual ASR for an intelligent automotive cockpit. Improved recognition accuracy by 5% across Chinese and European languages, resolved 60+ production recognition failures, and integrated models into production vehicle systems."
-                 data-zh="智能座舱多语种语音识别。将中文与欧洲语系的识别准确率提升 5%，定位并解决 60+ 个量产识别问题，并将模型集成进量产车系统。">
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Research Intern, Institute of Psychology, Chinese Academy of Sciences" data-zh="研究实习生 · 中国科学院心理研究所">Research Intern, Institute of Psychology, Chinese Academy of Sciences</h4>
-              <span>Mar 2022 – Jul 2022</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Pain Comprehensive Imaging Laboratory. Designed and ran MRI experiments, built an automated processing pipeline for small-sample MRI with Python and FSL, and applied few-shot learning under severe data scarcity."
-                 data-zh="疼痛综合影像实验室。参与 MRI 实验设计与执行，用 Python 与 FSL 搭建小样本 MRI 自动化处理流程，并在数据极度稀缺的条件下应用小样本学习。">
+                 data-en="Major in Software Development and Computational Data Science. Honours thesis on End-to-Same-End Encryption: a cross-platform blind cloud storage app where the server never sees plaintext, built with React Native, Spring Boot, AWS S3 and Jenkins CI/CD."
+                 data-zh="主修软件开发与计算数据科学。荣誉论文方向为端到同端加密：一个服务端永远看不到明文的跨平台盲云存储应用，用 React Native、Spring Boot、AWS S3 与 Jenkins CI/CD 构建。">
               </p>
             </li>
           </ol>
@@ -377,13 +455,17 @@
         <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box"><ion-icon name="people-outline"></ion-icon></div>
-            <h3 class="h3" data-i18n data-en="Service &amp; Leadership" data-zh="学术服务与领导">Service &amp; Leadership</h3>
+            <h3 class="h3" data-i18n data-en="Teaching &amp; service" data-zh="教学与学术服务">Teaching &amp; service</h3>
           </div>
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Student Representative, Data Science &amp; AI, Monash University" data-zh="数据科学与人工智能方向学生代表 · 蒙纳士大学">Student Representative, Data Science &amp; AI, Monash University</h4>
-              <span>Feb 2026 – Present</span>
+              <h4 class="h4 timeline-item-title" data-i18n data-en="Teaching Assistant (Sessional Academic), Monash University" data-zh="兼职助教 · 蒙纳士大学">Teaching Assistant (Sessional Academic), Monash University</h4>
+              <span>Jul 2025 – Present</span>
+              <p class="timeline-text" data-i18n
+                 data-en="FIT5196 Data Wrangling and FIT5145 Introduction to Data Science. Weekly tutorials and labs for 60+ postgraduate students, 92/100 student satisfaction. Student Representative for Data Science and AI in the Faculty of IT since February 2026."
+                 data-zh="FIT5196 数据整理与 FIT5145 数据科学导论。每周为 60+ 名研究生带 tutorial 与 lab，学生满意度 92/100。自 2026 年 2 月起担任信息技术学院数据科学与人工智能方向学生代表。">
+              </p>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title" data-i18n data-en="General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney" data-zh="第94届学生代表理事会常务执行委员 · 学术委员会学生代表 · 悉尼大学">General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney</h4>
@@ -396,16 +478,25 @@
           </ol>
         </section>
 
+        <section class="awards-sec">
+          <h3 class="h3 sec-title" data-i18n data-en="Awards" data-zh="荣誉">Awards</h3>
+          <ul class="awards-list">
+            <li data-i18n data-en="2nd place, Track II (unlimited model size, CER 9.86%) and 3rd place, Track I (limited model size, CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022." data-zh="智能座舱语音识别挑战赛 Track II（不限模型规模，CER 9.86%）第二名、Track I（限模型规模，CER 13.39%）第三名，新加坡，2022。">2nd place, Track II (unlimited model size, CER 9.86%) and 3rd place, Track I (limited model size, CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022.</li>
+            <li data-i18n data-en="Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022." data-zh="悉尼大学学术委员会主席正式致谢，2022。">Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022.</li>
+            <li data-i18n data-en="Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0." data-zh="上海交通大学交换，GPA 4.0 / 4.0。">Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0.</li>
+          </ul>
+        </section>
+
         <section class="skill">
           <h3 class="h3 skills-title" data-i18n data-en="Technical skills" data-zh="技术能力">Technical skills</h3>
           <ul class="skill-tags">
             <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Deep learning" data-zh="深度学习">Deep learning</p>
-              <div><span>PyTorch</span><span>SAM / SAM2 / SAM3</span><span>DINOv3</span><span>ViT</span><span>MAE pre-training</span><span>nnU-Net</span><span>UNETR</span><span>ConvNeXt</span><span>MONAI</span><span>LoRA</span><span>Knowledge distillation</span></div>
+              <p class="skill-group-title" data-i18n data-en="Machine learning" data-zh="机器学习">Machine learning</p>
+              <div><span>PyTorch</span><span>scikit-learn</span><span>SAM / SAM2</span><span>DINOv3</span><span>ViT</span><span>MAE pre-training</span><span>nnU-Net</span><span>UNETR</span><span>ConvNeXt</span><span>MONAI</span><span>LoRA</span><span>Knowledge distillation</span></div>
             </li>
             <li class="skill-group">
               <p class="skill-group-title" data-i18n data-en="LLM &amp; agents" data-zh="大模型与智能体">LLM &amp; agents</p>
-              <div><span>ReAct orchestration</span><span>vLLM</span><span>Qwen2.5</span><span>JSON Schema tooling</span><span>Pydantic state</span><span>Local deployment</span></div>
+              <div><span>ReAct orchestration</span><span>vLLM</span><span>Qwen2.5</span><span>JSON-Schema tool contracts</span><span>Pydantic state</span><span>Local / private deployment</span></div>
             </li>
             <li class="skill-group">
               <p class="skill-group-title" data-i18n data-en="Medical &amp; bio imaging" data-zh="医学与生物影像">Medical &amp; bio imaging</p>
@@ -413,15 +504,19 @@
             </li>
             <li class="skill-group">
               <p class="skill-group-title" data-i18n data-en="Clinical validation &amp; statistics" data-zh="临床验证与统计">Clinical validation &amp; statistics</p>
-              <div><span>ICC / CCC</span><span>Bland–Altman</span><span>Cohen's κ</span><span>AUROC</span><span>Paired Wilcoxon</span><span>Patient-disjoint CV</span><span>Uncertainty &amp; deferral</span><span>Survival analysis</span></div>
+              <div><span>ICC / CCC</span><span>Bland–Altman</span><span>Cohen's κ</span><span>AUROC</span><span>Paired Wilcoxon</span><span>Patient-disjoint CV</span><span>LASSO / Random Forest</span><span>Survival analysis</span></div>
             </li>
             <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Data &amp; infrastructure" data-zh="数据与基础设施">Data &amp; infrastructure</p>
-              <div><span>Large-scale DICOM pipelines</span><span>Versioned data lineage</span><span>Multi-GPU training</span><span>pandas</span><span>pytest</span><span>Docker</span><span>Kubernetes</span><span>Jenkins CI/CD</span><span>AWS</span><span>Linux</span><span>Git</span></div>
+              <p class="skill-group-title" data-i18n data-en="Data &amp; MLOps" data-zh="数据与 MLOps">Data &amp; MLOps</p>
+              <div><span>Large-scale DICOM pipelines</span><span>Versioned data lineage</span><span>Multi-GPU training</span><span>Crash-safe evaluation</span><span>pandas</span><span>pytest</span><span>Docker</span><span>Kubernetes</span><span>Jenkins CI/CD</span><span>AWS (S3, SageMaker)</span><span>Azure</span><span>Linux</span><span>Git</span></div>
             </li>
             <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Languages" data-zh="编程与语言">Languages</p>
-              <div><span>Python</span><span>Java</span><span>R</span><span>SQL</span><span>C++</span><span>MATLAB</span><span>LaTeX</span><span>English (professional)</span><span>Mandarin (native)</span></div>
+              <p class="skill-group-title" data-i18n data-en="Software" data-zh="软件工程">Software</p>
+              <div><span>Python (advanced)</span><span>Java</span><span>C++</span><span>SQL</span><span>R</span><span>MATLAB</span><span>React Native</span><span>Spring Boot</span><span>Node.js</span><span>PyQt</span><span>LaTeX</span></div>
+            </li>
+            <li class="skill-group">
+              <p class="skill-group-title" data-i18n data-en="Languages" data-zh="语言">Languages</p>
+              <div><span data-i18n data-en="English (professional)" data-zh="英语（专业工作能力）">English (professional)</span><span data-i18n data-en="Mandarin (native)" data-zh="普通话（母语）">Mandarin (native)</span></div>
             </li>
           </ul>
         </section>
@@ -714,7 +809,11 @@
           </a>
           <a class="contact-card" href="./assets/Yunshu_Chen_CV.pdf" target="_blank" rel="noopener">
             <ion-icon name="document-text-outline"></ion-icon>
-            <div><p class="cc-label" data-i18n data-en="Curriculum Vitae" data-zh="简历">Curriculum Vitae</p><p class="cc-value">PDF</p></div>
+            <div><p class="cc-label" data-i18n data-en="Research CV" data-zh="研究版简历">Research CV</p><p class="cc-value">PDF</p></div>
+          </a>
+          <a class="contact-card" href="./assets/Yunshu_Chen_Resume.pdf" target="_blank" rel="noopener">
+            <ion-icon name="briefcase-outline"></ion-icon>
+            <div><p class="cc-label" data-i18n data-en="Industry résumé" data-zh="业界版简历">Industry résumé</p><p class="cc-value">PDF</p></div>
           </a>
         </section>
 

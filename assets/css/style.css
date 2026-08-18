@@ -2323,3 +2323,53 @@ body > p:first-child { background: hsl(204, 100%, 32%) !important; color: hsl(0,
   background: hsla(204, 100%, 32%, 0.07);
   border-color: hsla(204, 100%, 32%, 0.25);
 }
+
+
+/*===== EXPERIENCE: two tracks =====*/
+.stance { margin-bottom: 34px; }
+.stance-lead {
+  font-size: var(--fs-6); color: var(--light-gray); line-height: 1.8;
+  max-width: 74ch; margin-bottom: 22px;
+}
+.track-cards { list-style: none; display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 22px; }
+.track-card {
+  background: hsl(0, 0%, 100%); border: 1px solid var(--jet);
+  border-radius: 14px; padding: 20px 22px; box-shadow: var(--shadow-1);
+}
+.tc-label {
+  font-size: var(--fs-8); text-transform: uppercase; letter-spacing: 1.1px;
+  color: var(--orange-yellow-crayola); margin-bottom: 12px;
+}
+.tc-points { list-style: none; }
+.tc-points li {
+  position: relative; padding-left: 16px; margin-bottom: 10px;
+  font-size: var(--fs-7); color: var(--light-gray); line-height: 1.65;
+}
+.tc-points li:last-child { margin-bottom: 0; }
+.tc-points li::before {
+  content: ""; position: absolute; left: 0; top: 8px;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: hsl(36, 80%, 45%);
+}
+.cv-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.tl-note {
+  font-size: var(--fs-8); color: var(--light-gray-70);
+  margin: -8px 0 16px 40px; line-height: 1.5;
+}
+.awards-sec { margin-bottom: 34px; }
+.awards-list { list-style: none; margin-top: 14px; }
+.awards-list li {
+  position: relative; padding: 12px 0 12px 16px;
+  border-top: 1px solid var(--jet);
+  font-size: var(--fs-7); color: var(--light-gray); line-height: 1.65;
+}
+.awards-list li:last-child { border-bottom: 1px solid var(--jet); }
+.awards-list li::before {
+  content: ""; position: absolute; left: 0; top: 20px;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: hsl(36, 80%, 45%);
+}
+
+@media (min-width: 768px) {
+  .track-cards { grid-template-columns: 1fr 1fr; }
+}
