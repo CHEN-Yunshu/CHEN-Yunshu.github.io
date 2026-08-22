@@ -20,820 +20,479 @@
   <meta property="og:image:alt" content="Structure-aware AI segmentation, from clinical to cellular scales">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Yunshu Chen · Medical AI Researcher">
-  <meta name="twitter:description" content="PhD candidate at Monash University building medical imaging AI for real clinical use: coronary ultrasound, imaging foundation models, clinical decision support.">
+  <meta name="twitter:description" content="PhD candidate at Monash University building medical imaging AI for real clinical use.">
   <meta name="twitter:image" content="https://chen-yunshu.github.io/assets/images/og-cover.jpg">
 
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 
 <body>
 
-  <main>
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="brand" href="#top">
+        <img src="./assets/images/avatar.jpg" alt="">
+        <span>Yunshu Chen</span>
+      </a>
 
-    <!--===== SIDEBAR =====-->
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar.jpg" alt="Yunshu Chen" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Yunshu Chen">Yunshu Chen</h1>
-          <p class="title" data-i18n data-en="PhD Candidate, Medical AI" data-zh="博士候选人 · 医学人工智能">PhD Candidate, Medical AI</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span data-i18n data-en="Show Contacts" data-zh="显示联系方式">Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title" data-i18n data-en="Email" data-zh="邮箱">Email</p>
-              <a href="#" class="contact-link" data-email>[ enable JavaScript ]</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title" data-i18n data-en="Affiliation" data-zh="所属机构">Affiliation</p>
-              <address data-i18n data-en="Monash University" data-zh="蒙纳士大学">Monash University</address>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title" data-i18n data-en="Location" data-zh="所在地">Location</p>
-              <address data-i18n data-en="Melbourne, Australia" data-zh="澳大利亚 墨尔本">Melbourne, Australia</address>
-            </div>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://github.com/CHEN-Yunshu" class="social-link" title="GitHub" target="_blank" rel="noopener">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/yunshu-chen-22917915a/" class="social-link" title="LinkedIn" target="_blank" rel="noopener">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://orcid.org/0009-0004-4772-4054" class="social-link" title="ORCID" target="_blank" rel="noopener">
-              <ion-icon name="finger-print-outline"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://scholar.google.com/citations?user=-mTqfsEAAAAJ&amp;hl=en" class="social-link" title="Google Scholar" target="_blank" rel="noopener">
-              <ion-icon name="book-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-    <!--===== MAIN CONTENT =====-->
-    <div class="main-content">
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-i18n data-en="About" data-zh="关于">About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Experience" data-zh="履历">Experience</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Projects" data-zh="项目">Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Papers" data-zh="论文">Papers</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link data-i18n data-en="Contact" data-zh="联系">Contact</button></li>
-          <li class="navbar-item navbar-item-lang">
-            <button class="navbar-link lang-toggle" data-lang-toggle aria-label="Switch language">
-              <ion-icon name="language-outline"></ion-icon><span data-lang-label>中文</span>
-            </button>
-          </li>
-        </ul>
+      <nav class="nav" data-nav>
+        <a href="#chain" data-i18n data-en="The work" data-zh="研究主线">The work</a>
+        <a href="#numbers" data-i18n data-en="Numbers" data-zh="数据">Numbers</a>
+        <a href="#work" data-i18n data-en="Projects" data-zh="项目">Projects</a>
+        <a href="#papers" data-i18n data-en="Papers" data-zh="论文">Papers</a>
+        <a href="#experience" data-i18n data-en="Experience" data-zh="履历">Experience</a>
+        <a href="#contact" data-i18n data-en="Contact" data-zh="联系">Contact</a>
       </nav>
 
+      <div class="hdr-tools">
+        <button class="lang" data-lang-toggle aria-label="Switch language"><span data-lang-label>中文</span></button>
+        <button class="burger" data-burger aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-      <!--=================== ABOUT ===================-->
-      <article class="about active" data-page="about">
+  <main id="top">
 
-        <header>
-          <h2 class="h2 article-title" data-i18n data-en="About" data-zh="关于">About</h2>
-        </header>
-
-        <!-- ===== THE CLAIM ===== -->
-        <section class="claim">
-          <p class="claim-kicker" data-i18n data-en="Yunshu Chen · PhD candidate, Monash Medical AI" data-zh="陈云舒 · 蒙纳士 Medical AI 博士候选人">Yunshu Chen · PhD candidate, Monash Medical AI</p>
-          <h3 class="claim-line" data-i18n
+    <!--============ HERO ============-->
+    <section class="wrap hero">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-kicker" data-i18n data-en="Yunshu Chen · PhD candidate · Monash Medical AI" data-zh="陈云舒 · 博士候选人 · 蒙纳士 Medical AI">Yunshu Chen · PhD candidate · Monash Medical AI</p>
+          <h1 data-i18n
               data-en="I build medical imaging AI for<br><em>real clinical use</em>."
-              data-zh="我做医学影像 AI，<br>是为了让它<em>真正用在临床</em>。">I build medical imaging AI for<br><em>real clinical use</em>.</h3>
-          <p class="claim-sub" data-i18n
-             data-en="I work on coronary ultrasound and cell imaging: segmentation validated against the decisions expert readers actually make, an ultrasound foundation model built from a decade of clinical acquisition, and a reporting agent where every number comes from a deterministic tool rather than the language model. Distilled to run on hospital hardware without a GPU. Three first-author papers under review; one model already in production use."
-             data-zh="我的方向是冠脉超声与细胞影像：拿专家实际做出的判断来验证分割结果、用十余年临床采集数据训练超声基础模型、以及一个报告智能体，报告里每个数字都来自确定性工具而非语言模型。模型经蒸馏后可在没有 GPU 的医院硬件上运行。三篇一作论文在投，一个模型已在生产环境使用。">I work on coronary ultrasound and cell imaging: segmentation validated against the decisions expert readers actually make, an ultrasound foundation model built from a decade of clinical acquisition, and a reporting agent where every number comes from a deterministic tool rather than the language model. Distilled to run on hospital hardware without a GPU. Three first-author papers under review; one model already in production use.</p>
+              data-zh="我做医学影像 AI，<br>是为了让它<em>真正用在临床</em>。">I build medical imaging AI for<br><em>real clinical use</em>.</h1>
+        </div>
 
-          <p class="claim-open" data-i18n
+        <div class="hero-side">
+          <p data-i18n
+             data-en="Coronary ultrasound and cell imaging. Segmentation validated against the decisions expert readers actually make, an ultrasound foundation model built from a decade of clinical acquisition, and a reporting agent where every number comes from a deterministic tool rather than the language model. Three first-author papers under review; one model already in production use."
+             data-zh="方向是冠脉超声与细胞影像。拿专家实际做出的判断来验证分割结果、用十余年临床采集数据训练超声基础模型，以及一个报告智能体：报告里每个数字都来自确定性工具，而不是语言模型。三篇一作论文在投，一个模型已在生产环境使用。">
+          </p>
+          <p class="avail" data-i18n
              data-en="Open to research and ML engineering roles · Melbourne · PhD completing April 2027"
              data-zh="正在寻找研究岗与机器学习工程岗 · 墨尔本 · 博士 2027 年 4 月毕业">Open to research and ML engineering roles · Melbourne · PhD completing April 2027</p>
-
-          <div class="hero-cta">
-            <a href="#" class="btn btn-primary" data-nav-jump="contact">
-              <ion-icon name="paper-plane-outline"></ion-icon>
-              <span data-i18n data-en="Get in touch" data-zh="联系我">Get in touch</span>
-            </a>
-            <a href="./assets/Yunshu_Chen_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <span data-i18n data-en="Download CV" data-zh="下载简历">Download CV</span>
-            </a>
-            <a href="https://github.com/CHEN-Yunshu" class="btn btn-ghost" target="_blank" rel="noopener">
-              <ion-icon name="logo-github"></ion-icon>
-              <span>GitHub</span>
-            </a>
+          <div class="cta">
+            <a class="btn btn-fill" href="#contact"><span data-i18n data-en="Get in touch" data-zh="联系我">Get in touch</span><span class="arw">&#8599;</span></a>
+            <a class="btn" href="./assets/Yunshu_Chen_CV.pdf" target="_blank" rel="noopener"><span data-i18n data-en="Research CV" data-zh="研究版简历">Research CV</span><span class="arw">PDF</span></a>
+            <a class="btn" href="./assets/Yunshu_Chen_Resume.pdf" target="_blank" rel="noopener"><span data-i18n data-en="Industry résumé" data-zh="业界版简历">Industry résumé</span><span class="arw">PDF</span></a>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <!-- ===== THE CHAIN ===== -->
-        <section class="chain">
-          <div class="chain-figure">
-            <img src="./assets/images/ivus-chain.png" alt="Pullback to segmentation to measurement to treatment decision">
+
+    <!--============ 01 THE CHAIN ============-->
+    <section class="wrap sec" id="chain">
+      <p class="marker">01 / <span data-i18n data-en="From a scan to a decision" data-zh="从一次扫描到一个决策">From a scan to a decision</span></p>
+
+      <h2 class="sec-h" data-i18n
+          data-en="Coronary IVUS: <span class='dim'>one chain, three projects</span>"
+          data-zh="冠脉 IVUS：<span class='dim'>一条链，三个项目</span>">Coronary IVUS: <span class="dim">one chain, three projects</span></h2>
+      <p class="sec-lead" data-i18n
+         data-en="A coronary pullback is thousands of frames. Turning them into a decision (stent size, treat or not, prepare the calcium first) is a chain, and a model is only as useful as the weakest link in it. My three IVUS projects cover the chain end to end."
+         data-zh="一次冠脉回撤是几千帧图像。把它变成一个决策（支架尺寸、要不要处理、要不要先处理钙化）是一条链，而模型的价值取决于链上最弱的一环。我的三个 IVUS 项目覆盖了这条链的全程。">
+      </p>
+
+      <figure class="fig" style="margin-top:26px">
+        <div class="fig-body"><img src="./assets/images/ivus-chain.png" alt="Pullback to segmentation to measurement to treatment decision"></div>
+        <figcaption class="fig-bar">
+          <span class="mono-note">FIG. 1 · PULLBACK &gt; SEGMENT &gt; MEASURE &gt; DECIDE</span>
+          <span class="mono-note">63 PATIENTS · 8,717 FRAMES · 5-FOLD PATIENT-DISJOINT CV</span>
+        </figcaption>
+      </figure>
+
+      <ol class="nodes">
+        <li class="node">
+          <p class="node-stage" data-i18n data-en="Segment &amp; measure" data-zh="分割与测量">Segment &amp; measure</p>
+          <p class="node-name">GeoCat</p>
+          <p class="node-num">84%</p>
+          <p class="node-numlab" data-i18n data-en="agreement with expert adjudication on the treatment threshold" data-zh="治疗阈值上与专家裁定的一致率">agreement with expert adjudication on the treatment threshold</p>
+          <p class="node-note" data-i18n data-en="Not pixel overlap, the decision itself. Two papers under review." data-zh="不是像素重叠，是决策本身。两篇论文在投。">Not pixel overlap, the decision itself. Two papers under review.</p>
+        </li>
+        <li class="node">
+          <p class="node-stage" data-i18n data-en="The data underneath" data-zh="底下的数据">The data underneath</p>
+          <p class="node-name">IVUS-FM</p>
+          <p class="node-num">49.6M</p>
+          <p class="node-numlab" data-i18n data-en="frames pre-trained on, from 28,753 pullbacks, 13 years and two vendors" data-zh="帧预训练语料，来自 28,753 个 pullback、13 年、两个厂商">frames pre-trained on, from 28,753 pullbacks, 13 years and two vendors</p>
+          <p class="node-note" data-i18n data-en="Fine labels come from the one platform that can produce them, targeting the ~74%-share platform that cannot." data-zh="细粒度标签来自唯一能产出它们的平台，目标是迁移到占约 74% 份额、无法产出标签的设备。">Fine labels come from the one platform that can produce them, targeting the ~74%-share platform that cannot.</p>
+        </li>
+        <li class="node">
+          <p class="node-stage" data-i18n data-en="Decide" data-zh="决策">Decide</p>
+          <p class="node-name">IVUS Agent</p>
+          <p class="node-num">0 <span style="font-size:20px" data-i18n data-en="numbers" data-zh="个数字">numbers</span></p>
+          <p class="node-numlab" data-i18n data-en="in the report come from the language model" data-zh="报告里由语言模型生成的数字">in the report come from the language model</p>
+          <p class="node-note" data-i18n data-en="An LLM plans and narrates over deterministic tools. Local Qwen2.5-7B for privacy; 35 cases clinician-reviewed." data-zh="LLM 只负责在确定性工具之上规划与叙述。本地 Qwen2.5-7B 保护隐私；35 例已医生复核。">An LLM plans and narrates over deterministic tools. Local Qwen2.5-7B for privacy; 35 cases clinician-reviewed.</p>
+        </li>
+      </ol>
+    </section>
+
+
+    <!--============ 02 NUMBERS ============-->
+    <section class="wrap sec" id="numbers">
+      <p class="marker">02 / <span data-i18n data-en="By the numbers" data-zh="用数字说">By the numbers</span></p>
+      <h2 class="sec-h" data-i18n data-en="Three years, <span class='dim'>what came out of them</span>" data-zh="三年，<span class='dim'>做出来的东西</span>">Three years, <span class="dim">what came out of them</span></h2>
+
+      <ul class="nums" style="margin-top:26px">
+        <li class="num"><b>3</b><span data-i18n data-en="first-author papers under review" data-zh="一作论文在投">first-author papers under review</span></li>
+        <li class="num"><b>8<span class="u">M+</span></b><span data-i18n data-en="cell instances segmented at 89% mAP, deployed as a production tool" data-zh="细胞实例分割 · 89% mAP，已部署为生产工具">cell instances segmented at 89% mAP, deployed as a production tool</span></li>
+        <li class="num"><b>3<span class="u">&#215;</span></b><span data-i18n data-en="faster on CPU after distillation, so it runs where there is no GPU" data-zh="蒸馏后 CPU 推理提速，能跑在没有 GPU 的地方">faster on CPU after distillation, so it runs where there is no GPU</span></li>
+        <li class="num"><b>135</b><span data-i18n data-en="experiments logged across 6 projects since March 2026" data-zh="条实验记录 · 6 个项目 · 2026 年 3 月至今">experiments logged across 6 projects since March 2026</span></li>
+      </ul>
+    </section>
+
+
+    <!--============ 03 WORK ============-->
+    <section class="wrap sec" id="work">
+      <p class="marker">03 / <span data-i18n data-en="Selected work" data-zh="精选项目">Selected work</span></p>
+      <h2 class="sec-h" data-i18n data-en="Twelve projects, <span class='dim'>in three tiers</span>" data-zh="十二个项目，<span class='dim'>分三层</span>">Twelve projects, <span class="dim">in three tiers</span></h2>
+      <p class="sec-lead" data-i18n
+         data-en="The main line is coronary imaging. The second is microscopy, where the same question turns up at a different scale. The third is the infrastructure that had to exist before either could be trusted."
+         data-zh="主线是冠脉影像。第二条线是显微影像，同一个问题在另一个尺度上重现。第三条是基础设施，它得先成立，前两条才值得信。">
+      </p>
+
+      <div class="tier-h" style="margin-top:34px">
+        <h3 data-i18n data-en="Coronary IVUS" data-zh="冠脉 IVUS">Coronary IVUS</h3>
+        <p class="mono-note">03.1 · THREE PROJECTS, ONE CHAIN</p>
+      </div>
+
+      <ul class="flags">
+        <li class="flag">
+          <div class="flag-img">
+            <img src="./assets/images/projects/geocat.jpg" alt="GeoCat" loading="lazy">
+            <span class="flag-chip" data-i18n data-en="Under review" data-zh="在投">Under review</span>
           </div>
-          <p class="chain-cap" data-i18n
-             data-en="A coronary pullback is thousands of frames. Turning them into a decision (stent size, treat or not, prepare the calcium first) is a chain, and a model is only as useful as the weakest link in it. My three IVUS projects cover the chain end to end."
-             data-zh="一次冠脉回撤是几千帧图像。把它变成一个决策（支架尺寸、要不要处理、要不要先处理钙化）是一条链，而模型的价值取决于链上最弱的一环。我的三个 IVUS 项目覆盖了这条链的全程。">
-          </p>
-
-          <ol class="chain-map">
-            <li class="chain-node">
-              <p class="cn-stage" data-i18n data-en="Segment &amp; measure" data-zh="分割与测量">Segment &amp; measure</p>
-              <h4 class="cn-name">GeoCat</h4>
-              <p class="cn-num">84%</p>
-              <p class="cn-numlab" data-i18n data-en="agreement with expert adjudication on the treatment threshold" data-zh="治疗阈值上与专家裁定的一致率">agreement with expert adjudication on the treatment threshold</p>
-              <p class="cn-note" data-i18n data-en="Not pixel overlap, the decision itself. Two papers under review." data-zh="不是像素重叠，是决策本身。两篇论文在投。">Not pixel overlap, the decision itself. Two papers under review.</p>
-            </li>
-            <li class="chain-node">
-              <p class="cn-stage" data-i18n data-en="The data underneath" data-zh="底下的数据">The data underneath</p>
-              <h4 class="cn-name">IVUS-FM</h4>
-              <p class="cn-num">49.6M</p>
-              <p class="cn-numlab" data-i18n data-en="frames pre-trained on, from 28,753 pullbacks, 13 years and two vendors" data-zh="帧预训练语料，来自 28,753 个 pullback、13 年、两个厂商">frames pre-trained on, from 28,753 pullbacks, 13 years and two vendors</p>
-              <p class="cn-note" data-i18n data-en="Fine labels come from the one platform that can produce them, targeting the ~74%-share platform that cannot." data-zh="细粒度标签来自唯一能产出它们的平台，目标是迁移到占约 74% 份额、无法产出标签的设备。">Fine labels come from the one platform that can produce them, targeting the ~74%-share platform that cannot.</p>
-            </li>
-            <li class="chain-node">
-              <p class="cn-stage" data-i18n data-en="Decide" data-zh="决策">Decide</p>
-              <h4 class="cn-name">IVUS Agent</h4>
-              <p class="cn-num" data-i18n data-en="0 numbers" data-zh="0 个数字">0 numbers</p>
-              <p class="cn-numlab" data-i18n data-en="in the report come from the language model" data-zh="报告里由语言模型生成的数字">in the report come from the language model</p>
-              <p class="cn-note" data-i18n data-en="An LLM plans and narrates over deterministic tools. Local Qwen2.5-7B for privacy; 35 cases clinician-reviewed." data-zh="LLM 只负责在确定性工具之上规划与叙述。本地 Qwen2.5-7B 保护隐私；35 例已医生复核。">An LLM plans and narrates over deterministic tools. Local Qwen2.5-7B for privacy; 35 cases clinician-reviewed.</p>
-            </li>
-          </ol>
-        </section>
-
-        <!-- ===== SCALE ===== -->
-        <section class="stats">
-          <ul class="stats-list">
-            <li class="stats-item">
-              <p class="stats-num">3</p>
-              <p class="stats-label" data-i18n data-en="first-author papers under review" data-zh="一作论文在投">first-author papers under review</p>
-            </li>
-            <li class="stats-item">
-              <p class="stats-num">8M+</p>
-              <p class="stats-label" data-i18n data-en="cell instances segmented at 89% mAP, deployed as a production tool" data-zh="细胞实例分割 · 89% mAP，已部署为生产工具">cell instances segmented at 89% mAP, deployed as a production tool</p>
-            </li>
-            <li class="stats-item">
-              <p class="stats-num">3×</p>
-              <p class="stats-label" data-i18n data-en="faster on CPU after distillation, so it runs where there is no GPU" data-zh="蒸馏后 CPU 推理提速，能跑在没有 GPU 的地方">faster on CPU after distillation, so it runs where there is no GPU</p>
-            </li>
-            <li class="stats-item">
-              <p class="stats-num">SOTA</p>
-              <p class="stats-label" data-i18n data-en="cell tracker beaten with zero retraining, 6 of 6 fields, p &lt; 0.001" data-zh="零重训超越 SOTA 细胞追踪器，6/6 视野，p &lt; 0.001">cell tracker beaten with zero retraining, 6 of 6 fields, p &lt; 0.001</p>
-            </li>
-          </ul>
-        </section>
-
-        <!-- ===== WHO I AM ===== -->
-        <section class="bio">
-          <h3 class="h3 sec-title" data-i18n data-en="How I got here" data-zh="我是怎么走到这儿的">How I got here</h3>
-          <p data-i18n
-             data-en="I came to research from software engineering, and it shows in what I ship rather than what I claim: a distilled model 2.6× smaller and 3× faster on CPU, so it runs on hospital hardware with no GPU; an analysis GUI handed to biologists who are not programmers; an open-source research logbook that has recorded every experiment I have run since March 2026."
-             data-zh="我是从软件工程转到研究的，这一点体现在我交付的东西上，而不是我声称的东西上：一个蒸馏后小 2.6 倍、CPU 推理快 3 倍的模型，让它能跑在没有 GPU 的医院硬件上；一个交给非程序员生物学家使用的分析界面；一个开源的科研日志工具，2026 年 3 月以来我跑过的每个实验都记在里面。">
-          </p>
-          <p data-i18n
-             data-en="The same instinct shapes the research. When a benchmark saturates, the interesting question is usually not how to squeeze out another 0.3 Dice. It is whether the benchmark still measures anything that matters. That question is what moved my IVUS work from pixel overlap to clinical agreement, and it is what I look for in a new problem."
-             data-zh="同样的直觉也塑造了我的研究方式。当一个基准饱和时，有意思的问题通常不是「怎么再抠出 0.3 个 Dice」，而是「这个基准还在衡量任何重要的东西吗」。正是这个问题把我的 IVUS 工作从像素重叠推到了临床一致性，也是我判断一个新问题值不值得做的方式。">
-          </p>
-        </section>
-
-        <!-- ===== SECOND TRACK ===== -->
-        <section class="track">
-          <div class="track-head">
-            <h3 class="h3 sec-title" data-i18n data-en="Second track: microscopy" data-zh="第二条线：显微影像">Second track: microscopy</h3>
-            <p class="track-sub" data-i18n data-en="Same question, different scale: what does a cell model actually need to get right?" data-zh="同一个问题，换一个尺度：细胞模型真正需要做对的是什么？">Same question, different scale: what does a cell model actually need to get right?</p>
+          <div class="flag-in">
+            <h4>GeoCat</h4>
+            <p class="flag-role" data-i18n data-en="Segment &amp; measure" data-zh="分割与测量">Segment &amp; measure</p>
+            <p data-i18n
+               data-en="Dice on this task has saturated, so the paper is not about Dice. It asks whether the measurements derived from a segmentation agree with what an expert reader would have decided: stent size, whether the lesion needs treating, whether the calcium must be modified first."
+               data-zh="这个任务上的 Dice 已经饱和，所以论文讲的不是 Dice。它问的是：从分割导出的测量值，是否与专家读片者会做出的决策一致：支架尺寸、病变要不要处理、钙化要不要先处理。"></p>
+            <ul class="metrics">
+              <li><b>84%</b><span data-i18n data-en="agreement on treatment threshold (κ 0.67)" data-zh="治疗阈值一致率（κ 0.67）">agreement on treatment threshold (κ 0.67)</span></li>
+              <li><b>0.94–0.96</b><span data-i18n data-en="CCC vs expert measurement" data-zh="与专家测量的 CCC">CCC vs expert measurement</span></li>
+              <li><b>0.97–0.99</b><span data-i18n data-en="AUROC, calcium threshold" data-zh="钙化阈值 AUROC">AUROC, calcium threshold</span></li>
+              <li><b>0.922–0.930</b><span data-i18n data-en="Dice, patient-disjoint 5-fold" data-zh="Dice，患者不重叠 5 折">Dice, patient-disjoint 5-fold</span></li>
+            </ul>
+            <p class="flag-more" data-i18n
+               data-en="Distillation gave a model 2.6× smaller and 3× faster on CPU, trainable on one sixth of the annotation budget, so it runs where there is no GPU. Uncertainty-guided deferral cut measurement error from 0.91 to 0.64 by handing the hard frames back to a human."
+               data-zh="蒸馏得到小 2.6 倍、CPU 快 3 倍的模型，且只需 1/6 的标注量，因此能跑在没有 GPU 的地方。不确定性引导的 deferral 把难帧交还给人，测量误差从 0.91 降到 0.64。"></p>
           </div>
-          <ul class="mini-list">
-            <li class="mini-item">
-              <h4 class="mini-title" data-i18n data-en="SAM2 memory as a tracking linker" data-zh="SAM2 记忆作为追踪 linker">SAM2 memory as a tracking linker</h4>
-              <p class="mini-num">CHOTA 0.8603</p>
-              <p class="mini-text" data-i18n data-en="Beat a trained SOTA associator with no retraining at all, on 6 of 6 fields of view (p &lt; 0.001)." data-zh="完全不重训即胜过训练过的 SOTA 关联器，6/6 个视野（p &lt; 0.001）。">Beat a trained SOTA associator with no retraining at all, on 6 of 6 fields of view (p &lt; 0.001).</p>
-            </li>
-            <li class="mini-item">
-              <h4 class="mini-title" data-i18n data-en="LeadCell, a cell foundation model" data-zh="LeadCell 细胞基础模型">LeadCell, a cell foundation model</h4>
-              <p class="mini-num">8M+ instances</p>
-              <p class="mini-text" data-i18n data-en="DINOv3 + UNETR across five modalities, beating four SAM-family baselines. Deployed as a production web tool." data-zh="DINOv3 + UNETR，覆盖五种模态，优于四个 SAM 系基线。已部署为生产环境的 web 工具。">DINOv3 + UNETR across five modalities, beating four SAM-family baselines. Deployed as a production web tool.</p>
-            </li>
-            <li class="mini-item">
-              <h4 class="mini-title" data-i18n data-en="Cell size × resolution benchmark" data-zh="细胞尺寸 × 分辨率基准">Cell size × resolution benchmark</h4>
-              <p class="mini-num">19 × 9</p>
-              <p class="mini-text" data-i18n data-en="19 datasets against 9 frozen models over four perturbation axes, plus a data audit that found duplication and corruption first." data-zh="19 个数据集 × 9 个冻结模型 × 四个扰动轴，外加先一步发现重复与损坏的数据审计。">19 datasets against 9 frozen models over four perturbation axes, plus a data audit that found duplication and corruption first.</p>
-            </li>
-            <li class="mini-item">
-              <h4 class="mini-title" data-i18n data-en="Confidence-Adaptive Trimap" data-zh="置信度自适应 Trimap">Confidence-Adaptive Trimap</h4>
-              <p class="mini-num" data-i18n data-en="Under review" data-zh="在投">Under review</p>
-              <p class="mini-text" data-i18n data-en="The uncertain boundary band comes from the model's own confidence, not a hand-tuned kernel, and it survives domain shift where the fixed kernel does not." data-zh="不确定边界带来自模型自身的置信度，而非手调核，在域偏移下它稳住了，固定核没有。">The uncertain boundary band comes from the model's own confidence, not a hand-tuned kernel, and it survives domain shift where the fixed kernel does not.</p>
-            </li>
-            <li class="mini-item">
-              <h4 class="mini-title" data-i18n data-en="Physically-grounded synthesis" data-zh="物理约束的图像合成">Physically-grounded synthesis</h4>
-              <p class="mini-num" data-i18n data-en="11 priors × 5 domains" data-zh="11 类先验 × 5 个域">11 priors × 5 domains</p>
-              <p class="mini-text" data-i18n data-en="Point processes and imaging physics instead of generative hallucination. A self-review then killed my own framing and relocated the bottleneck." data-zh="用点过程与成像物理替代生成式幻觉。随后的自审否定了我自己的框架，并重新定位了瓶颈。">Point processes and imaging physics instead of generative hallucination. A self-review then killed my own framing and relocated the bottleneck.</p>
-            </li>
-          </ul>
-        </section>
+        </li>
 
-        <!-- ===== ALSO BUILT ===== -->
-        <section class="also">
-          <h3 class="h3 sec-title" data-i18n data-en="Also built" data-zh="另外做的">Also built</h3>
-          <ul class="also-list">
-            <li>
-              <a href="https://github.com/CHEN-Yunshu/Genius_Labbook" target="_blank" rel="noopener">
-                <span class="also-name">Genius Labbook <ion-icon name="logo-github"></ion-icon></span>
-                <span class="also-text" data-i18n data-en="A git-backed research logbook CLI. 135 entries across 6 projects: every experiment I have run since March 2026. Open source, MIT." data-zh="git 支撑的科研日志命令行工具。135 条记录、6 个项目，涵盖 2026 年 3 月以来我跑过的每个实验。开源，MIT。">A git-backed research logbook CLI. 135 entries across 6 projects: every experiment I have run since March 2026. Open source, MIT.</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/CHEN-Yunshu/Cell_Collection" target="_blank" rel="noopener">
-                <span class="also-name">Cell_Collection <ion-icon name="logo-github"></ion-icon></span>
-                <span class="also-text" data-i18n data-en="Dataset curation across 7 sources: 186 public datasets, with a duplication and leakage audit run before anything reaches a benchmark. Open source." data-zh="跨 7 个来源的数据集整理：186 个公开数据集，并在数据进入基准之前跑重复与泄漏审计。开源。">Dataset curation across 7 sources: 186 public datasets, with a duplication and leakage audit run before anything reaches a benchmark. Open source.</span>
-              </a>
-            </li>
-            <li>
-              <span class="also-name">Stroke outcome prediction</span>
-              <span class="also-text" data-i18n data-en="Multimodal CT-perfusion and clinical fusion with treatment-specific heads, +12% accuracy. Apollo Medical Imaging, completed 2025." data-zh="CT 灌注与临床变量的多模态融合，按治疗方案分头建模，准确率 +12%。Apollo 医学影像，2025 年结项。">Multimodal CT-perfusion and clinical fusion with treatment-specific heads, +12% accuracy. Apollo Medical Imaging, completed 2025.</span>
-            </li>
-          </ul>
-          <button class="feat-more" data-nav-jump="projects">
-            <span data-i18n data-en="All 12 projects in detail" data-zh="全部 12 个项目的细节">All 12 projects in detail</span>
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </button>
-        </section>
-
-      </article>
-
-
-      <!--=================== EXPERIENCE ===================-->
-      <article class="resume" data-page="research">
-
-        <header><h2 class="h2 article-title" data-i18n data-en="Experience" data-zh="履历">Experience</h2></header>
-
-        <section class="stance">
-          <p class="stance-lead" data-i18n
-             data-en="I work in the space between a research question and a system somebody can actually use. The research half asks whether a model is validated at the level that changes a decision. The engineering half makes sure the answer survives a hospital network, a machine with no GPU, and a clinician who is short of time. Most of my projects need both halves, so the two tracks below are the same work seen from two sides."
-             data-zh="我的工作处在「一个研究问题」和「一个真能被人用起来的系统」之间。研究的那一半在问：模型有没有在真正影响决策的层面被验证。工程的那一半负责让答案扛得住医院内网、没有 GPU 的机器，以及一位没时间的临床医生。我的项目大多两边都需要，所以下面这两条线其实是同一份工作的两个侧面。">
-          </p>
-
-          <ul class="track-cards">
-            <li class="track-card">
-              <p class="tc-label" data-i18n data-en="As a researcher" data-zh="作为研究者">As a researcher</p>
-              <ul class="tc-points">
-                <li data-i18n data-en="Three first-author papers under review, all on validation rather than architecture." data-zh="三篇一作论文在投，主题都是验证，而不是新架构。">Three first-author papers under review, all on validation rather than architecture.</li>
-                <li data-i18n data-en="For coronary IVUS I moved evaluation from pixel overlap to clinical measurement agreement: CCC 0.94 and 0.96 against expert readings, and 84% agreement on the threshold that decides treatment." data-zh="在冠脉 IVUS 上，我把评估从像素重叠换成了临床测量一致性：与专家读数 CCC 0.94 与 0.96，决定是否治疗的阈值上一致率 84%。">For coronary IVUS I moved evaluation from pixel overlap to clinical measurement agreement: CCC 0.94 and 0.96 against expert readings, and 84% agreement on the threshold that decides treatment.</li>
-                <li data-i18n data-en="Pre-training an ultrasound foundation model on 49.6M frames drawn from 13 years of clinical acquisition." data-zh="正在用 13 年临床采集、4,960 万帧数据预训练一个超声基础模型。">Pre-training an ultrasound foundation model on 49.6M frames drawn from 13 years of clinical acquisition.</li>
-                <li data-i18n data-en="I publish what did not work too: five explicitly falsified directions shipped with the tracking paper." data-zh="我也写没走通的部分：追踪那篇附了五个被明确证伪的方向。">I publish what did not work too: five explicitly falsified directions shipped with the tracking paper.</li>
-              </ul>
-            </li>
-            <li class="track-card">
-              <p class="tc-label" data-i18n data-en="As an engineer" data-zh="作为工程师">As an engineer</p>
-              <ul class="tc-points">
-                <li data-i18n data-en="I came to research from software engineering, and I build for the machine the work has to land on." data-zh="我是从软件工程转到研究的，写代码时想的是这套东西最后要落在什么机器上。">I came to research from software engineering, and I build for the machine the work has to land on.</li>
-                <li data-i18n data-en="A distilled segmentation model 2.6× smaller and 3× faster on CPU, so a hospital without GPUs can still run it." data-zh="一个蒸馏后小 2.6 倍、CPU 快 3 倍的分割模型，让没有 GPU 的医院也跑得动。">A distilled segmentation model 2.6× smaller and 3× faster on CPU, so a hospital without GPUs can still run it.</li>
-                <li data-i18n data-en="A cell analysis platform in daily production use by an industry partner, with LoRA adaptation to a new cell type from 5 to 10 samples." data-zh="一个产业合作方每天在用的细胞分析平台，用 LoRA 只需 5 到 10 个样本就能适配新细胞类型。">A cell analysis platform in daily production use by an industry partner, with LoRA adaptation to a new cell type from 5 to 10 samples.</li>
-                <li data-i18n data-en="Infrastructure that is not glamorous but decides whether the science holds: versioned data lineage, crash-safe multi-GPU evaluation, and audits that caught duplication and corruption inside widely used public datasets." data-zh="以及不好看但决定科学结论是否成立的基础设施：版本化数据血统、崩溃安全的多卡评测，以及在被广泛使用的公开数据集里查出重复与损坏的审计。">Infrastructure that is not glamorous but decides whether the science holds: versioned data lineage, crash-safe multi-GPU evaluation, and audits that caught duplication and corruption inside widely used public datasets.</li>
-              </ul>
-            </li>
-          </ul>
-
-          <div class="cv-links">
-            <a href="./assets/Yunshu_Chen_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <span data-i18n data-en="Research CV (PDF)" data-zh="研究版简历 PDF">Research CV (PDF)</span>
-            </a>
-            <a href="./assets/Yunshu_Chen_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
-              <ion-icon name="briefcase-outline"></ion-icon>
-              <span data-i18n data-en="Industry résumé (PDF)" data-zh="业界版简历 PDF">Industry résumé (PDF)</span>
-            </a>
+        <li class="flag">
+          <div class="flag-img">
+            <img src="./assets/images/projects/ivusfm.jpg" alt="IVUS-FM" loading="lazy">
+            <span class="flag-chip" data-i18n data-en="In progress" data-zh="进行中">In progress</span>
           </div>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="flask-outline"></ion-icon></div>
-            <h3 class="h3" data-i18n data-en="Research" data-zh="研究经历">Research</h3>
+          <div class="flag-in">
+            <h4>IVUS-FM</h4>
+            <p class="flag-role" data-i18n data-en="The data underneath" data-zh="底下的数据">The data underneath</p>
+            <p data-i18n
+               data-en="Only one of the two vendor platforms in clinical use can produce virtual-histology classes and structured reports. It holds roughly a quarter of the market. So every fine-grained label comes from that platform, and the model is built to transfer to the other one, the platform most catheter labs actually own."
+               data-zh="临床在用的两个厂商平台中，只有一个能产出虚拟组织学分类与结构化报告，而它只占约四分之一的市场。所以全部细粒度标签都来自这个平台，模型则被设计成能迁移到另一个，也就是大多数导管室实际拥有的那一个。"></p>
+            <ul class="metrics">
+              <li><b>49.6M</b><span data-i18n data-en="frames pre-trained on" data-zh="预训练帧数">frames pre-trained on</span></li>
+              <li><b>28,753</b><span data-i18n data-en="pullbacks" data-zh="个 pullback">pullbacks</span></li>
+              <li><b>13 yrs</b><span data-i18n data-en="of clinical acquisition" data-zh="临床采集跨度">of clinical acquisition</span></li>
+              <li><b>4</b><span data-i18n data-en="levels of supervision" data-zh="级监督">levels of supervision</span></li>
+            </ul>
+            <p class="flag-more" data-i18n
+               data-en="Supervision runs from 67,203 pixel masks through 5,876 contours and 894 statistical records to 7,267 paired clinical reports. Coarse labels are plentiful, fine labels are not, and the architecture is designed around that asymmetry rather than pretending it away."
+               data-zh="监督信号从 67,203 张像素级 mask、5,876 条轮廓、894 份统计记录，一直到 7,267 份配对临床报告。粗标签多、细标签少，架构是围绕这个不对称设计的，而不是假装它不存在。"></p>
           </div>
-          <p class="tl-note" data-i18n data-en="Roles and collaborations. The work itself is on the Projects page." data-zh="这里是角色与合作关系，工作内容本身在「项目」页。">Roles and collaborations. The work itself is on the Projects page.</p>
+        </li>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Coronary IVUS segmentation and clinical measurement validation" data-zh="冠脉 IVUS 分割与临床测量验证">Coronary IVUS segmentation and clinical measurement validation</h4>
-              <span>Jun 2025 – Present</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Monash University with the Victorian Heart Institute, on the CARAT and Huygens cohorts. End-to-end pullback analysis: quality control, side-branch detection, lumen and vessel segmentation, plaque progression. Statistically indistinguishable from nnU-Net at a fraction of the inference cost."
-                 data-zh="蒙纳士大学与维多利亚心脏研究所合作，基于 CARAT 与 Huygens 两个队列。端到端的回撤分析：质控、侧支检测、管腔与血管壁分割、斑块进展。与 nnU-Net 无统计学差异，但推理成本只有其一小部分。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Ultrasound foundation model, multi-scale vendor-locked supervision" data-zh="超声基础模型：多尺度 vendor-locked 监督">Ultrasound foundation model, multi-scale vendor-locked supervision</h4>
-              <span>Mar 2026 – Present</span>
-              <p class="timeline-text" data-i18n
-                 data-en="49.6M frames, 28,753 pullbacks, two vendor platforms, 13 years of clinical acquisition. I built the pre-training infrastructure end to end: a large-scale DICOM to tensor pipeline, md5-versioned data lineage and multi-GPU training."
-                 data-zh="4,960 万帧、28,753 个 pullback、两个厂商平台、13 年临床采集跨度。预训练基础设施由我从零搭起：大规模 DICOM 转张量管线、md5 版本化数据血统、多卡训练。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="LLM-orchestrated clinical decision support" data-zh="LLM 编排的临床决策支持">LLM-orchestrated clinical decision support</h4>
-              <span>2026 – Present</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Clinician-reviewed across 35 cases. The architectural guarantee is that every number in a report comes from an algorithm and none from the language model. Hosted locally on Qwen2.5-7B and vLLM because patient data cannot leave the network."
-                 data-zh="已由医生复核 35 例。架构上的保证是：报告里每个数字都来自算法，没有一个来自语言模型。因为患者数据不能出内网，整套跑在本地的 Qwen2.5-7B 与 vLLM 上。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Multi-scale cell instance segmentation foundation model" data-zh="多尺度细胞实例分割基础模型">Multi-scale cell instance segmentation foundation model</h4>
-              <span>Feb 2025 – Feb 2026</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Monash University in collaboration with Lead Healthcare. 100K+ images and 8M+ instances across four imaging modalities, 89% mAP, ahead of four published SAM-family models across 12 benchmarks. Deployed as a production web application."
-                 data-zh="蒙纳士大学与 Lead Healthcare 合作。10 万+ 图像、800 万+ 实例、四种成像模态，89% mAP，在 12 个基准上优于四个已发表的 SAM 系模型。已部署为生产环境 web 应用。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Time-lapse cell tracking and zebrafish myotome segmentation" data-zh="时序细胞追踪与斑马鱼肌节分割">Time-lapse cell tracking and zebrafish myotome segmentation</h4>
-              <span>Apr 2024 – Present</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Zebrafish work is with the Australian Regenerative Medicine Institute, and I delivered a PyQt analysis interface so the biologists can run it themselves. The tracking work replaced a state-of-the-art tracker's learned association module with SAM2 memory, winning on 6 of 6 fields of view with no retraining."
-                 data-zh="斑马鱼方向与澳大利亚再生医学研究所合作，我交付了一个 PyQt 分析界面，让生物学家自己就能跑。追踪方向用 SAM2 的记忆机制替换了 SOTA 追踪器的学习式关联模块，在 6/6 个视野上胜出，且完全不需要重训。">
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
-            <h3 class="h3" data-i18n data-en="Industry" data-zh="业界经历">Industry</h3>
+        <li class="flag">
+          <div class="flag-img">
+            <img src="./assets/images/projects/agent.jpg" alt="IVUS Agent" loading="lazy">
+            <span class="flag-chip" data-i18n data-en="Agentic clinical AI" data-zh="临床决策智能体">Agentic clinical AI</span>
           </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Speech Recognition Algorithm Engineer, Intern (Full-time), NIO" data-zh="语音识别算法工程师（全职实习）· 蔚来">Speech Recognition Algorithm Engineer, Intern (Full-time), NIO</h4>
-              <span>Jul 2022 – Dec 2022</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Intelligent Cockpit and Software Development, Shanghai. Improved multilingual recognition accuracy by 5% across Chinese and European languages, built automated diagnostics that resolved 60+ production failures, and shipped models into production vehicle systems alongside product, UX and NLU teams."
-                 data-zh="智能座舱与软件开发部门，上海。将中文与欧洲语系的多语种识别准确率提升 5%，搭建自动化诊断解决了 60+ 个量产问题，并与产品、UX、NLU 团队一起把模型送进了量产车系统。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Research Intern, Institute of Psychology, Chinese Academy of Sciences" data-zh="研究实习生 · 中国科学院心理研究所">Research Intern, Institute of Psychology, Chinese Academy of Sciences</h4>
-              <span>Mar 2022 – Jul 2022</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Pain Comprehensive Imaging Laboratory, Beijing. MRI experiment design, an automated small-sample MRI pipeline in Python and FSL, and few-shot learning under real data scarcity."
-                 data-zh="疼痛综合影像实验室，北京。参与 MRI 实验设计，用 Python 与 FSL 搭建小样本 MRI 自动化流程，并在数据真实稀缺的条件下应用小样本学习。">
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
-            <h3 class="h3" data-i18n data-en="Education" data-zh="教育背景">Education</h3>
+          <div class="flag-in">
+            <h4>IVUS Agent</h4>
+            <p class="flag-role" data-i18n data-en="Decide" data-zh="决策">Decide</p>
+            <p data-i18n
+               data-en="A language model in a clinical report is a liability the moment it produces a number. So it does not produce any. The foundation model and GeoCat are wrapped as deterministic tools; the LLM plans which to call and narrates the result, and every figure in the output is traceable to an algorithm."
+               data-zh="临床报告里的语言模型，一旦开始生成数字就成了风险来源。所以它一个都不生成。基础模型与 GeoCat 被封装为确定性工具，LLM 只负责规划调用哪个、并把结果叙述出来，输出里的每个数字都能追溯到某个算法。"></p>
+            <ul class="metrics">
+              <li><b>0</b><span data-i18n data-en="numbers generated by the model" data-zh="由模型生成的数字">numbers generated by the model</span></li>
+              <li><b>8</b><span data-i18n data-en="decision tools, ESC-guideline cited" data-zh="个决策工具，引用 ESC 指南">decision tools, ESC-guideline cited</span></li>
+              <li><b>35</b><span data-i18n data-en="cases reviewed by clinicians" data-zh="例经医生复核">cases reviewed by clinicians</span></li>
+              <li><b>Local</b><span data-i18n data-en="Qwen2.5-7B + vLLM, on-premise" data-zh="Qwen2.5-7B + vLLM，本地部署">Qwen2.5-7B + vLLM, on-premise</span></li>
+            </ul>
+            <p class="flag-more" data-i18n
+               data-en="JSON-Schema tool registry, a Pydantic audit ledger that records every call, bilingual report generation, and a review interface built so the cardiologist reviewing it can disagree with any individual number."
+               data-zh="JSON Schema 工具注册表、记录每次调用的 Pydantic 审计账本、中英双语报告生成，以及一个允许复核医生对任意单个数字提出异议的复核界面。"></p>
           </div>
+        </li>
+      </ul>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="PhD, Data Science &amp; Artificial Intelligence, Monash University" data-zh="博士 · 数据科学与人工智能 · 蒙纳士大学">PhD, Data Science &amp; Artificial Intelligence, Monash University</h4>
-              <span>Oct 2023 – Apr 2027 (expected)</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Multi-modal imaging analysis, vision-language models, and segmentation. Supervised by Dr Deval Mehta, with Prof Guanliang Chen and Dr Litao Yang. Monash Medical AI. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute."
-                 data-zh="多模态影像分析、视觉语言模型与图像分割。主导师 Deval Mehta，副导师 Guanliang Chen、Litao Yang，Monash Medical AI 课题组。合作方：维多利亚心脏研究所、Apollo 医学影像、Lead Healthcare、澳大利亚再生医学研究所。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="BAdvComputing (Honours II-1), The University of Sydney" data-zh="高级计算学士（荣誉二等一级）· 悉尼大学">BAdvComputing (Honours II-1), The University of Sydney</h4>
-              <span>Feb 2019 – Jun 2023</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Major in Software Development and Computational Data Science. Honours thesis on End-to-Same-End Encryption: a cross-platform blind cloud storage app where the server never sees plaintext, built with React Native, Spring Boot, AWS S3 and Jenkins CI/CD."
-                 data-zh="主修软件开发与计算数据科学。荣誉论文方向为端到同端加密：一个服务端永远看不到明文的跨平台盲云存储应用，用 React Native、Spring Boot、AWS S3 与 Jenkins CI/CD 构建。">
-              </p>
-            </li>
-          </ol>
-        </section>
+      <div class="tier-h">
+        <h3 data-i18n data-en="Microscopy &amp; cell imaging" data-zh="显微与细胞影像">Microscopy &amp; cell imaging</h3>
+        <p class="mono-note">03.2 · SAME QUESTION, DIFFERENT SCALE</p>
+      </div>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="people-outline"></ion-icon></div>
-            <h3 class="h3" data-i18n data-en="Teaching &amp; service" data-zh="教学与学术服务">Teaching &amp; service</h3>
-          </div>
+      <ul class="minis">
+        <li class="mini">
+          <h4 data-i18n data-en="SAM2 memory as a tracking linker" data-zh="SAM2 记忆作为追踪 linker">SAM2 memory as a tracking linker</h4>
+          <p class="m-num">CHOTA 0.8603</p>
+          <p data-i18n data-en="Beat a trained state-of-the-art associator with no retraining at all, on 6 of 6 fields of view (p &lt; 0.001). A learned trajectory verifier cut false positives from 233 to 199." data-zh="完全不重训即胜过训练过的 SOTA 关联器，6/6 个视野（p &lt; 0.001）。学习式轨迹验证器把假阳性从 233 降到 199。"></p>
+        </li>
+        <li class="mini">
+          <h4 data-i18n data-en="LeadCell, a cell foundation model" data-zh="LeadCell 细胞基础模型">LeadCell, a cell foundation model</h4>
+          <p class="m-num">8M+ instances · 89% mAP</p>
+          <p data-i18n data-en="DINOv3 and a custom UNETR decoder across five modalities, ahead of four published SAM-family models over 12 benchmarks. Deployed as a production web tool, with LoRA adaptation to a new cell type from 5 to 10 samples." data-zh="DINOv3 加自定义 UNETR 解码器，覆盖五种模态，在 12 个基准上优于四个已发表的 SAM 系模型。已部署为生产环境 web 工具，用 LoRA 只需 5 到 10 个样本即可适配新细胞类型。"></p>
+        </li>
+        <li class="mini">
+          <h4 data-i18n data-en="Cell size × resolution benchmark" data-zh="细胞尺寸 × 分辨率基准">Cell size × resolution benchmark</h4>
+          <p class="m-num">19 datasets × 9 frozen models</p>
+          <p data-i18n data-en="Four perturbation axes on an 8-GPU crash-safe framework. Every cell size has its own optimal resolution, and the data audit found duplication in cyto2 and corruption in VNC before any of it reached a benchmark." data-zh="四个扰动轴，跑在 8 卡崩溃安全的框架上。每种细胞尺寸都有自己的最优分辨率；数据审计在进入基准之前查出了 cyto2 的重复与 VNC 的损坏。"></p>
+        </li>
+        <li class="mini">
+          <h4 data-i18n data-en="Confidence-Adaptive Trimap" data-zh="置信度自适应 Trimap">Confidence-Adaptive Trimap</h4>
+          <p class="m-num" data-i18n data-en="Under review" data-zh="在投">Under review</p>
+          <p data-i18n data-en="The uncertain boundary band comes from the model's own confidence, not a hand-tuned kernel, and it survives domain shift to muscular dystrophy where the fixed kernel falls below plain U-Net++." data-zh="不确定边界带来自模型自身的置信度，而非手调核；在向肌营养不良的域偏移下它稳住了，固定核则跌破普通 U-Net++。"></p>
+        </li>
+        <li class="mini">
+          <h4 data-i18n data-en="Physically-grounded synthesis" data-zh="物理约束的图像合成">Physically-grounded synthesis</h4>
+          <p class="m-num">11 priors × 5 domains</p>
+          <p data-i18n data-en="Point processes and imaging physics instead of generative hallucination. A literature audit and self-review then killed my own framing and relocated the bottleneck to appearance realism." data-zh="用点过程与成像物理替代生成式幻觉。随后的文献核查与自审否定了我自己的框架，把瓶颈重新定位到 appearance 真实感。"></p>
+        </li>
+      </ul>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="Teaching Assistant (Sessional Academic), Monash University" data-zh="兼职助教 · 蒙纳士大学">Teaching Assistant (Sessional Academic), Monash University</h4>
-              <span>Jul 2025 – Present</span>
-              <p class="timeline-text" data-i18n
-                 data-en="FIT5196 Data Wrangling and FIT5145 Introduction to Data Science. Weekly tutorials and labs for 60+ postgraduate students, 92/100 student satisfaction. Student Representative for Data Science and AI in the Faculty of IT since February 2026."
-                 data-zh="FIT5196 数据整理与 FIT5145 数据科学导论。每周为 60+ 名研究生带 tutorial 与 lab，学生满意度 92/100。自 2026 年 2 月起担任信息技术学院数据科学与人工智能方向学生代表。">
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" data-i18n data-en="General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney" data-zh="第94届学生代表理事会常务执行委员 · 学术委员会学生代表 · 悉尼大学">General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney</h4>
-              <span>2021 – 2022</span>
-              <p class="timeline-text" data-i18n
-                 data-en="Elected with 434 primary votes, among the highest in the SRC's history, a result that carried two further candidates on the ticket. Contributed to the Sydney in 2032 strategy, the MySydney special admission scheme widening access for students from low socio-economic areas, and a new academic integrity framework. Formally acknowledged by the Chair of the Academic Board."
-                 data-zh="以 434 张首选票当选，是学生代表理事会历史上得票最高的候选人之一，并带动同一名单另外两人当选。参与 Sydney in 2032 学校战略、扩大低社会经济地区学生入学机会的 MySydney 特殊招生方案，以及新的学术诚信框架。获学术委员会主席正式致谢。">
-              </p>
-            </li>
-          </ol>
-        </section>
+      <div class="tier-h">
+        <h3 data-i18n data-en="Tools &amp; infrastructure" data-zh="工具与基础设施">Tools &amp; infrastructure</h3>
+        <p class="mono-note">03.3 · WHAT THE PAPERS STAND ON</p>
+      </div>
 
-        <section class="awards-sec">
-          <h3 class="h3 sec-title" data-i18n data-en="Awards" data-zh="荣誉">Awards</h3>
-          <ul class="awards-list">
-            <li data-i18n data-en="2nd place, Track II (unlimited model size, CER 9.86%) and 3rd place, Track I (limited model size, CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022." data-zh="智能座舱语音识别挑战赛 Track II（不限模型规模，CER 9.86%）第二名、Track I（限模型规模，CER 13.39%）第三名，新加坡，2022。">2nd place, Track II (unlimited model size, CER 9.86%) and 3rd place, Track I (limited model size, CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022.</li>
-            <li data-i18n data-en="Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022." data-zh="悉尼大学学术委员会主席正式致谢，2022。">Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022.</li>
-            <li data-i18n data-en="Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0." data-zh="上海交通大学交换，GPA 4.0 / 4.0。">Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0.</li>
-          </ul>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title" data-i18n data-en="Technical skills" data-zh="技术能力">Technical skills</h3>
-          <ul class="skill-tags">
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Machine learning" data-zh="机器学习">Machine learning</p>
-              <div><span>PyTorch</span><span>scikit-learn</span><span>SAM / SAM2</span><span>DINOv3</span><span>ViT</span><span>MAE pre-training</span><span>nnU-Net</span><span>UNETR</span><span>ConvNeXt</span><span>MONAI</span><span>LoRA</span><span>Knowledge distillation</span></div>
-            </li>
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="LLM &amp; agents" data-zh="大模型与智能体">LLM &amp; agents</p>
-              <div><span>ReAct orchestration</span><span>vLLM</span><span>Qwen2.5</span><span>JSON-Schema tool contracts</span><span>Pydantic state</span><span>Local / private deployment</span></div>
-            </li>
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Medical &amp; bio imaging" data-zh="医学与生物影像">Medical &amp; bio imaging</p>
-              <div><span>IVUS / NIRS-IVUS</span><span>CT perfusion</span><span>MRI / fMRI</span><span>DICOM</span><span>Fluorescence / Brightfield / H&amp;E / EM</span><span>Radiomics</span><span>Cell tracking (CTC / CHOTA)</span></div>
-            </li>
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Clinical validation &amp; statistics" data-zh="临床验证与统计">Clinical validation &amp; statistics</p>
-              <div><span>ICC / CCC</span><span>Bland–Altman</span><span>Cohen's κ</span><span>AUROC</span><span>Paired Wilcoxon</span><span>Patient-disjoint CV</span><span>LASSO / Random Forest</span><span>Survival analysis</span></div>
-            </li>
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Data &amp; MLOps" data-zh="数据与 MLOps">Data &amp; MLOps</p>
-              <div><span>Large-scale DICOM pipelines</span><span>Versioned data lineage</span><span>Multi-GPU training</span><span>Crash-safe evaluation</span><span>pandas</span><span>pytest</span><span>Docker</span><span>Kubernetes</span><span>Jenkins CI/CD</span><span>AWS (S3, SageMaker)</span><span>Azure</span><span>Linux</span><span>Git</span></div>
-            </li>
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Software" data-zh="软件工程">Software</p>
-              <div><span>Python (advanced)</span><span>Java</span><span>C++</span><span>SQL</span><span>R</span><span>MATLAB</span><span>React Native</span><span>Spring Boot</span><span>Node.js</span><span>PyQt</span><span>LaTeX</span></div>
-            </li>
-            <li class="skill-group">
-              <p class="skill-group-title" data-i18n data-en="Languages" data-zh="语言">Languages</p>
-              <div><span data-i18n data-en="English (professional)" data-zh="英语（专业工作能力）">English (professional)</span><span data-i18n data-en="Mandarin (native)" data-zh="普通话（母语）">Mandarin (native)</span></div>
-            </li>
-          </ul>
-        </section>
-
-      </article>
-
-
-      <!--=================== PROJECTS ===================-->
-      <article class="portfolio" data-page="projects">
-
-        <header><h2 class="h2 article-title" data-i18n data-en="Projects" data-zh="项目">Projects</h2></header>
-
-        <section class="projects">
-
-          <div class="tier-head">
-            <p class="tier-label" data-i18n data-en="The main line" data-zh="主线">The main line</p>
-            <h3 class="tier-title" data-i18n data-en="Coronary IVUS: one chain, three projects" data-zh="冠脉 IVUS：一条链，三个项目">Coronary IVUS: one chain, three projects</h3>
-            <p class="tier-sub" data-i18n data-en="Segmentation that is validated against decisions, the pre-training corpus underneath it, and the agent that turns both into a report a cardiologist can act on." data-zh="面向决策验证的分割、支撑它的预训练语料，以及把两者变成心内科医生可直接使用的报告的智能体。">Segmentation that is validated against decisions, the pre-training corpus underneath it, and the agent that turns both into a report a cardiologist can act on.</p>
-          </div>
-
-          <ul class="flag-list">
-
-            <li class="flag-item">
-              <div class="flag-media">
-                <img src="./assets/images/projects/geocat.jpg" alt="GeoCat" loading="lazy">
-                <span class="flag-venue" data-i18n data-en="Under review" data-zh="在投">Under review</span>
-              </div>
-              <div class="flag-body">
-                <h3 class="flag-title">GeoCat</h3>
-                <p class="flag-role" data-i18n data-en="Segment &amp; measure" data-zh="分割与测量">Segment &amp; measure</p>
-                <p class="flag-lead" data-i18n
-                   data-en="Dice on this task has saturated, so the paper is not about Dice. It asks whether the measurements derived from a segmentation agree with what an expert reader would have decided: stent size, whether the lesion needs treating, whether the calcium must be modified first."
-                   data-zh="这个任务上的 Dice 已经饱和，所以论文讲的不是 Dice。它问的是：从分割导出的测量值，是否与专家读片者会做出的决策一致：支架尺寸、病变要不要处理、钙化要不要先处理。">
-                </p>
-                <ul class="flag-metrics">
-                  <li><b>84%</b><span data-i18n data-en="agreement on treatment threshold (κ 0.67)" data-zh="治疗阈值一致率（κ 0.67）">agreement on treatment threshold (κ 0.67)</span></li>
-                  <li><b>0.94–0.96</b><span data-i18n data-en="CCC vs expert measurement" data-zh="与专家测量的 CCC">CCC vs expert measurement</span></li>
-                  <li><b>0.97–0.99</b><span data-i18n data-en="AUROC, calcium threshold" data-zh="钙化阈值 AUROC">AUROC, calcium threshold</span></li>
-                  <li><b>0.922–0.930</b><span data-i18n data-en="Dice, patient-disjoint 5-fold" data-zh="Dice，患者不重叠 5 折">Dice, patient-disjoint 5-fold</span></li>
-                </ul>
-                <p class="flag-more" data-i18n
-                   data-en="Distillation gave a model 2.6× smaller and 3× faster on CPU, trainable on one sixth of the annotation budget, so it runs where there is no GPU. Uncertainty-guided deferral cut measurement error from 0.91 to 0.64 by handing the hard frames back to a human."
-                   data-zh="蒸馏得到小 2.6 倍、CPU 快 3 倍的模型，且只需 1/6 的标注量，因此能跑在没有 GPU 的地方。不确定性引导的 deferral 把难帧交还给人，测量误差从 0.91 降到 0.64。">
-                </p>
-              </div>
-            </li>
-
-            <li class="flag-item">
-              <div class="flag-media">
-                <img src="./assets/images/projects/ivusfm.jpg" alt="IVUS-FM" loading="lazy">
-                <span class="flag-venue" data-i18n data-en="In progress" data-zh="进行中">In progress</span>
-              </div>
-              <div class="flag-body">
-                <h3 class="flag-title">IVUS-FM</h3>
-                <p class="flag-role" data-i18n data-en="The data underneath" data-zh="底下的数据">The data underneath</p>
-                <p class="flag-lead" data-i18n
-                   data-en="Only one of the two vendor platforms in clinical use can produce virtual-histology classes and structured reports. It holds roughly a quarter of the market. So every fine-grained label comes from that platform, and the model is built to transfer to the other one, the platform most catheter labs actually own."
-                   data-zh="临床在用的两个厂商平台中，只有一个能产出虚拟组织学分类与结构化报告，而它只占约四分之一的市场。所以全部细粒度标签都来自这个平台，模型则被设计成能迁移到另一个，也就是大多数导管室实际拥有的那一个。">
-                </p>
-                <ul class="flag-metrics">
-                  <li><b>49.6M</b><span data-i18n data-en="frames pre-trained on" data-zh="预训练帧数">frames pre-trained on</span></li>
-                  <li><b>28,753</b><span data-i18n data-en="pullbacks" data-zh="个 pullback">pullbacks</span></li>
-                  <li><b>13 yrs</b><span data-i18n data-en="of clinical acquisition" data-zh="临床采集跨度">of clinical acquisition</span></li>
-                  <li><b>4</b><span data-i18n data-en="levels of supervision" data-zh="级监督">levels of supervision</span></li>
-                </ul>
-                <p class="flag-more" data-i18n
-                   data-en="Supervision runs from 67,203 pixel masks through 5,876 contours and 894 statistical records to 7,267 paired clinical reports. Coarse labels are plentiful, fine labels are not, and the architecture is designed around that asymmetry rather than pretending it away."
-                   data-zh="监督信号从 67,203 张像素级 mask、5,876 条轮廓、894 份统计记录，一直到 7,267 份配对临床报告。粗标签多、细标签少，架构是围绕这个不对称设计的，而不是假装它不存在。">
-                </p>
-              </div>
-            </li>
-
-            <li class="flag-item">
-              <div class="flag-media">
-                <img src="./assets/images/projects/agent.jpg" alt="IVUS Agent" loading="lazy">
-                <span class="flag-venue" data-i18n data-en="Agentic clinical AI" data-zh="临床决策智能体">Agentic clinical AI</span>
-              </div>
-              <div class="flag-body">
-                <h3 class="flag-title">IVUS Agent</h3>
-                <p class="flag-role" data-i18n data-en="Decide" data-zh="决策">Decide</p>
-                <p class="flag-lead" data-i18n
-                   data-en="A language model in a clinical report is a liability the moment it produces a number. So it does not produce any. The foundation model and GeoCat are wrapped as deterministic tools; the LLM plans which to call and narrates the result, and every figure in the output is traceable to an algorithm."
-                   data-zh="临床报告里的语言模型，一旦开始生成数字就成了风险来源。所以它一个都不生成。基础模型与 GeoCat 被封装为确定性工具，LLM 只负责规划调用哪个、并把结果叙述出来，输出里的每个数字都能追溯到某个算法。">
-                </p>
-                <ul class="flag-metrics">
-                  <li><b>0</b><span data-i18n data-en="numbers generated by the model" data-zh="由模型生成的数字">numbers generated by the model</span></li>
-                  <li><b>8</b><span data-i18n data-en="decision tools, ESC-guideline cited" data-zh="个决策工具，引用 ESC 指南">decision tools, ESC-guideline cited</span></li>
-                  <li><b>35</b><span data-i18n data-en="cases reviewed by clinicians" data-zh="例经医生复核">cases reviewed by clinicians</span></li>
-                  <li><b>Local</b><span data-i18n data-en="Qwen2.5-7B + vLLM, on-premise" data-zh="Qwen2.5-7B + vLLM，本地部署">Qwen2.5-7B + vLLM, on-premise</span></li>
-                </ul>
-                <p class="flag-more" data-i18n
-                   data-en="JSON-Schema tool registry, a Pydantic audit ledger that records every call, bilingual report generation, and a review interface built so the cardiologist reviewing it can disagree with any individual number."
-                   data-zh="JSON Schema 工具注册表、记录每次调用的 Pydantic 审计账本、中英双语报告生成，以及一个允许复核医生对任意单个数字提出异议的复核界面。">
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-          <div class="tier-head">
-            <p class="tier-label" data-i18n data-en="Second track" data-zh="第二条线">Second track</p>
-            <h3 class="tier-title" data-i18n data-en="Microscopy &amp; cell imaging" data-zh="显微与细胞影像">Microscopy &amp; cell imaging</h3>
-            <p class="tier-sub" data-i18n data-en="The same question at a different scale: what does a cell model actually need to get right, and what do the benchmarks miss?" data-zh="同一个问题换一个尺度：细胞模型真正需要做对什么，而现有基准漏掉了什么？">The same question at a different scale: what does a cell model actually need to get right, and what do the benchmarks miss?</p>
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item active">
-              <a href="#">
-                <figure class="project-img"><img src="./assets/images/projects/tracking.jpg" alt="Cell tracking" loading="lazy"></figure>
-                <h3 class="project-title">SAM2 memory as a tracking linker</h3>
-                <p class="project-category" data-i18n data-en="Microscopy · cell tracking" data-zh="显微影像 · 细胞追踪">Microscopy · cell tracking</p>
-                <p class="project-desc" data-i18n
-                   data-en="CHOTA 0.8603 vs Trackastra's 0.8511, p &lt; 0.001, with no retraining. SAM2's memory beat a learned associator on 6 of 6 fields of view. A learned trajectory verifier cut false positives from 233 to 199. Published with a complete ablation ladder and five explicitly falsified directions, including short-track filtering, which is actively harmful because 24% of ground-truth cells survive fewer than five frames."
-                   data-zh="CHOTA 0.8603 对 Trackastra 的 0.8511，p &lt; 0.001，且无需重训。SAM2 的记忆机制在 6/6 个视野上胜过学习式关联器。学习式轨迹验证器将假阳性从 233 降到 199。附完整消融阶梯与五个明确证伪的方向，其中短轨迹过滤是有害的，因为 24% 的真值细胞存活不足五帧。">
-                </p>
-              </a>
-            </li>
-            <li class="project-item active">
-              <a href="#">
-                <figure class="project-img"><img src="./assets/images/projects/leadorg.jpg" alt="LeadCell" loading="lazy"></figure>
-                <h3 class="project-title">LeadCell, a multi-scale instance segmentation foundation model</h3>
-                <p class="project-category" data-i18n data-en="Microscopy · industry deployment" data-zh="显微影像 · 产业部署">Microscopy · industry deployment</p>
-                <p class="project-desc" data-i18n
-                   data-en="A SAM-based framework with a custom UNETR decoder predicting complementary distance and boundary maps, trained on 100K+ images and 8M+ instances across four modalities. 89% mAP, outperforming Cellpose-SAM, microSAM, SAMCell and CellSAM across 12 benchmarks. LoRA fine-tuning adapts to a new cell type from 5–10 samples. Deployed as a production web application for the industry partner."
-                   data-zh="基于 SAM 的框架配自研 UNETR 解码器，预测互补的距离与边界图，在 10 万+ 图像、800 万+ 实例、四种模态上训练。89% mAP，在 12 个 benchmark 上超过 Cellpose-SAM、microSAM、SAMCell 与 CellSAM。LoRA 微调可用 5–10 个样本适配新细胞类型。已作为生产级 web 应用交付产业合作方。">
-                </p>
-              </a>
-            </li>
-            <li class="project-item active">
-              <a href="#">
-                <figure class="project-img"><img src="./assets/images/projects/resolution.jpg" alt="Cell Resolution" loading="lazy"></figure>
-                <h3 class="project-title">Cell size × resolution: a systematic benchmark</h3>
-                <p class="project-category" data-i18n data-en="Microscopy · systematic benchmark" data-zh="显微影像 · 系统性基准">Microscopy · systematic benchmark</p>
-                <p class="project-desc" data-i18n
-                   data-en="19 public datasets × 9 frozen pre-trained models across four perturbation axes (tile size, resolution, blur, field of view) on an 8-GPU crash-safe evaluation framework. The data audit uncovered duplicate copies in cyto2 and corruption in VNC, both excluded before the unified re-run. Produces practitioner guidance and motivating evidence for resolution-aware cell foundation models."
-                   data-zh="19 个公开数据集 × 9 个冻结预训练模型，覆盖 tile size、分辨率、模糊、视野四个扰动轴，跑在 8 卡崩溃安全的评测框架上。数据审计发现 cyto2 存在拷贝重复、VNC 数据损坏，均在统一重跑前剔除。产出面向实践者的设置指南，以及分辨率感知细胞基础模型的动机证据。">
-                </p>
-              </a>
-            </li>
-            <li class="project-item active">
-              <a href="#">
-                <figure class="project-img"><img src="./assets/images/projects/fish.jpg" alt="Fish segmentation" loading="lazy"></figure>
-                <h3 class="project-title">Confidence-Adaptive Trimap for zebrafish myotomes</h3>
-                <p class="project-category" data-i18n data-en="Microscopy · under review" data-zh="显微影像 · 在投">Microscopy · under review</p>
-                <p class="project-desc" data-i18n
-                   data-en="The uncertain boundary band is derived from the model's own predictive confidence with a per-image adaptive threshold, replacing hand-tuned morphological kernels. Dice 0.856 / B-IoU 0.467 / HD95 31.1 on 121 images from 35 fish under fish-level 5-fold CV, significantly beating every baseline. Under domain shift to muscular dystrophy the adaptive variant holds while the fixed-kernel one falls below plain U-Net++."
-                   data-zh="不确定边界带由模型自身的预测置信度加逐图自适应阈值导出，取代手工调参的形态学核。121 图 / 35 条鱼、fish-level 5 折交叉验证下 Dice 0.856 / B-IoU 0.467 / HD95 31.1，显著优于全部基线。在向肌营养不良的域偏移下，自适应版本保持稳定，而固定核版本跌破普通 U-Net++。">
-                </p>
-              </a>
-            </li>
-            <li class="project-item active">
-              <a href="#">
-                <figure class="project-img"><img src="./assets/images/projects/synthesis.jpg" alt="Synthesis Cell" loading="lazy"></figure>
-                <h3 class="project-title">Physically-grounded cell image synthesis</h3>
-                <p class="project-category" data-i18n data-en="Microscopy · synthesis · in progress" data-zh="显微影像 · 合成 · 进行中">Microscopy · synthesis · in progress</p>
-                <p class="project-desc" data-i18n
-                   data-en="Replaced generative-model hallucination with physical and statistical priors: real background patches, spatial point processes (Poisson, Matérn, Thomas, Strauss, hexagonal), and physical imaging degradation. A literature audit and self-review then killed the original framing and located the real bottleneck as appearance realism, which prompted a pivot to learning canonical morphodynamic fields from adjacent-frame mask pairs."
-                   data-zh="用物理与统计先验替代生成模型的幻觉：真实背景 patch、空间点过程（Poisson / Matérn / Thomas / Strauss / 六方晶格）与物理成像退化。文献核查与自审否定了原方向，并把真实瓶颈定位在 appearance 真实感，据此转向从相邻帧 mask 对学习 canonical 形态动力学场。">
-                </p>
-              </a>
-            </li>
-          </ul>
-
-          <div class="tier-head">
-            <p class="tier-label" data-i18n data-en="Tools &amp; delivery" data-zh="工具与交付">Tools &amp; delivery</p>
-            <h3 class="tier-title" data-i18n data-en="Infrastructure, clinical pipelines, earlier work" data-zh="基础设施、临床管线、早期工作">Infrastructure, clinical pipelines, earlier work</h3>
-            <p class="tier-sub" data-i18n data-en="Not papers, but the things that had to exist for the papers to be possible, plus one completed clinical project." data-zh="这些不是论文，而是论文得以成立的前提，外加一个已结项的临床项目。">Not papers, but the things that had to exist for the papers to be possible, plus one completed clinical project.</p>
-          </div>
-
-          <ul class="also-list">
-            <li>
-              <a href="https://github.com/CHEN-Yunshu/Genius_Labbook" target="_blank" rel="noopener">
-                <span class="also-name">Genius Labbook <ion-icon name="logo-github"></ion-icon></span>
-                <span class="also-text" data-i18n
-                      data-en="A command-line research logbook that records experiments, results, figures and decisions as Markdown + YAML with automatic git commits. I wrote it because results were scattering across machines, figures were being silently overwritten, and decisions went unrecorded. It has held every experiment I have run since March 2026: 135 entries across 6 projects. Open source under MIT, and packaged as a Claude Code skill."
-                      data-zh="一个把实验、结果、图表与决策记为 Markdown + YAML 并自动 git 提交的命令行工具。写它是因为结果在机器间散落、图表被静默覆盖、决策无处可查。2026 年 3 月以来我跑过的每个实验都在里面：135 条记录、跨 6 个项目。MIT 开源，并打包为 Claude Code skill。">
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/CHEN-Yunshu/Cell_Collection" target="_blank" rel="noopener">
-                <span class="also-name">Cell_Collection <ion-icon name="logo-github"></ion-icon></span>
-                <span class="also-text" data-i18n
-                      data-en="Crawling, curation and standardisation across seven public sources (CIL, EMPIAR, IDR, Figshare, Zenodo, bioRxiv and PMC), producing 186 datasets and a duplication-and-leakage audit that ran before any of it reached a benchmark. It caught duplicate copies inside cyto2 and corruption in VNC; both were excluded rather than quietly averaged over."
-                      data-zh="跨 CIL、EMPIAR、IDR、Figshare、Zenodo、bioRxiv、PMC 七个公开来源的爬取、清洗与标准化，产出 186 个数据集，以及在数据进入任何基准之前跑完的重复与泄漏审计。它查出了 cyto2 内部的重复拷贝与 VNC 的数据损坏，两者都被剔除，而不是悄悄平均掉。">
-                </span>
-              </a>
-            </li>
-            <li>
-              <span class="also-name" data-i18n data-en="Acute ischemic stroke outcome prediction" data-zh="急性缺血性卒中预后预测">Acute ischemic stroke outcome prediction</span>
-              <span class="also-text" data-i18n
-                    data-en="With Apollo Medical Imaging, completed 2025. 3D ResNet-50 features from 7-channel CT perfusion fused with tabular clinical variables through cross-modal attention, with separate heads for EVT and non-EVT pathways rather than averaging over heterogeneous treatment effects, giving 12% better accuracy. Shipped with DICOM preprocessing and interpretability dashboards."
-                    data-zh="与 Apollo 医学影像合作，2025 年结项。用跨模态注意力融合 7 通道 CT 灌注的 3D ResNet-50 特征与表格临床变量，并为 EVT 与非 EVT 两条通路分设预测头，而不是把异质治疗效应平均掉，准确率提升 12%。配套交付 DICOM 预处理与可解释性看板。">
-              </span>
-            </li>
-          </ul>
-
-        </section>
-      </article>
-
-
-      <!--=================== PAPERS ===================-->
-      <article class="blog" data-page="papers">
-
-        <header><h2 class="h2 article-title" data-i18n data-en="Papers" data-zh="论文">Papers</h2></header>
-
-        <section class="pubs">
-
-          <h3 class="h3 pub-group-title" data-i18n data-en="Under review" data-zh="在投 / 在审">Under review</h3>
-          <ol class="pub-list">
-            <li class="pub-item">
-              <h4 class="pub-title">From Pixels to Decisions: Validating Deployable Coronary IVUS Analysis at the Level That Informs Treatment</h4>
-              <p class="pub-authors"><strong>Y. Chen</strong>, et al.</p>
-            </li>
-            <li class="pub-item">
-              <h4 class="pub-title">Clinically Aligned Geometry Constraints for Robust IVUS Vessel Boundary Segmentation</h4>
-              <p class="pub-authors"><strong>Y. Chen</strong>, et al.</p>
-            </li>
-            <li class="pub-item">
-              <h4 class="pub-title">Confidence-Adaptive Trimap for Boundary-Precise Zebrafish Myotome Segmentation</h4>
-              <p class="pub-authors"><strong>Y. Chen</strong>, et al.</p>
-            </li>
-          </ol>
-
-          <h3 class="h3 pub-group-title" data-i18n data-en="Published" data-zh="已发表">Published</h3>
-          <ol class="pub-list">
-            <li class="pub-item">
-              <p class="pub-venue">IEEE ISCSLP 2022 · Singapore</p>
-              <h4 class="pub-title">Efficient Conformer-Based CTC Model for Intelligent Cockpit Speech Recognition</h4>
-              <p class="pub-authors">H. Guo, <strong>Y. Chen</strong>, X. Xie, G. Xu, W. Guo, pp. 522–526</p>
-              <a class="pub-doi" href="https://doi.org/10.1109/ISCSLP57327.2022.10037993" target="_blank" rel="noopener">doi:10.1109/ISCSLP57327.2022.10037993</a>
-            </li>
-          </ol>
-
-          <h3 class="h3 pub-group-title" data-i18n data-en="In preparation" data-zh="撰写中">In preparation</h3>
-          <ul class="pub-prep">
-            <li><span data-i18n data-en="IVUS journal extension" data-zh="IVUS 期刊扩展版">IVUS journal extension</span></li>
-            <li><span data-i18n data-en="IVUS foundation model" data-zh="IVUS 基础模型">IVUS foundation model</span></li>
-            <li><span data-i18n data-en="Cell size × resolution benchmark" data-zh="细胞尺寸与分辨率基准">Cell size × resolution benchmark</span></li>
-            <li><span data-i18n data-en="Field-mediated morphodynamics" data-zh="场介导的形态动力学">Field-mediated morphodynamics</span></li>
-            <li><span data-i18n data-en="SAM2-as-linker cell tracking" data-zh="SAM2 作为 linker 的细胞追踪">SAM2-as-linker cell tracking</span></li>
-          </ul>
-
-          <h3 class="h3 pub-group-title" data-i18n data-en="Awards" data-zh="荣誉">Awards</h3>
-          <ul class="pub-prep">
-            <li><strong>2nd place</strong>, Track II, ISCSLP 2022 Intelligent Cockpit Speech Recognition Challenge, Singapore <em>(CER 9.86%)</em></li>
-            <li><strong>3rd place</strong>, Track I, same challenge <em>(CER 13.39%)</em></li>
-            <li data-i18n data-en="Formal acknowledgement from the Chair of the Academic Board, The University of Sydney (2022)" data-zh="悉尼大学学术委员会主席正式致谢（2022）">Formal acknowledgement from the Chair of the Academic Board, The University of Sydney (2022)</li>
-          </ul>
-
-        </section>
-      </article>
-
-
-      <!--=================== CONTACT ===================-->
-      <article class="contact" data-page="contact">
-
-        <header><h2 class="h2 article-title" data-i18n data-en="Contact" data-zh="联系">Contact</h2></header>
-
-        <section class="contact-intro">
-          <p data-i18n
-             data-en="I'm interested in research and machine learning engineering roles. My own work is in clinically validated imaging, foundation models and decision support. Happy to talk about collaborations, data sharing, or anything on this site."
-             data-zh="我对研究岗与机器学习工程岗都感兴趣。我自己的工作方向是临床验证的影像分析、基础模型与决策支持。也欢迎聊合作、数据共享，或这个网站上的任何内容。">
-          </p>
-        </section>
-
-        <section class="contact-cards">
-          <a class="contact-card" href="#" data-email-card>
-            <ion-icon name="mail-outline"></ion-icon>
-            <div>
-              <p class="cc-label" data-i18n data-en="Email" data-zh="邮箱">Email</p>
-              <p class="cc-value" data-email>[ enable JavaScript ]</p>
-            </div>
+      <ul class="rows">
+        <li>
+          <a href="https://github.com/CHEN-Yunshu/Genius_Labbook" target="_blank" rel="noopener">
+            <h4>Genius Labbook <span class="gh">github.com/CHEN-Yunshu/Genius_Labbook</span></h4>
+            <p data-i18n data-en="A command-line research logbook recording experiments, results, figures and decisions as Markdown and YAML with automatic git commits. It has held every experiment I have run since March 2026: 135 entries across 6 projects. Open source under MIT." data-zh="一个把实验、结果、图表与决策记为 Markdown + YAML 并自动 git 提交的命令行工具。2026 年 3 月以来我跑过的每个实验都在里面：135 条记录、跨 6 个项目。MIT 开源。"></p>
           </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/yunshu-chen-22917915a/" target="_blank" rel="noopener">
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <div><p class="cc-label">LinkedIn</p><p class="cc-value">yunshu-chen</p></div>
+        </li>
+        <li>
+          <a href="https://github.com/CHEN-Yunshu/Cell_Collection" target="_blank" rel="noopener">
+            <h4>Cell_Collection <span class="gh">github.com/CHEN-Yunshu/Cell_Collection</span></h4>
+            <p data-i18n data-en="Crawling, curation and standardisation across seven public sources, producing 186 datasets and a duplication and leakage audit that ran before any of it reached a benchmark. Open source." data-zh="跨七个公开来源的爬取、清洗与标准化，产出 186 个数据集，以及在数据进入任何基准之前跑完的重复与泄漏审计。开源。"></p>
           </a>
-          <a class="contact-card" href="https://github.com/CHEN-Yunshu" target="_blank" rel="noopener">
-            <ion-icon name="logo-github"></ion-icon>
-            <div><p class="cc-label">GitHub</p><p class="cc-value">CHEN-Yunshu</p></div>
-          </a>
-          <a class="contact-card" href="https://orcid.org/0009-0004-4772-4054" target="_blank" rel="noopener">
-            <ion-icon name="finger-print-outline"></ion-icon>
-            <div><p class="cc-label">ORCID</p><p class="cc-value">0009-0004-4772-4054</p></div>
-          </a>
-          <a class="contact-card" href="https://scholar.google.com/citations?user=-mTqfsEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-            <ion-icon name="book-outline"></ion-icon>
-            <div><p class="cc-label">Google Scholar</p><p class="cc-value" data-i18n data-en="Publications" data-zh="论文列表">Publications</p></div>
-          </a>
-          <a class="contact-card" href="./assets/Yunshu_Chen_CV.pdf" target="_blank" rel="noopener">
-            <ion-icon name="document-text-outline"></ion-icon>
-            <div><p class="cc-label" data-i18n data-en="Research CV" data-zh="研究版简历">Research CV</p><p class="cc-value">PDF</p></div>
-          </a>
-          <a class="contact-card" href="./assets/Yunshu_Chen_Resume.pdf" target="_blank" rel="noopener">
-            <ion-icon name="briefcase-outline"></ion-icon>
-            <div><p class="cc-label" data-i18n data-en="Industry résumé" data-zh="业界版简历">Industry résumé</p><p class="cc-value">PDF</p></div>
-          </a>
-        </section>
+        </li>
+        <li>
+          <h4 data-i18n data-en="Acute ischemic stroke outcome prediction" data-zh="急性缺血性卒中预后预测">Acute ischemic stroke outcome prediction</h4>
+          <p data-i18n data-en="With Apollo Medical Imaging, completed 2025. 3D ResNet-50 over 7-channel CT perfusion fused with clinical variables through cross-modal attention, with separate heads for EVT and non-EVT pathways rather than averaging over heterogeneous treatment effects, giving 12% better accuracy." data-zh="与 Apollo 医学影像合作，2025 年结项。用跨模态注意力融合 7 通道 CT 灌注的 3D ResNet-50 特征与临床变量，并为 EVT 与非 EVT 两条通路分设预测头，而不是把异质治疗效应平均掉，准确率提升 12%。"></p>
+        </li>
+        <li>
+          <h4 data-i18n data-en="Pre-training and evaluation infrastructure" data-zh="预训练与评测基础设施">Pre-training and evaluation infrastructure</h4>
+          <p data-i18n data-en="A 49.6M-frame DICOM to tensor pipeline with md5-versioned data lineage, multi-GPU training and an experiment dashboard, plus an 8-GPU crash-safe evaluation framework. Not glamorous, but it decides whether the science holds." data-zh="4,960 万帧的 DICOM 转张量管线，带 md5 版本化数据血统、多卡训练与实验看板，另有 8 卡崩溃安全的评测框架。不好看，但它决定科学结论是否成立。"></p>
+        </li>
+      </ul>
+    </section>
 
-        <footer class="site-foot">
-          <p>© <span data-year>2026</span> Yunshu Chen ·
-            <span data-i18n data-en="Built on the" data-zh="基于">Built on the</span>
-            <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener">vCard</a>
-            <span data-i18n data-en="template by codewithsadee (MIT)" data-zh="模板 · codewithsadee（MIT 协议）">template by codewithsadee (MIT)</span>
-          </p>
-        </footer>
 
-      </article>
+    <!--============ 04 PAPERS ============-->
+    <section class="wrap sec" id="papers">
+      <p class="marker">04 / <span data-i18n data-en="Papers" data-zh="论文">Papers</span></p>
+      <h2 class="sec-h" data-i18n data-en="Three first-author submissions <span class='dim'>under review</span>" data-zh="三篇一作<span class='dim'>在投</span>">Three first-author submissions <span class="dim">under review</span></h2>
 
-    </div>
+      <ul class="pubs" style="margin-top:24px">
+        <li class="pub">
+          <h4>From Pixels to Decisions: Validating Deployable Coronary IVUS Analysis at the Level That Informs Treatment</h4>
+          <p class="meta">Y. Chen, et al. · <b data-i18n data-en="First author, under review" data-zh="一作，在投">First author, under review</b></p>
+        </li>
+        <li class="pub">
+          <h4>Clinically Aligned Geometry Constraints for Robust IVUS Vessel Boundary Segmentation</h4>
+          <p class="meta">Y. Chen, et al. · <b data-i18n data-en="First author, under review" data-zh="一作，在投">First author, under review</b></p>
+        </li>
+        <li class="pub">
+          <h4>Confidence-Adaptive Trimap for Boundary-Precise Zebrafish Myotome Segmentation</h4>
+          <p class="meta">Y. Chen, et al. · <b data-i18n data-en="First author, under review" data-zh="一作，在投">First author, under review</b></p>
+        </li>
+        <li class="pub">
+          <h4>Efficient Conformer-Based CTC Model for Intelligent Cockpit Speech Recognition</h4>
+          <p class="meta">H. Guo, Y. Chen, X. Xie, G. Xu, W. Guo · IEEE ISCSLP 2022, pp. 522–526 · <a href="https://doi.org/10.1109/ISCSLP57327.2022.10037993" target="_blank" rel="noopener">doi</a></p>
+        </li>
+      </ul>
+
+      <h3 style="font-size:15px;font-weight:600;color:var(--ink);margin:30px 0 10px" data-i18n data-en="In preparation" data-zh="撰写中">In preparation</h3>
+      <ul class="prep">
+        <li data-i18n data-en="IVUS journal extension" data-zh="IVUS 期刊扩展版">IVUS journal extension</li>
+        <li data-i18n data-en="IVUS foundation model" data-zh="IVUS 基础模型">IVUS foundation model</li>
+        <li data-i18n data-en="Cell size × resolution benchmark" data-zh="细胞尺寸 × 分辨率基准">Cell size × resolution benchmark</li>
+        <li data-i18n data-en="Field-mediated morphodynamics" data-zh="场介导的形态动力学">Field-mediated morphodynamics</li>
+        <li data-i18n data-en="SAM2-as-linker cell tracking" data-zh="SAM2 作为 linker 的细胞追踪">SAM2-as-linker cell tracking</li>
+      </ul>
+
+      <h3 style="font-size:15px;font-weight:600;color:var(--ink);margin:34px 0 6px" data-i18n data-en="Awards" data-zh="荣誉">Awards</h3>
+      <ul class="awards">
+        <li data-i18n data-en="2nd place, Track II (unlimited model size, CER 9.86%) and 3rd place, Track I (limited model size, CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022." data-zh="智能座舱语音识别挑战赛 Track II（不限模型规模，CER 9.86%）第二名、Track I（限模型规模，CER 13.39%）第三名，新加坡，2022。"></li>
+        <li data-i18n data-en="Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022." data-zh="悉尼大学学术委员会主席正式致谢，2022。"></li>
+        <li data-i18n data-en="Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0." data-zh="上海交通大学交换，GPA 4.0 / 4.0。"></li>
+      </ul>
+    </section>
+
+
+    <!--============ 05 EXPERIENCE ============-->
+    <section class="wrap sec" id="experience">
+      <p class="marker">05 / <span data-i18n data-en="Experience" data-zh="履历">Experience</span></p>
+      <h2 class="sec-h" data-i18n data-en="Two tracks, <span class='dim'>one body of work</span>" data-zh="两条线，<span class='dim'>同一份工作</span>">Two tracks, <span class="dim">one body of work</span></h2>
+      <p class="sec-lead" data-i18n
+         data-en="I work in the space between a research question and a system somebody can actually use. The research half asks whether a model is validated at the level that changes a decision. The engineering half makes sure the answer survives a hospital network, a machine with no GPU, and a clinician who is short of time."
+         data-zh="我的工作处在「一个研究问题」和「一个真能被人用起来的系统」之间。研究的那一半在问：模型有没有在真正影响决策的层面被验证。工程的那一半负责让答案扛得住医院内网、没有 GPU 的机器，以及一位没时间的临床医生。">
+      </p>
+
+      <ul class="tracks">
+        <li class="track">
+          <p class="track-lab" data-i18n data-en="As a researcher" data-zh="作为研究者">As a researcher</p>
+          <ul>
+            <li data-i18n data-en="Three first-author papers under review, all on validation rather than architecture." data-zh="三篇一作论文在投，主题都是验证，而不是新架构。"></li>
+            <li data-i18n data-en="For coronary IVUS I moved evaluation from pixel overlap to clinical measurement agreement: CCC 0.94 and 0.96 against expert readings, 84% agreement on the threshold that decides treatment." data-zh="在冠脉 IVUS 上，我把评估从像素重叠换成了临床测量一致性：与专家读数 CCC 0.94 与 0.96，决定是否治疗的阈值上一致率 84%。"></li>
+            <li data-i18n data-en="Pre-training an ultrasound foundation model on 49.6M frames drawn from 13 years of clinical acquisition." data-zh="正在用 13 年临床采集、4,960 万帧数据预训练一个超声基础模型。"></li>
+            <li data-i18n data-en="I publish what did not work too: five explicitly falsified directions shipped with the tracking paper." data-zh="我也写没走通的部分：追踪那篇附了五个被明确证伪的方向。"></li>
+          </ul>
+        </li>
+        <li class="track">
+          <p class="track-lab" data-i18n data-en="As an engineer" data-zh="作为工程师">As an engineer</p>
+          <ul>
+            <li data-i18n data-en="I came to research from software engineering, and I build for the machine the work has to land on." data-zh="我是从软件工程转到研究的，写代码时想的是这套东西最后要落在什么机器上。"></li>
+            <li data-i18n data-en="A distilled segmentation model 2.6× smaller and 3× faster on CPU, so a hospital without GPUs can still run it." data-zh="一个蒸馏后小 2.6 倍、CPU 快 3 倍的分割模型，让没有 GPU 的医院也跑得动。"></li>
+            <li data-i18n data-en="A cell analysis platform in daily production use by an industry partner, and a PyQt interface handed to biologists who are not programmers." data-zh="一个产业合作方每天在用的细胞分析平台，以及一个交给非程序员生物学家使用的 PyQt 界面。"></li>
+            <li data-i18n data-en="Versioned data lineage, crash-safe multi-GPU evaluation, and audits that caught duplication and corruption inside widely used public datasets." data-zh="版本化数据血统、崩溃安全的多卡评测，以及在被广泛使用的公开数据集里查出重复与损坏的审计。"></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="tl">
+        <div class="tl-group">
+          <h3 data-i18n data-en="Research" data-zh="研究经历">Research</h3>
+          <div class="tl-item">
+            <p class="tl-when">Jun 2025 – Present</p>
+            <p class="tl-what" data-i18n data-en="Coronary IVUS segmentation and clinical measurement validation" data-zh="冠脉 IVUS 分割与临床测量验证">Coronary IVUS segmentation and clinical measurement validation</p>
+            <p class="tl-desc" data-i18n data-en="Monash University with the Victorian Heart Institute, on the CARAT and Huygens cohorts. End-to-end pullback analysis: quality control, side-branch detection, lumen and vessel segmentation, plaque progression." data-zh="蒙纳士大学与维多利亚心脏研究所合作，基于 CARAT 与 Huygens 两个队列。端到端的回撤分析：质控、侧支检测、管腔与血管壁分割、斑块进展。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">Mar 2026 – Present</p>
+            <p class="tl-what" data-i18n data-en="Ultrasound foundation model" data-zh="超声基础模型">Ultrasound foundation model</p>
+            <p class="tl-desc" data-i18n data-en="Multi-scale vendor-locked supervision. I built the pre-training infrastructure end to end: a large-scale DICOM to tensor pipeline, md5-versioned data lineage and multi-GPU training." data-zh="多尺度 vendor-locked 监督。预训练基础设施由我从零搭起：大规模 DICOM 转张量管线、md5 版本化数据血统、多卡训练。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">2026 – Present</p>
+            <p class="tl-what" data-i18n data-en="LLM-orchestrated clinical decision support" data-zh="LLM 编排的临床决策支持">LLM-orchestrated clinical decision support</p>
+            <p class="tl-desc" data-i18n data-en="Clinician-reviewed across 35 cases. Hosted locally on Qwen2.5-7B and vLLM because patient data cannot leave the network." data-zh="已由医生复核 35 例。因为患者数据不能出内网，整套跑在本地的 Qwen2.5-7B 与 vLLM 上。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">Feb 2025 – Feb 2026</p>
+            <p class="tl-what" data-i18n data-en="Multi-scale cell instance segmentation foundation model" data-zh="多尺度细胞实例分割基础模型">Multi-scale cell instance segmentation foundation model</p>
+            <p class="tl-desc" data-i18n data-en="Monash University in collaboration with Lead Healthcare. 100K+ images and 8M+ instances across four modalities, 89% mAP, deployed as a production web application." data-zh="蒙纳士大学与 Lead Healthcare 合作。10 万+ 图像、800 万+ 实例、四种模态，89% mAP，已部署为生产环境 web 应用。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">Apr 2024 – Present</p>
+            <p class="tl-what" data-i18n data-en="Cell tracking and zebrafish myotome segmentation" data-zh="细胞追踪与斑马鱼肌节分割">Cell tracking and zebrafish myotome segmentation</p>
+            <p class="tl-desc" data-i18n data-en="Zebrafish work is with the Australian Regenerative Medicine Institute, delivered with a PyQt analysis interface so the biologists can run it themselves." data-zh="斑马鱼方向与澳大利亚再生医学研究所合作，配套交付了 PyQt 分析界面，让生物学家自己就能跑。"></p>
+          </div>
+        </div>
+
+        <div class="tl-group">
+          <h3 data-i18n data-en="Industry" data-zh="业界经历">Industry</h3>
+          <div class="tl-item">
+            <p class="tl-when">Jul 2022 – Dec 2022</p>
+            <p class="tl-what" data-i18n data-en="Speech Recognition Algorithm Engineer, Intern (Full-time), NIO" data-zh="语音识别算法工程师（全职实习）· 蔚来">Speech Recognition Algorithm Engineer, Intern (Full-time), NIO</p>
+            <p class="tl-desc" data-i18n data-en="Intelligent Cockpit and Software Development, Shanghai. Improved multilingual recognition accuracy by 5%, built automated diagnostics that resolved 60+ production failures, and shipped models into production vehicle systems." data-zh="智能座舱与软件开发部门，上海。将多语种识别准确率提升 5%，搭建自动化诊断解决了 60+ 个量产问题，并把模型送进了量产车系统。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">Mar 2022 – Jul 2022</p>
+            <p class="tl-what" data-i18n data-en="Research Intern, Institute of Psychology, Chinese Academy of Sciences" data-zh="研究实习生 · 中国科学院心理研究所">Research Intern, Institute of Psychology, Chinese Academy of Sciences</p>
+            <p class="tl-desc" data-i18n data-en="Pain Comprehensive Imaging Laboratory, Beijing. MRI experiment design, an automated small-sample MRI pipeline in Python and FSL, few-shot learning under real data scarcity." data-zh="疼痛综合影像实验室，北京。参与 MRI 实验设计，用 Python 与 FSL 搭建小样本 MRI 自动化流程，并在数据真实稀缺的条件下应用小样本学习。"></p>
+          </div>
+        </div>
+
+        <div class="tl-group">
+          <h3 data-i18n data-en="Education" data-zh="教育背景">Education</h3>
+          <div class="tl-item">
+            <p class="tl-when">Oct 2023 – Apr 2027</p>
+            <p class="tl-what" data-i18n data-en="PhD, Data Science &amp; Artificial Intelligence, Monash University" data-zh="博士 · 数据科学与人工智能 · 蒙纳士大学">PhD, Data Science &amp; Artificial Intelligence, Monash University</p>
+            <p class="tl-desc" data-i18n data-en="Multi-modal imaging analysis, vision-language models and segmentation. Supervised by Dr Deval Mehta, with Prof Guanliang Chen and Dr Litao Yang. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute." data-zh="多模态影像分析、视觉语言模型与图像分割。主导师 Deval Mehta，副导师 Guanliang Chen、Litao Yang。合作方：维多利亚心脏研究所、Apollo 医学影像、Lead Healthcare、澳大利亚再生医学研究所。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">Feb 2019 – Jun 2023</p>
+            <p class="tl-what" data-i18n data-en="BAdvComputing (Honours II-1), The University of Sydney" data-zh="高级计算学士（荣誉二等一级）· 悉尼大学">BAdvComputing (Honours II-1), The University of Sydney</p>
+            <p class="tl-desc" data-i18n data-en="Major in Software Development and Computational Data Science. Honours thesis on End-to-Same-End Encryption: a cross-platform blind cloud storage app where the server never sees plaintext, built with React Native, Spring Boot, AWS S3 and Jenkins CI/CD." data-zh="主修软件开发与计算数据科学。荣誉论文方向为端到同端加密：一个服务端永远看不到明文的跨平台盲云存储应用，用 React Native、Spring Boot、AWS S3 与 Jenkins CI/CD 构建。"></p>
+          </div>
+        </div>
+
+        <div class="tl-group">
+          <h3 data-i18n data-en="Teaching &amp; service" data-zh="教学与学术服务">Teaching &amp; service</h3>
+          <div class="tl-item">
+            <p class="tl-when">Jul 2025 – Present</p>
+            <p class="tl-what" data-i18n data-en="Teaching Assistant (Sessional Academic), Monash University" data-zh="兼职助教 · 蒙纳士大学">Teaching Assistant (Sessional Academic), Monash University</p>
+            <p class="tl-desc" data-i18n data-en="FIT5196 Data Wrangling and FIT5145 Introduction to Data Science. Weekly tutorials and labs for 60+ postgraduate students, 92/100 student satisfaction. Student Representative for Data Science and AI since February 2026." data-zh="FIT5196 数据整理与 FIT5145 数据科学导论。每周为 60+ 名研究生带 tutorial 与 lab，学生满意度 92/100。自 2026 年 2 月起担任数据科学与人工智能方向学生代表。"></p>
+          </div>
+          <div class="tl-item">
+            <p class="tl-when">2021 – 2022</p>
+            <p class="tl-what" data-i18n data-en="General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney" data-zh="第94届学生代表理事会常务执行委员 · 学术委员会学生代表 · 悉尼大学">General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney</p>
+            <p class="tl-desc" data-i18n data-en="Elected with 434 primary votes, among the highest in the SRC's history, a result that carried two further candidates on the ticket. Contributed to the Sydney in 2032 strategy, the MySydney special admission scheme, and a new academic integrity framework." data-zh="以 434 张首选票当选，是学生代表理事会历史上得票最高的候选人之一，并带动同一名单另外两人当选。参与 Sydney in 2032 学校战略、MySydney 特殊招生方案，以及新的学术诚信框架。"></p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-size:15px;font-weight:600;color:var(--ink);margin:8px 0 4px" data-i18n data-en="Technical skills" data-zh="技术能力">Technical skills</h3>
+      <div class="skills">
+        <div class="skill-row"><p data-i18n data-en="Machine learning" data-zh="机器学习">Machine learning</p><div><span>PyTorch</span><span>scikit-learn</span><span>SAM / SAM2</span><span>DINOv3</span><span>ViT</span><span>MAE pre-training</span><span>nnU-Net</span><span>UNETR</span><span>ConvNeXt</span><span>MONAI</span><span>LoRA</span><span>Distillation</span></div></div>
+        <div class="skill-row"><p data-i18n data-en="LLM &amp; agents" data-zh="大模型与智能体">LLM &amp; agents</p><div><span>ReAct orchestration</span><span>vLLM</span><span>Qwen2.5</span><span>JSON-Schema tool contracts</span><span>Pydantic state</span><span>Local deployment</span></div></div>
+        <div class="skill-row"><p data-i18n data-en="Medical &amp; bio imaging" data-zh="医学与生物影像">Medical &amp; bio imaging</p><div><span>IVUS / NIRS-IVUS</span><span>CT perfusion</span><span>MRI / fMRI</span><span>DICOM</span><span>Fluorescence / H&amp;E / EM</span><span>Radiomics</span><span>Cell tracking (CHOTA)</span></div></div>
+        <div class="skill-row"><p data-i18n data-en="Validation &amp; statistics" data-zh="验证与统计">Validation &amp; statistics</p><div><span>ICC / CCC</span><span>Bland–Altman</span><span>Cohen's κ</span><span>AUROC</span><span>Paired Wilcoxon</span><span>Patient-disjoint CV</span><span>LASSO / Random Forest</span></div></div>
+        <div class="skill-row"><p data-i18n data-en="Data &amp; MLOps" data-zh="数据与 MLOps">Data &amp; MLOps</p><div><span>Large-scale DICOM pipelines</span><span>Data lineage</span><span>Multi-GPU training</span><span>pandas</span><span>pytest</span><span>Docker</span><span>Kubernetes</span><span>Jenkins CI/CD</span><span>AWS</span><span>Azure</span><span>Linux</span></div></div>
+        <div class="skill-row"><p data-i18n data-en="Software" data-zh="软件工程">Software</p><div><span>Python</span><span>Java</span><span>C++</span><span>SQL</span><span>R</span><span>MATLAB</span><span>React Native</span><span>Spring Boot</span><span>Node.js</span><span>PyQt</span><span>LaTeX</span></div></div>
+        <div class="skill-row"><p data-i18n data-en="Languages" data-zh="语言">Languages</p><div><span data-i18n data-en="English (professional)" data-zh="英语（专业工作能力）">English (professional)</span><span data-i18n data-en="Mandarin (native)" data-zh="普通话（母语）">Mandarin (native)</span></div></div>
+      </div>
+    </section>
+
+
+    <!--============ 06 CONTACT ============-->
+    <section class="wrap sec" id="contact">
+      <p class="marker">06 / <span data-i18n data-en="Contact" data-zh="联系">Contact</span></p>
+      <h2 class="sec-h" data-i18n data-en="Happy to talk <span class='dim'>about any of this</span>" data-zh="欢迎聊<span class='dim'>上面的任何一部分</span>">Happy to talk <span class="dim">about any of this</span></h2>
+      <p class="sec-lead" data-i18n
+         data-en="I'm interested in research and machine learning engineering roles. Also happy to talk about collaborations, data sharing, or anything on this page."
+         data-zh="我对研究岗与机器学习工程岗都感兴趣。也欢迎聊合作、数据共享，或这个页面上的任何内容。"></p>
+
+      <div class="contact-grid">
+        <a class="ccard" href="#" data-email-link>
+          <span class="ic">@</span>
+          <span><span class="lab" data-i18n data-en="Email" data-zh="邮箱">Email</span><span class="val" data-email>[ enable JavaScript ]</span></span>
+        </a>
+        <a class="ccard" href="https://www.linkedin.com/in/yunshu-chen-22917915a/" target="_blank" rel="noopener">
+          <span class="ic">in</span>
+          <span><span class="lab">LinkedIn</span><span class="val">yunshu-chen</span></span>
+        </a>
+        <a class="ccard" href="https://github.com/CHEN-Yunshu" target="_blank" rel="noopener">
+          <span class="ic">{ }</span>
+          <span><span class="lab">GitHub</span><span class="val">CHEN-Yunshu</span></span>
+        </a>
+        <a class="ccard" href="https://scholar.google.com/citations?user=-mTqfsEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <span class="ic">GS</span>
+          <span><span class="lab">Google Scholar</span><span class="val" data-i18n data-en="Publications" data-zh="论文列表">Publications</span></span>
+        </a>
+        <a class="ccard" href="https://orcid.org/0009-0004-4772-4054" target="_blank" rel="noopener">
+          <span class="ic">iD</span>
+          <span><span class="lab">ORCID</span><span class="val">0009-0004-4772-4054</span></span>
+        </a>
+        <a class="ccard" href="./assets/Yunshu_Chen_CV.pdf" target="_blank" rel="noopener">
+          <span class="ic">PDF</span>
+          <span><span class="lab" data-i18n data-en="Research CV" data-zh="研究版简历">Research CV</span><span class="val" data-i18n data-en="Two pages" data-zh="两页">Two pages</span></span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="wrap foot">
+      <p>© <span data-year>2026</span> Yunshu Chen · Melbourne, Australia</p>
+    </footer>
 
   </main>
 
-  <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="./assets/js/site.js"></script>
 </body>
 </html>
