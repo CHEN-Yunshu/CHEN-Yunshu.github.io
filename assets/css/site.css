@@ -2534,3 +2534,16 @@ html[lang="zh-CN"] .hero-description,html[lang="zh-CN"] .case-overview p,html[la
     scroll-behavior:auto!important
   }
 }
+
+/* Quantitative outputs are a primary part of the IVUS demonstration. */
+.ivus-measurements { margin-top:24px; padding:26px; background:#eaf0e7; border:1px solid #c8d3c4; border-radius:8px; color:var(--ink) }
+.measurement-heading { margin:0 0 20px; font-size:15px; font-weight:600 }
+.measurement-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; margin:0 }
+.measurement-item dt { font-size:14px; font-weight:600; margin-bottom:10px }
+.measurement-item dd { margin:0; font-size:clamp(28px,3.2vw,44px); font-weight:600; line-height:1.15; letter-spacing:-.04em; font-variant-numeric:tabular-nums }
+.measurement-item dd span { font-size:14px; margin-left:7px; letter-spacing:0; font-weight:500 }
+.measurement-context { margin:20px 0 0; font-size:13px; line-height:1.7 }
+@media(max-width:680px) {
+ .ivus-measurements { padding:20px }
+ .measurement-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 16px }
+}

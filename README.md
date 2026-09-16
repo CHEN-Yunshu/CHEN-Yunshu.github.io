@@ -27,7 +27,7 @@ No build step is needed. Inter and IBM Plex Mono are optional Google Fonts, with
 
 - The selected IVUS card uses `ivus-cover.jpg`, an oblique view of the original 3D reconstruction paired with its corresponding ultrasound cross-section. The home hero retains the original ultrasound visual.
 - `assets/media/ivus-linked-view.mp4` records the original tool's linked reconstruction and cross-section display. `ivus-spatial.jpg` is its static poster. Exported visuals omit case identifiers and clinical report text; the source report is not part of the site.
-- `cell-preannotation.mp4` and its poster show a recent 3T3 pre-annotation workflow, with the source header removed. The caption explicitly separates this preview from the reported SAM2 benchmark.
+- `cell-preannotation.mp4` and its poster show a recent VERO pre-annotation workflow, with the source header removed. The caption explicitly separates this preview from the reported SAM2 benchmark.
 - The organoid example is a candidate event: masks are manually annotated, but the automatic track associations and event interpretation await review.
 - Videos load on demand, start only when requested, and pause when the reader changes pages. Existing corpus sizes, cohort counts and evaluation results are unchanged by this media update.
 
