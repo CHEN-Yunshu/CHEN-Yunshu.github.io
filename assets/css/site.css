@@ -3,13 +3,13 @@
   --paper:#f7f6f2;
   --white:#fff;
   --ink:#20382e;
-  --muted:#65716b;
+  --muted:#46574d;
   --line:#dcded6;
   --forest:#183b2d;
   --dark:#14281f;
   --lime:#d7ee98;
   --sage:#e8eddf;
-  --orange:#bf714d;
+  --orange:#a35634;
   --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
   --wrap:1240px;
@@ -375,7 +375,7 @@ p {
 .scan-note {
   font-family:var(--mono);
   font-size:9px;
-  color:#b9c4b4;
+  color:#d0dac9;
   letter-spacing:.15px;
   display:flex;
   align-items:center;
@@ -403,7 +403,7 @@ p {
 }
 .visual-bottom div>span {
   display:block;
-  color:#a4b3a4;
+  color:#c4d1c0;
   font-size:10px;
   margin-top:3px
 }
@@ -647,7 +647,7 @@ p {
   border:1px solid #d7dacf;
   border-radius:4px;
   padding:6px 9px;
-  color:#5c655d;
+  color:#465347;
   background:#f1f0e9;
   letter-spacing:.1px
 }
@@ -796,7 +796,7 @@ p {
   line-height:1.85
 }
 .case-ivus .case-cover-copy>p:not(.case-subtitle) {
-  color:#a9bdae
+  color:#cfdbd0
 }
 .cover-tags {
   display:flex;
@@ -828,7 +828,7 @@ p {
 }
 .art-caption {
   text-align:center;
-  color:#a6b19c;
+  color:#c9d4bf;
   font-family:var(--mono);
   font-size:9px;
   padding:6px 0 5px;
@@ -1016,7 +1016,7 @@ details>.work-block h3 {
 }
 .case-cells .cover-tags span {
   border-color:#b7c3aa;
-  color:#55674d
+  color:#405538
 }
 .case-cells .case-cover-copy {
   padding-top:37px
@@ -1159,7 +1159,7 @@ details>.work-block h3 {
 .data-sources li>span:first-child {
   font-family:var(--mono);
   font-size:9px;
-  color:#74816b
+  color:#526347
 }
 .data-quality {
   font-size:9px;
@@ -1205,11 +1205,11 @@ details>.work-block h3 {
   line-height:1.9
 }
 .tool-dark p {
-  color:#b8c7b5
+  color:#d0dccb
 }
 .tool-dark .tags span {
   border-color:#526452;
-  color:#b8c7b5
+  color:#d0dccb
 }
 .tool-card .text-link {
   margin-top:27px;
@@ -1454,7 +1454,7 @@ details>.work-block h3 {
   padding-bottom:55px
 }
 .footer-main .eyebrow {
-  color:#adc299;
+  color:#d0dfbc;
   font-size:9px
 }
 .footer-main h2 {
@@ -1467,7 +1467,7 @@ details>.work-block h3 {
 }
 .footer-main p:not(.eyebrow) {
   font-size:12px;
-  color:#b7c8b5
+  color:#d2dfcd
 }
 .footer-contact {
   padding-top:33px
@@ -1487,7 +1487,7 @@ details>.work-block h3 {
   gap:12px;
   align-items:center;
   background:none;
-  color:#aec7a3;
+  color:#d1e1c5;
   font-size:10px;
   margin-top:18px;
   min-height:28px
@@ -1524,7 +1524,7 @@ details>.work-block h3 {
   font-family:var(--mono);
   font-size:9px;
   letter-spacing:.2px;
-  color:#b4c8a5
+  color:#ccddbd
 }
 .back-top {
   display:grid;
