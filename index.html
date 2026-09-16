@@ -556,33 +556,11 @@
          </span>
         </video>
         <figcaption id="ivus-preview-caption">
-         <span class="" data-en="Recorded from the analysis tool: moving along the image-derived reconstruction updates the matching ultrasound cross-section." data-i18n="" data-zh="分析工具实录：沿影像重建模型移动位置，对应超声切面同步更新。">
-          Recorded from the analysis tool: moving along the image-derived reconstruction updates the matching ultrasound cross-section.
+         <span class="" data-en="Recorded from the analysis tool: moving along the image-derived reconstruction updates the matching ultrasound cross-section and its lumen, EEM and plaque measurements." data-i18n="" data-zh="分析工具实录：沿影像重建模型移动位置，超声切面与管腔、外弹力膜、斑块的测量读数同步更新。">
+          Recorded from the analysis tool: moving along the image-derived reconstruction updates the matching ultrasound cross-section and its lumen, EEM and plaque measurements.
          </span>
         </figcaption>
        </figure>
-       <div class="ivus-measurements">
-        <p class="measurement-heading" data-i18n="" data-en="Example cross-section · quantitative measurements" data-zh="示例切面 · 定量测量">Example cross-section · quantitative measurements</p>
-        <dl class="measurement-grid">
-         <div class="measurement-item">
-          <dt data-i18n="" data-en="Lumen CSA" data-zh="管腔横截面积">Lumen CSA</dt>
-          <dd>5.44<span>mm²</span></dd>
-         </div>
-         <div class="measurement-item">
-          <dt data-i18n="" data-en="EEM CSA" data-zh="外弹力膜横截面积">EEM CSA</dt>
-          <dd>18.33<span>mm²</span></dd>
-         </div>
-         <div class="measurement-item">
-          <dt data-i18n="" data-en="Plaque CSA" data-zh="斑块横截面积">Plaque CSA</dt>
-          <dd>12.89<span>mm²</span></dd>
-         </div>
-         <div class="measurement-item">
-          <dt data-i18n="" data-en="Plaque burden" data-zh="斑块负荷">Plaque burden</dt>
-          <dd>70<span>%</span></dd>
-         </div>
-        </dl>
-        <p class="measurement-context" data-i18n="" data-en="Values from one example cross-section; the recorded sequence above shows multiple positions. CSA = cross-sectional area; EEM = external elastic membrane." data-zh="数值来自一个示例切面；上方实录展示多个位置。CSA 为横截面积，EEM 为外弹力膜。">Values from one example cross-section; the recorded sequence above shows multiple positions. CSA = cross-sectional area; EEM = external elastic membrane.</p>
-       </div>
        <p class="media-note" data-en="The software also supports contour editing and selecting a segment for volume measurements." data-i18n="" data-zh="软件也支持轮廓编辑，以及选择区段进行体积测量。">
         The software also supports contour editing and selecting a segment for volume measurements.
        </p>
@@ -744,38 +722,78 @@
         </figure>
        </div>
       </div>
-      <details>
-       <summary data-en="Data preparation, organoids and synthesis" data-i18n="" data-zh="数据准备、类器官与图像合成">
-        Data preparation, organoids and synthesis
-       </summary>
-       <div class="work-block">
-        <h3 data-en="Dataset curation and organoid evaluation" data-i18n="" data-zh="数据整理与类器官评估">
-         Dataset curation and organoid evaluation
-        </h3>
-        <p data-en="Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. I also prepared organoid datasets and a common evaluation format that preserves overlapping masks. These tools support model comparison." data-i18n="" data-zh="Cell_Collection 收集和标准化显微图像数据集，检查重复图像及基准之间的重叠。我也整理了类器官数据，并建立保留重叠掩码的统一评测格式，为模型比较提供支持。">
-         Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. I also prepared organoid datasets and a common evaluation format that preserves overlapping masks. These tools support model comparison.
-        </p>
-        <figure class="project-figure zoomable organoid-preview">
-         <button aria-label="Enlarge figure" data-zoom="" type="button">
-          <img alt="Three consecutive microscopy frames showing manually annotated organoid masks and automatically linked candidate tracks." height="568" loading="lazy" src="./assets/images/work/organoid-event.jpg" width="1696"/>
-          <span aria-hidden="true" class="zoom-hint">
-           ↗
-          </span>
-         </button>
-         <figcaption class="" data-en="Candidate division event across three frames. Masks are manually annotated; track associations and the event interpretation await review." data-i18n="" data-zh="三个时间点的候选分裂事件。掩码为人工标注，轨迹关联与事件判定仍待复核。">
-          Candidate division event across three frames. Masks are manually annotated; track associations and the event interpretation await review.
-         </figcaption>
-        </figure>
-       </div>
-       <div class="work-block">
-        <h3 data-en="Synthetic data research" data-i18n="" data-zh="合成数据研究">
-         Synthetic data research
-        </h3>
-        <p data-en="I explored microscopy image synthesis using spatial statistics and imaging physics. Pilot experiments exposed limitations in appearance realism; subsequent work studies changes in cell shape and motion between frames. This remains research in progress." data-i18n="" data-zh="我探索了用空间统计和成像物理合成显微图像的方法。先导实验显示外观真实性仍有限，后续研究转向细胞在相邻帧中的形状与运动变化。这部分仍在研究中。">
-         I explored microscopy image synthesis using spatial statistics and imaging physics. Pilot experiments exposed limitations in appearance realism; subsequent work studies changes in cell shape and motion between frames. This remains research in progress.
-        </p>
-       </div>
-      </details>
+<div class="research-projects">
+ <p class="eyebrow" data-en="Further research" data-i18n="" data-zh="延伸研究">
+  Further research
+ </p>
+ <div class="related-grid">
+  <article class="related-card" id="organoids">
+   <span class="status" data-en="Research in progress" data-i18n="" data-zh="研究进行中">
+    Research in progress
+   </span>
+   <h3 class="" data-en="Organoids across time" data-i18n="" data-zh="追踪类器官的动态变化">
+    Organoids across time
+   </h3>
+   <p class="" data-en="I prepare organoid datasets and evaluation formats that preserve overlapping masks, and explore how organoids change across frames. Candidate division and fusion events are surfaced for review." data-i18n="" data-zh="我整理类器官数据与保留重叠掩码的评测格式，并探索类器官在连续帧中的变化，筛选候选分裂与融合事件供复核。">
+    I prepare organoid datasets and evaluation formats that preserve overlapping masks, and explore how organoids change across frames. Candidate division and fusion events are surfaced for review.
+   </p>
+   <figure class="project-figure zoomable organoid-preview">
+    <button aria-label="Enlarge figure" data-zoom="" type="button">
+     <img alt="Three consecutive microscopy frames showing manually annotated organoid masks and automatically linked candidate tracks." height="568" loading="lazy" src="./assets/images/work/organoid-event.jpg" width="1696"/>
+     <span aria-hidden="true" class="zoom-hint">
+      ↗
+     </span>
+    </button>
+    <figcaption class="" data-en="Candidate division event across three frames. Masks are manually annotated; track associations and the event interpretation await review." data-i18n="" data-zh="三个时间点的候选分裂事件。掩码为人工标注，轨迹关联与事件判定仍待复核。">
+     Candidate division event across three frames. Masks are manually annotated; track associations and the event interpretation await review.
+    </figcaption>
+   </figure>
+  </article>
+  <article class="related-card" id="synthesis">
+   <span class="status" data-en="Exploratory research" data-i18n="" data-zh="探索性研究">
+    Exploratory research
+   </span>
+   <h3 class="" data-en="Synthesising microscopy images" data-i18n="" data-zh="合成显微图像">
+    Synthesising microscopy images
+   </h3>
+   <p class="" data-en="I explore microscopy image synthesis using spatial statistics and imaging physics, with an interest in cell shape and motion. This early visual example illustrates the direction; image realism and usefulness for model training remain under investigation." data-i18n="" data-zh="我探索结合空间统计与成像物理的显微图像合成，关注细胞形态与运动。这张早期样例用于展示探索方向，图像真实性及其对模型训练的帮助仍待研究。">
+    I explore microscopy image synthesis using spatial statistics and imaging physics, with an interest in cell shape and motion. This early visual example illustrates the direction; image realism and usefulness for model training remain under investigation.
+   </p>
+   <figure class="project-figure zoomable">
+    <button aria-label="Enlarge figure" data-zoom="" type="button">
+     <img alt="Exploratory microscopy image synthesis example supplied by the researcher." height="1288" loading="lazy" src="./assets/images/work/microscopy-synthesis.png" width="1300"/>
+     <span aria-hidden="true" class="zoom-hint">
+      ↗
+     </span>
+    </button>
+    <figcaption class="" data-en="Early synthesis example · research in progress." data-i18n="" data-zh="早期合成样例 · 研究进行中。">
+     Early synthesis example · research in progress.
+    </figcaption>
+   </figure>
+  </article>
+ </div>
+ <article class="early-project" id="cle">
+  <span class="status" data-en="Annotation in progress" data-i18n="" data-zh="标注进行中">
+   Annotation in progress
+  </span>
+  <h3 class="" data-en="CLE image annotation" data-i18n="" data-zh="CLE 影像标注">
+   CLE image annotation
+  </h3>
+  <p class="" data-en="An early-stage project focused on preparing and annotating confocal imaging data for tissue structures and features. The current work is building the annotated dataset for later model development." data-i18n="" data-zh="一个处于早期阶段的共聚焦影像项目，目前聚焦影像整理与组织结构、特征标注，为后续模型开发准备标注数据。">
+   An early-stage project focused on preparing and annotating confocal imaging data for tissue structures and features. The current work is building the annotated dataset for later model development.
+  </p>
+ </article>
+</div>
+<details>
+ <summary class="" data-en="Dataset curation" data-i18n="" data-zh="数据整理">
+  Dataset curation
+ </summary>
+ <div class="work-block">
+  <p class="" data-en="Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. These tools support more consistent model comparison." data-i18n="" data-zh="Cell_Collection 收集和标准化显微图像数据集，检查重复图像及基准之间的重叠，为更一致的模型比较提供支持。">
+   Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. These tools support more consistent model comparison.
+  </p>
+ </div>
+</details>
      </section>
      <section class="case-section" id="fish">
       <div class="chapter-heading">
