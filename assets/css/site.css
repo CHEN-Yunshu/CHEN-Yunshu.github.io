@@ -522,11 +522,11 @@ p {
   transform:scale(1.025)
 }
 .selected-ivus .selected-image img {
-  width:170%;
-  max-width:none;
-  flex-shrink:0;
-  margin-left:-35%;
-  height:auto
+  width:100%;
+  max-width:100%;
+  margin-left:0;
+  height:100%;
+  object-fit:contain
 }
 .selected-cell .selected-image {
   background:#e6e9dd;
@@ -2459,6 +2459,35 @@ html[lang="zh-CN"] .hero-description,html[lang="zh-CN"] .case-overview p,html[la
   html[lang="zh-CN"] .section-title h2 {
     font-size:25px
   }
+}
+/* Original scientific media: static cover, user-initiated demonstrations. */
+.selected-ivus .selected-image { background:#0a0b10 }
+.selected-ivus .image-label { font-size:11px; padding:5px 8px }
+.spatial-showcase { margin-top:36px }
+.media-figure { margin:0; min-width:0 }
+.media-figure video {
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid #25352b;
+  border-radius:7px;
+  background:#0a0b10
+}
+.media-figure figcaption,.media-note {
+  font-size:13px;
+  line-height:1.75;
+  color:var(--muted);
+  margin-top:12px
+}
+.related-card .media-figure { order:-1; margin-bottom:22px }
+.related-card .media-figure video { height:280px; object-fit:contain }
+.organoid-preview { margin-top:22px }
+.organoid-preview figcaption { font:13px/1.75 var(--sans) }
+.organoid-preview button { border:1px solid var(--line) }
+@media(max-width:520px) {
+  .related-card .media-figure video { height:250px }
+  .selected-ivus .selected-image { height:auto; aspect-ratio:2 }
+  .selected-ivus .image-label { font-size:9px; bottom:9px; left:10px }
 }
 /* Give body text and navigation enough visual weight beside display headings. */
 .intro-aside>p,.hero-description,.sec-lead {

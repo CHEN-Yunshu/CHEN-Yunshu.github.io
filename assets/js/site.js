@@ -101,6 +101,7 @@ function showRoute({ focus = false, smooth = false } = {}) {
   activeRoute = name;
   panels.forEach(item => {
     const active = item === panel;
+    if (!active) item.querySelectorAll('video').forEach(video => video.pause());
     item.classList.toggle('on', active);
     item.hidden = !active;
     item.inert = !active;
@@ -255,6 +256,9 @@ backTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: red
 window.addEventListener('scroll', scheduleScrollUI, { passive: true });
 window.addEventListener('resize', scheduleScrollUI);
 window.addEventListener('load', scheduleScrollUI);
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) document.querySelectorAll('video').forEach(video => video.pause());
+});
 document.querySelectorAll('[data-email]').forEach(element => { element.textContent = address; });
 document.querySelectorAll('[data-email-link]').forEach(element => { element.href = 'mailto:' + address; });
 document.querySelectorAll('[data-year]').forEach(element => { element.textContent = new Date().getFullYear(); });

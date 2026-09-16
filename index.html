@@ -229,7 +229,7 @@
      <div class="selected-grid">
       <a class="selected-card selected-ivus" data-section="ivus" data-tab="work" href="#work/ivus">
        <div class="selected-image">
-        <img alt="Three coronary ultrasound sections with vessel contours." loading="lazy" src="./assets/images/work/ivus-gallery.png"/>
+        <img alt="Oblique 3D IVUS reconstruction with its matching ultrasound cross-section." height="700" loading="lazy" src="./assets/images/work/ivus-cover.jpg" width="1400"/>
         <span class="image-label">
          01 / CLINICAL IMAGING
         </span>
@@ -539,6 +539,32 @@
         </p>
        </div>
       </div>
+      <div class="spatial-showcase">
+       <div class="subsection-heading">
+        <h3 class="" data-en="From cross-sections to 3D" data-i18n="" data-zh="从超声切面到三维重建">
+         From cross-sections to 3D
+        </h3>
+        <p class="" data-en="A linked view of the pullback" data-i18n="" data-zh="沿回撤路径联动查看">
+         A linked view of the pullback
+        </p>
+       </div>
+       <figure class="media-figure">
+        <video aria-describedby="ivus-preview-caption" controls="" controlslist="nodownload" playsinline="" poster="./assets/images/work/ivus-spatial.jpg" preload="none">
+         <source src="./assets/media/ivus-linked-view.mp4" type="video/mp4"/>
+         <span class="" data-en="Your browser does not support video playback." data-i18n="" data-zh="当前浏览器不支持视频播放。">
+          Your browser does not support video playback.
+         </span>
+        </video>
+        <figcaption id="ivus-preview-caption">
+         <span class="" data-en="Recorded from the analysis tool: moving along the image-derived reconstruction updates the matching ultrasound cross-section." data-i18n="" data-zh="分析工具实录：沿影像重建模型移动位置，对应超声切面同步更新。">
+          Recorded from the analysis tool: moving along the image-derived reconstruction updates the matching ultrasound cross-section.
+         </span>
+        </figcaption>
+       </figure>
+       <p class="media-note" data-en="The software also supports contour editing and selecting a segment for volume measurements." data-i18n="" data-zh="软件也支持轮廓编辑，以及选择区段进行体积测量。">
+        The software also supports contour editing and selecting a segment for volume measurements.
+       </p>
+      </div>
       <details class="technical-details">
        <summary>
         <span class="" data-en="Explore the software &amp; evaluation" data-i18n="" data-zh="查看软件与验证细节">
@@ -549,17 +575,6 @@
         </span>
        </summary>
        <div class="detail-content">
-        <figure class="project-figure zoomable reader-figure">
-         <button aria-label="Enlarge figure" data-zoom="" type="button">
-          <img alt="IVUS review interface: images, measurements and a report in one workspace." loading="lazy" src="./assets/images/work/ivus-reader.png"/>
-          <span aria-hidden="true" class="zoom-hint">
-           ↗
-          </span>
-         </button>
-         <figcaption class="" data-en="IVUS review interface: images, measurements and a report in one workspace." data-i18n="" data-zh="IVUS 复核界面：在同一工作区查看影像、测量与报告。">
-          IVUS review interface: images, measurements and a report in one workspace.
-         </figcaption>
-        </figure>
         <p data-en="GeoCat was evaluated using five-fold patient-disjoint cross-validation. Distillation reduced model size by 2.6× and improved CPU speed by 3×. The separate pre-training corpus contains 49.6 million frames from 28,753 pullbacks." data-i18n="" data-zh="GeoCat 使用患者互不重叠的五折交叉验证。蒸馏后模型缩小 2.6 倍，CPU 速度提高 3 倍。独立的预训练语料包含来自 28,753 条 pullback 的 4,960 万帧。">
          GeoCat was evaluated using five-fold patient-disjoint cross-validation. Distillation reduced model size by 2.6× and improved CPU speed by 3×. The separate pre-training corpus contains 49.6 million frames from 28,753 pullbacks.
         </p>
@@ -673,15 +688,17 @@
         <p data-en="The tracking project links cell detections across video frames using SAM2 memory without retraining. In this project’s evaluation, it achieved CHOTA 0.8603 against a Trackastra baseline of 0.8511. I also examined errors such as merged cells and missed daughter cells. The paper is under review." data-i18n="" data-zh="追踪项目使用 SAM2 的记忆机制关联视频帧中的细胞，无需重新训练。在该项目的评估中，CHOTA 为 0.8603，Trackastra 基线为 0.8511。我也分析了细胞合并、分裂后的子细胞漏检等错误。论文目前在审。">
          The tracking project links cell detections across video frames using SAM2 memory without retraining. In this project’s evaluation, it achieved CHOTA 0.8603 against a Trackastra baseline of 0.8511. I also examined errors such as merged cells and missed daughter cells. The paper is under review.
         </p>
-        <figure class="project-figure zoomable">
-         <button aria-label="Enlarge figure" data-zoom="" type="button">
-          <img alt="An example frame with SAM2 cell masks." loading="eager" src="./assets/images/work/tracking.png"/>
-          <span aria-hidden="true" class="zoom-hint">
-           ↗
+        <figure class="media-figure">
+         <video aria-describedby="cell-preview-caption" controls="" controlslist="nodownload" playsinline="" poster="./assets/images/work/cell-preannotation.jpg" preload="none">
+          <source src="./assets/media/cell-preannotation.mp4" type="video/mp4"/>
+          <span class="" data-en="Your browser does not support video playback." data-i18n="" data-zh="当前浏览器不支持视频播放。">
+           Your browser does not support video playback.
           </span>
-         </button>
-         <figcaption data-en="An example frame with SAM2 cell masks." data-i18n="" data-zh="叠加 SAM2 细胞掩码的示例帧。">
-          An example frame with SAM2 cell masks.
+         </video>
+         <figcaption id="cell-preview-caption">
+          <span class="" data-en="3T3 pre-annotation preview. Automatic track links are shown for review; this example is separate from the SAM2 benchmark described below." data-i18n="" data-zh="3T3 预标注预览，展示供复核的自动轨迹关联；此示例与下方 SAM2 评测分开呈现。">
+           3T3 pre-annotation preview. Automatic track links are shown for review; this example is separate from the SAM2 benchmark described below.
+          </span>
          </figcaption>
         </figure>
        </div>
@@ -716,6 +733,17 @@
         <p data-en="Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. I also prepared organoid datasets and a common evaluation format that preserves overlapping masks. These tools support model comparison." data-i18n="" data-zh="Cell_Collection 收集和标准化显微图像数据集，检查重复图像及基准之间的重叠。我也整理了类器官数据，并建立保留重叠掩码的统一评测格式，为模型比较提供支持。">
          Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. I also prepared organoid datasets and a common evaluation format that preserves overlapping masks. These tools support model comparison.
         </p>
+        <figure class="project-figure zoomable organoid-preview">
+         <button aria-label="Enlarge figure" data-zoom="" type="button">
+          <img alt="Three consecutive microscopy frames showing manually annotated organoid masks and automatically linked candidate tracks." height="568" loading="lazy" src="./assets/images/work/organoid-event.jpg" width="1696"/>
+          <span aria-hidden="true" class="zoom-hint">
+           ↗
+          </span>
+         </button>
+         <figcaption class="" data-en="Candidate division event across three frames. Masks are manually annotated; track associations and the event interpretation await review." data-i18n="" data-zh="三个时间点的候选分裂事件。掩码为人工标注，轨迹关联与事件判定仍待复核。">
+          Candidate division event across three frames. Masks are manually annotated; track associations and the event interpretation await review.
+         </figcaption>
+        </figure>
        </div>
        <div class="work-block">
         <h3 data-en="Synthetic data research" data-i18n="" data-zh="合成数据研究">
