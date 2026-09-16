@@ -1,465 +1,1407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yunshu Chen · Medical AI Researcher</title>
-  <meta name="description" content="Yunshu Chen. PhD candidate in Data Science & AI at Monash University, building medical imaging AI for real clinical use: coronary ultrasound, imaging foundation models, and clinical decision support.">
-  <meta name="author" content="Yunshu Chen">
-  <link rel="canonical" href="https://chen-yunshu.github.io/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Yunshu Chen">
-  <meta property="og:url" content="https://chen-yunshu.github.io/">
-  <meta property="og:title" content="Yunshu Chen · Medical AI Researcher">
-  <meta property="og:description" content="PhD candidate at Monash University building medical imaging AI for real clinical use: coronary ultrasound, imaging foundation models, and clinical decision support.">
-  <meta property="og:image" content="https://chen-yunshu.github.io/assets/images/og-cover.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Structure-aware AI segmentation, from clinical to cellular scales">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Yunshu Chen · Medical AI Researcher">
-  <meta name="twitter:description" content="PhD candidate at Monash University building medical imaging AI for real clinical use.">
-  <meta name="twitter:image" content="https://chen-yunshu.github.io/assets/images/og-cover.jpg">
-
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/site.css">
-</head>
-
-<body>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Yunshu Chen · AI &amp; Software Engineer
+  </title>
+  <meta content="Yunshu Chen is a software engineer and PhD candidate at Monash University, working on medical imaging, clinical data and analysis tools." name="description"/>
+  <meta content="Yunshu Chen" name="author"/>
+  <link href="https://chen-yunshu.github.io/" rel="canonical"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Yunshu Chen" property="og:site_name"/>
+  <meta content="https://chen-yunshu.github.io/" property="og:url"/>
+  <meta content="Yunshu Chen · AI &amp; Software Engineer" property="og:title"/>
+  <meta content="Yunshu Chen is a software engineer and PhD candidate at Monash University, working on medical imaging, clinical data and analysis tools." property="og:description"/>
+  <meta content="https://chen-yunshu.github.io/assets/images/og-cover.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Structure-aware AI segmentation, from clinical to cellular scales" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Yunshu Chen · AI &amp; Software Engineer" name="twitter:title"/>
+  <meta content="Yunshu Chen is a software engineer and PhD candidate at Monash University, working on medical imaging, clinical data and analysis tools." name="twitter:description"/>
+  <meta content="https://chen-yunshu.github.io/assets/images/og-cover.jpg" name="twitter:image"/>
+  <link href="./assets/images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="./assets/css/site.css" rel="stylesheet"/>
+  <noscript>
+   <style>
+    [data-panel]{display:block!important}.lang,.burger,.copy-email,.header-contact{display:none!important}.nav{display:flex!important}.project-nav{position:static!important}.hero-visual{pointer-events:none}
+   </style>
+  </noscript>
+ </head>
+ <body>
+  <a class="skip-link" href="#main-content">
+   Skip to content
+  </a>
+  <a class="skip-link" href="#main-content">
+   Skip to content
+  </a>
   <header class="hdr">
-    <div class="wrap hdr-in">
-      <a class="brand" href="#" data-tab="home">
-        <img src="./assets/images/avatar.jpg" alt="">
-        <span>Yunshu Chen</span>
-      </a>
-
-      <nav class="nav" data-nav>
-        <a href="#home" data-tab="home" data-i18n data-en="Home" data-zh="首页">Home</a>
-        <a href="#projects" data-tab="projects" data-i18n data-en="Projects" data-zh="项目">Projects</a>
-        <a href="#papers" data-tab="papers" data-i18n data-en="Papers" data-zh="论文">Papers</a>
-        <a href="#experience" data-tab="experience" data-i18n data-en="Experience" data-zh="履历">Experience</a>
-      </nav>
-
-      <div class="hdr-tools">
-        <button class="lang" data-lang-toggle aria-label="Switch language"><span data-lang-label>中文</span></button>
-        <button class="burger" data-burger aria-label="Menu"><span></span><span></span><span></span></button>
-      </div>
+   <div class="wrap hdr-in">
+    <a class="brand" data-tab="home" href="#home">
+     <span aria-hidden="true" class="brand-mark">
+      yc
+      <span>
+       .
+      </span>
+     </span>
+     <span>
+      Yunshu Chen
+     </span>
+    </a>
+    <nav class="nav" data-nav="" id="main-nav">
+     <a data-en="Home" data-i18n="" data-tab="home" data-zh="首页" href="#home">
+      Home
+     </a>
+     <a data-en="Work" data-i18n="" data-tab="work" data-zh="工作" href="#work">
+      Work
+     </a>
+     <a data-en="Papers" data-i18n="" data-tab="papers" data-zh="论文" href="#papers">
+      Papers
+     </a>
+     <a data-en="Background" data-i18n="" data-tab="background" data-zh="背景" href="#background">
+      Background
+     </a>
+    </nav>
+    <div class="hdr-tools">
+     <button aria-label="Switch language" class="lang" data-lang-toggle="">
+      <span data-lang-label="">
+       中文
+      </span>
+     </button>
+     <button aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" class="burger" data-burger="">
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+     </button>
     </div>
+    <a class="header-contact" data-email-link="" href="#">
+     <span class="" data-en="Let’s talk" data-i18n="" data-zh="联系我">
+      Let’s talk
+     </span>
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+   </div>
+   <div aria-hidden="true" class="reading-progress" data-reading-progress="">
+   </div>
   </header>
-
-  <main>
-
-  <!--============================ HOME ============================-->
-  <div data-panel="home" class="on">
-
+  <main id="main-content" tabindex="-1">
+   <!--============================ HOME ============================-->
+   <div class="on" data-panel="home" id="home">
     <section class="wrap hero">
-      <div class="hero-grid">
-        <div>
-          <p class="hero-kicker" data-i18n data-en="Yunshu Chen · PhD candidate · Monash Medical AI" data-zh="陈云舒 · 博士候选人 · 蒙纳士 Medical AI">Yunshu Chen · PhD candidate · Monash Medical AI</p>
-          <h1 data-i18n
-              data-en="I build medical imaging AI for<br><em>real clinical use</em>."
-              data-zh="我做医学影像 AI，<br>是为了让它<em>真正用在临床</em>。">I build medical imaging AI for<br><em>real clinical use</em>.</h1>
-
-          <div class="hero-contact">
-            <a class="hc-mail" href="#" data-email-link>
-              <span class="hc-lab" data-i18n data-en="Email" data-zh="邮箱">Email</span>
-              <span class="hc-val" data-email>[ enable JavaScript ]</span>
-            </a>
-            <ul class="hc-links">
-              <li><a href="https://github.com/CHEN-Yunshu" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/yunshu-chen-22917915a/" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://scholar.google.com/citations?user=-mTqfsEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-              <li><a href="https://orcid.org/0009-0004-4772-4054" target="_blank" rel="noopener">ORCID</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="hero-side">
-          <p data-i18n
-             data-en="Coronary ultrasound and cell imaging. Segmentation validated against the decisions expert readers actually make, an ultrasound foundation model built from a decade of clinical acquisition, and a reporting agent where every number comes from a deterministic tool rather than the language model."
-             data-zh="方向是冠脉超声与细胞影像。拿专家实际做出的判断来验证分割结果、用十余年临床采集数据训练超声基础模型，以及一个报告智能体：报告里每个数字都来自确定性工具，而不是语言模型。">
-          </p>
-          <p class="avail" data-i18n
-             data-en="Open to research and ML engineering roles · Melbourne · PhD completing April 2027"
-             data-zh="正在寻找研究岗与机器学习工程岗 · 墨尔本 · 博士 2027 年 4 月毕业">Open to research and ML engineering roles · Melbourne · PhD completing April 2027</p>
-          <div class="cta">
-            <a class="btn btn-fill" href="./assets/Yunshu_Chen_CV.pdf" target="_blank" rel="noopener"><span data-i18n data-en="Research CV" data-zh="研究版简历">Research CV</span><span class="arw">PDF</span></a>
-            <a class="btn" href="./assets/Yunshu_Chen_Resume.pdf" target="_blank" rel="noopener"><span data-i18n data-en="Industry résumé" data-zh="业界版简历">Industry résumé</span><span class="arw">PDF</span></a>
-          </div>
-        </div>
+     <div class="hero-copy">
+      <p class="eyebrow" data-en="YUNSHU CHEN / RESEARCHER &amp; ENGINEER" data-i18n="" data-zh="陈云舒 / 研究与工程开发">
+       YUNSHU CHEN / RESEARCHER &amp; ENGINEER
+      </p>
+      <h1 class="" data-en="Research.&lt;br&gt;Engineering.&lt;br&gt;&lt;em&gt;Medical AI.&lt;/em&gt;" data-i18n="" data-zh="以研究探索。&lt;br&gt;以工程实现。&lt;br&gt;&lt;em&gt;医学人工智能。&lt;/em&gt;">
+       Research.
+       <br/>
+       Engineering.
+       <br/>
+       <em>
+        Medical AI.
+       </em>
+      </h1>
+      <p class="hero-description" data-en="I'm Yunshu, a software engineer and PhD candidate at Monash University. I build imaging models, analysis tools and the software that brings them into practice." data-i18n="" data-zh="我是陈云舒，软件工程师、蒙纳士大学博士生。我开发影像模型和分析工具，也将它们做成临床与科研伙伴能使用的软件。">
+       I'm Yunshu, a software engineer and PhD candidate at Monash University. I build imaging models, analysis tools and the software that brings them into practice.
+      </p>
+      <div class="hero-actions">
+       <a class="btn btn-fill" data-section="ivus" data-tab="work" href="#work/ivus">
+        <span class="" data-en="Explore my work" data-i18n="" data-zh="探索我的工作">
+         Explore my work
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+       <a class="quiet-link" data-tab="background" href="#background">
+        <span class="" data-en="A little about me" data-i18n="" data-zh="了解我的经历">
+         A little about me
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
       </div>
+      <p class="availability">
+       <span aria-hidden="true" class="live-dot">
+       </span>
+       <span class="" data-en="Open to full-time opportunities · Melbourne" data-i18n="" data-zh="可全职工作 · 墨尔本">
+        Open to full-time opportunities · Melbourne
+       </span>
+      </p>
+     </div>
+     <a aria-label="Explore coronary ultrasound research" class="hero-visual" data-section="ivus" data-tab="work" href="#work/ivus">
+      <div class="visual-top">
+       <span class="micro-label">
+        A CLOSER LOOK
+       </span>
+       <span class="visual-index">
+        01 / IVUS
+       </span>
+      </div>
+      <div class="scan-visual">
+       <img alt="Coronary ultrasound cross-section with vessel contours from the IVUS project." fetchpriority="high" src="./assets/images/work/ivus-gallery.png"/>
+      </div>
+      <div class="scan-note">
+       <span aria-hidden="true" class="contour-dot">
+       </span>
+       <span class="" data-en="Vessel boundaries, made visible." data-i18n="" data-zh="让血管边界清晰可见。">
+        Vessel boundaries, made visible.
+       </span>
+      </div>
+      <div class="visual-bottom">
+       <div>
+        <strong class="" data-en="From images to measurements" data-i18n="" data-zh="从影像到测量">
+         From images to measurements
+        </strong>
+        <span class="" data-en="Coronary imaging · Victorian Heart Institute" data-i18n="" data-zh="冠脉影像 · 维多利亚心脏研究所">
+         Coronary imaging · Victorian Heart Institute
+        </span>
+       </div>
+       <span aria-hidden="true" class="circle-arrow">
+        ↗
+       </span>
+      </div>
+     </a>
     </section>
-
-    <section class="wrap sec">
-      <p class="marker">01 / <span data-i18n data-en="From a scan to a decision" data-zh="从一次扫描到一个决策">From a scan to a decision</span></p>
-      <h2 class="sec-h" data-i18n
-          data-en="Coronary IVUS: <span class='dim'>one chain, three projects</span>"
-          data-zh="冠脉 IVUS：<span class='dim'>一条链，三个项目</span>">Coronary IVUS: <span class="dim">one chain, three projects</span></h2>
-      <p class="sec-lead" data-i18n
-         data-en="A model is only as useful as the weakest link in that chain."
-         data-zh="模型的价值，取决于这条链上最弱的一环。"></p>
-
-      <figure class="fig" style="margin-top:22px">
-        <div class="fig-body"><img src="./assets/images/ivus-chain.png" alt="Pullback to segmentation to measurement to treatment decision"></div>
-        <figcaption class="fig-bar">
-          <span class="mono-note">FIG. 1 · PULLBACK &gt; SEGMENT &gt; MEASURE &gt; DECIDE</span>
-          <span class="mono-note">63 PATIENTS · 8,717 FRAMES · 5-FOLD PATIENT-DISJOINT CV</span>
-        </figcaption>
-      </figure>
-
-      <ol class="nodes">
-        <li class="node">
-          <p class="node-stage" data-i18n data-en="Segment &amp; measure" data-zh="分割与测量">Segment &amp; measure</p>
-          <p class="node-name">GeoCat</p>
-          <p class="node-num">84%</p>
-          <p class="node-numlab" data-i18n data-en="agreement with expert adjudication on the treatment threshold" data-zh="治疗阈值上与专家裁定的一致率">agreement with expert adjudication on the treatment threshold</p>
-        </li>
-        <li class="node">
-          <p class="node-stage" data-i18n data-en="The data underneath" data-zh="底下的数据">The data underneath</p>
-          <p class="node-name">IVUS-FM</p>
-          <p class="node-num">49.6M</p>
-          <p class="node-numlab" data-i18n data-en="frames pre-trained on, from 28,753 pullbacks and two vendors" data-zh="帧预训练语料，来自 28,753 个 pullback、两个厂商">frames pre-trained on, from 28,753 pullbacks and two vendors</p>
-        </li>
-        <li class="node">
-          <p class="node-stage" data-i18n data-en="Decide" data-zh="决策">Decide</p>
-          <p class="node-name">IVUS Agent</p>
-          <p class="node-num">0 <span style="font-size:20px" data-i18n data-en="numbers" data-zh="个数字">numbers</span></p>
-          <p class="node-numlab" data-i18n data-en="in the report come from the language model" data-zh="报告里由语言模型生成的数字">in the report come from the language model</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="wrap sec">
-      <p class="marker">02 / <span data-i18n data-en="By the numbers" data-zh="用数字说">By the numbers</span></p>
-      <ul class="nums">
-        <li class="num"><b>3</b><span data-i18n data-en="first-author papers under review" data-zh="一作论文在投">first-author papers under review</span></li>
-        <li class="num"><b>8<span class="u">M+</span></b><span data-i18n data-en="cell instances segmented at 89% mAP, in production use" data-zh="细胞实例分割 · 89% mAP，已上生产">cell instances segmented at 89% mAP, in production use</span></li>
-        <li class="num"><b>3<span class="u">&#215;</span></b><span data-i18n data-en="faster on CPU after distillation, no GPU needed" data-zh="蒸馏后 CPU 提速，无需 GPU">faster on CPU after distillation, no GPU needed</span></li>
-        <li class="num"><b>135</b><span data-i18n data-en="experiments logged across 6 projects" data-zh="条实验记录 · 6 个项目">experiments logged across 6 projects</span></li>
-      </ul>
-
-      <div class="next-up">
-        <a class="btn" href="#projects" data-tab="projects"><span data-i18n data-en="All 12 projects" data-zh="全部 12 个项目">All 12 projects</span><span class="arw">&#8594;</span></a>
-        <a class="btn" href="#papers" data-tab="papers"><span data-i18n data-en="Papers" data-zh="论文">Papers</span><span class="arw">&#8594;</span></a>
-        <a class="btn" href="#experience" data-tab="experience"><span data-i18n data-en="Experience" data-zh="履历">Experience</span><span class="arw">&#8594;</span></a>
-      </div>
-    </section>
-  </div>
-
-  <!--============================ PROJECTS ============================-->
-  <div data-panel="projects">
-    <section class="wrap sec">
-      <p class="marker">03 / <span data-i18n data-en="Selected work" data-zh="精选项目">Selected work</span></p>
-      <h2 class="sec-h" data-i18n data-en="Twelve projects, <span class='dim'>in three tiers</span>" data-zh="十二个项目，<span class='dim'>分三层</span>">Twelve projects, <span class="dim">in three tiers</span></h2>
-
-      <div class="tier-h" style="margin-top:30px">
-        <h3 data-i18n data-en="Coronary IVUS" data-zh="冠脉 IVUS">Coronary IVUS</h3>
-        <p class="mono-note">03.1 · THREE PROJECTS, ONE CHAIN</p>
-      </div>
-
-      <ul class="flags">
-        <li class="flag">
-          <div class="flag-img">
-            <img src="./assets/images/projects/geocat.jpg" alt="GeoCat" loading="lazy">
-            <span class="flag-chip" data-i18n data-en="Under review" data-zh="在投">Under review</span>
-          </div>
-          <div class="flag-in">
-            <h4>GeoCat</h4>
-            <p class="flag-role" data-i18n data-en="Segment &amp; measure" data-zh="分割与测量">Segment &amp; measure</p>
-            <p data-i18n
-               data-en="Dice has saturated on this task, so the paper asks a different question: do the measurements derived from a segmentation agree with what an expert reader would have decided?"
-               data-zh="这个任务上 Dice 已经饱和，所以论文问的是另一个问题：从分割导出的测量值，与专家读片者会做出的决策一致吗？"></p>
-            <ul class="metrics">
-              <li><b>84%</b><span data-i18n data-en="agreement on treatment threshold (κ 0.67)" data-zh="治疗阈值一致率（κ 0.67）">agreement on treatment threshold (κ 0.67)</span></li>
-              <li><b>0.94–0.96</b><span data-i18n data-en="CCC vs expert measurement" data-zh="与专家测量的 CCC">CCC vs expert measurement</span></li>
-              <li><b>0.97–0.99</b><span data-i18n data-en="AUROC, calcium threshold" data-zh="钙化阈值 AUROC">AUROC, calcium threshold</span></li>
-              <li><b>2.6× / 3×</b><span data-i18n data-en="smaller and faster on CPU after distillation" data-zh="蒸馏后更小、CPU 更快">smaller and faster on CPU after distillation</span></li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="flag">
-          <div class="flag-img">
-            <img src="./assets/images/projects/ivusfm.jpg" alt="IVUS-FM" loading="lazy">
-            <span class="flag-chip" data-i18n data-en="In progress" data-zh="进行中">In progress</span>
-          </div>
-          <div class="flag-in">
-            <h4>IVUS-FM</h4>
-            <p class="flag-role" data-i18n data-en="The data underneath" data-zh="底下的数据">The data underneath</p>
-            <p data-i18n
-               data-en="Only one of the two vendor platforms can produce virtual-histology classes and structured reports, and it holds a quarter of the market. Every fine label comes from that platform; the model is built to transfer to the one most catheter labs actually own."
-               data-zh="两个厂商平台中只有一个能产出虚拟组织学分类与结构化报告，而它只占约四分之一市场。全部细标签都来自它，模型则被设计成能迁移到大多数导管室实际拥有的那一个。"></p>
-            <ul class="metrics">
-              <li><b>49.6M</b><span data-i18n data-en="frames pre-trained on" data-zh="预训练帧数">frames pre-trained on</span></li>
-              <li><b>28,753</b><span data-i18n data-en="pullbacks" data-zh="个 pullback">pullbacks</span></li>
-              <li><b>13 yrs</b><span data-i18n data-en="of clinical acquisition" data-zh="临床采集跨度">of clinical acquisition</span></li>
-              <li><b>4</b><span data-i18n data-en="levels of supervision" data-zh="级监督">levels of supervision</span></li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="flag">
-          <div class="flag-img">
-            <img src="./assets/images/projects/agent.jpg" alt="IVUS Agent" loading="lazy">
-            <span class="flag-chip" data-i18n data-en="Agentic clinical AI" data-zh="临床决策智能体">Agentic clinical AI</span>
-          </div>
-          <div class="flag-in">
-            <h4>IVUS Agent</h4>
-            <p class="flag-role" data-i18n data-en="Decide" data-zh="决策">Decide</p>
-            <p data-i18n
-               data-en="A language model in a clinical report becomes a liability the moment it produces a number. So it produces none. It plans which deterministic tool to call and narrates the result; every figure is traceable to an algorithm."
-               data-zh="临床报告里的语言模型，一旦生成数字就成了风险来源。所以它一个都不生成：只负责规划调用哪个确定性工具、并叙述结果，每个数字都能追溯到算法。"></p>
-            <ul class="metrics">
-              <li><b>0</b><span data-i18n data-en="numbers from the model" data-zh="由模型生成的数字">numbers from the model</span></li>
-              <li><b>8</b><span data-i18n data-en="tools, ESC-guideline cited" data-zh="个工具，引用 ESC 指南">tools, ESC-guideline cited</span></li>
-              <li><b>35</b><span data-i18n data-en="cases clinician-reviewed" data-zh="例经医生复核">cases clinician-reviewed</span></li>
-              <li><b>Local</b><span data-i18n data-en="Qwen2.5-7B + vLLM, on-premise" data-zh="Qwen2.5-7B + vLLM，本地">Qwen2.5-7B + vLLM, on-premise</span></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-
-      <div class="tier-h">
-        <h3 data-i18n data-en="Microscopy &amp; cell imaging" data-zh="显微与细胞影像">Microscopy &amp; cell imaging</h3>
-        <p class="mono-note">03.2 · SAME QUESTION, DIFFERENT SCALE</p>
-      </div>
-
-      <ul class="minis">
-        <li class="mini">
-          <h4 data-i18n data-en="SAM2 memory as a tracking linker" data-zh="SAM2 记忆作为追踪 linker">SAM2 memory as a tracking linker</h4>
-          <p class="m-num">CHOTA 0.8603</p>
-          <p data-i18n data-en="Beat a trained state-of-the-art associator with no retraining, on 6 of 6 fields of view (p &lt; 0.001)." data-zh="完全不重训即胜过训练过的 SOTA 关联器，6/6 个视野（p &lt; 0.001）。"></p>
-        </li>
-        <li class="mini">
-          <h4 data-i18n data-en="LeadCell, a cell foundation model" data-zh="LeadCell 细胞基础模型">LeadCell, a cell foundation model</h4>
-          <p class="m-num">8M+ instances · 89% mAP</p>
-          <p data-i18n data-en="DINOv3 and a custom UNETR decoder across five modalities, ahead of four published SAM-family models. In production use; LoRA adapts to a new cell type from 5 to 10 samples." data-zh="DINOv3 加自定义 UNETR 解码器，五种模态，优于四个已发表 SAM 系模型。已上生产；LoRA 只需 5 到 10 个样本适配新细胞类型。"></p>
-        </li>
-        <li class="mini">
-          <h4 data-i18n data-en="Cell size × resolution benchmark" data-zh="细胞尺寸 × 分辨率基准">Cell size × resolution benchmark</h4>
-          <p class="m-num">19 datasets × 9 frozen models</p>
-          <p data-i18n data-en="Every cell size has its own optimal resolution. The data audit found duplication in cyto2 and corruption in VNC before either reached a benchmark." data-zh="每种细胞尺寸都有自己的最优分辨率。数据审计在进入基准前查出了 cyto2 的重复与 VNC 的损坏。"></p>
-        </li>
-        <li class="mini">
-          <h4 data-i18n data-en="Confidence-Adaptive Trimap" data-zh="置信度自适应 Trimap">Confidence-Adaptive Trimap</h4>
-          <p class="m-num" data-i18n data-en="Under review" data-zh="在投">Under review</p>
-          <p data-i18n data-en="The uncertain boundary band comes from the model's own confidence, not a hand-tuned kernel, and it survives domain shift where the fixed kernel does not." data-zh="不确定边界带来自模型自身的置信度而非手调核；域偏移下它稳住了，固定核没有。"></p>
-        </li>
-        <li class="mini">
-          <h4 data-i18n data-en="Physically-grounded synthesis" data-zh="物理约束的图像合成">Physically-grounded synthesis</h4>
-          <p class="m-num">11 priors × 5 domains</p>
-          <p data-i18n data-en="Point processes and imaging physics instead of generative hallucination. A self-review then killed my own framing and relocated the bottleneck." data-zh="用点过程与成像物理替代生成式幻觉。随后的自审否定了我自己的框架，并重新定位了瓶颈。"></p>
-        </li>
-      </ul>
-
-      <div class="tier-h">
-        <h3 data-i18n data-en="Tools &amp; infrastructure" data-zh="工具与基础设施">Tools &amp; infrastructure</h3>
-        <p class="mono-note">03.3 · WHAT THE PAPERS STAND ON</p>
-      </div>
-
-      <ul class="rows">
-        <li>
-          <a href="https://github.com/CHEN-Yunshu/Genius_Labbook" target="_blank" rel="noopener">
-            <h4>Genius Labbook <span class="gh">github.com/CHEN-Yunshu/Genius_Labbook</span></h4>
-            <p data-i18n data-en="A command-line research logbook. 135 entries across 6 projects since March 2026. Open source, MIT." data-zh="git 支撑的科研日志命令行工具。2026 年 3 月以来 135 条记录、6 个项目。MIT 开源。"></p>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/CHEN-Yunshu/Cell_Collection" target="_blank" rel="noopener">
-            <h4>Cell_Collection <span class="gh">github.com/CHEN-Yunshu/Cell_Collection</span></h4>
-            <p data-i18n data-en="186 public datasets curated across seven sources, with a duplication and leakage audit. Open source." data-zh="跨七个来源整理 186 个公开数据集，含重复与泄漏审计。开源。"></p>
-          </a>
-        </li>
-        <li>
-          <h4 data-i18n data-en="Acute ischemic stroke outcome prediction" data-zh="急性缺血性卒中预后预测">Acute ischemic stroke outcome prediction</h4>
-          <p data-i18n data-en="Apollo Medical Imaging, 2025. 7-channel CT perfusion fused with clinical variables, with separate heads for EVT and non-EVT pathways. 12% better accuracy." data-zh="Apollo 医学影像，2025。7 通道 CT 灌注与临床变量融合，EVT 与非 EVT 分头建模。准确率提升 12%。"></p>
-        </li>
-        <li>
-          <h4 data-i18n data-en="Pre-training and evaluation infrastructure" data-zh="预训练与评测基础设施">Pre-training and evaluation infrastructure</h4>
-          <p data-i18n data-en="A 49.6M-frame DICOM to tensor pipeline with md5-versioned lineage and multi-GPU training, plus an 8-GPU crash-safe evaluation framework." data-zh="4,960 万帧 DICOM 转张量管线，md5 版本化血统、多卡训练，另有 8 卡崩溃安全评测框架。"></p>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <!--============================ PAPERS ============================-->
-  <div data-panel="papers">
-    <section class="wrap sec">
-      <p class="marker">04 / <span data-i18n data-en="Papers" data-zh="论文">Papers</span></p>
-      <h2 class="sec-h" data-i18n data-en="Three first-author submissions <span class='dim'>under review</span>" data-zh="三篇一作<span class='dim'>在投</span>">Three first-author submissions <span class="dim">under review</span></h2>
-
-      <ul class="pubs" style="margin-top:24px">
-        <li class="pub">
-          <h4>From Pixels to Decisions: Validating Deployable Coronary IVUS Analysis at the Level That Informs Treatment</h4>
-          <p class="meta">Y. Chen, et al. · <b data-i18n data-en="First author, under review" data-zh="一作，在投">First author, under review</b></p>
-        </li>
-        <li class="pub">
-          <h4>Clinically Aligned Geometry Constraints for Robust IVUS Vessel Boundary Segmentation</h4>
-          <p class="meta">Y. Chen, et al. · <b data-i18n data-en="First author, under review" data-zh="一作，在投">First author, under review</b></p>
-        </li>
-        <li class="pub">
-          <h4>Confidence-Adaptive Trimap for Boundary-Precise Zebrafish Myotome Segmentation</h4>
-          <p class="meta">Y. Chen, et al. · <b data-i18n data-en="First author, under review" data-zh="一作，在投">First author, under review</b></p>
-        </li>
-        <li class="pub">
-          <h4>Efficient Conformer-Based CTC Model for Intelligent Cockpit Speech Recognition</h4>
-          <p class="meta">H. Guo, Y. Chen, X. Xie, G. Xu, W. Guo · IEEE ISCSLP 2022, pp. 522–526 · <a href="https://doi.org/10.1109/ISCSLP57327.2022.10037993" target="_blank" rel="noopener">doi</a></p>
-        </li>
-      </ul>
-
-      <h3 class="sub-h" data-i18n data-en="In preparation" data-zh="撰写中">In preparation</h3>
-      <ul class="prep">
-        <li data-i18n data-en="IVUS journal extension" data-zh="IVUS 期刊扩展版">IVUS journal extension</li>
-        <li data-i18n data-en="IVUS foundation model" data-zh="IVUS 基础模型">IVUS foundation model</li>
-        <li data-i18n data-en="Cell size × resolution benchmark" data-zh="细胞尺寸 × 分辨率基准">Cell size × resolution benchmark</li>
-        <li data-i18n data-en="Field-mediated morphodynamics" data-zh="场介导的形态动力学">Field-mediated morphodynamics</li>
-        <li data-i18n data-en="SAM2-as-linker cell tracking" data-zh="SAM2 作为 linker 的细胞追踪">SAM2-as-linker cell tracking</li>
-      </ul>
-
-      <h3 class="sub-h" data-i18n data-en="Awards" data-zh="荣誉">Awards</h3>
-      <ul class="awards">
-        <li data-i18n data-en="2nd place, Track II (CER 9.86%) and 3rd place, Track I (CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022." data-zh="智能座舱语音识别挑战赛 Track II（CER 9.86%）第二名、Track I（CER 13.39%）第三名，新加坡，2022。"></li>
-        <li data-i18n data-en="Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022." data-zh="悉尼大学学术委员会主席正式致谢，2022。"></li>
-        <li data-i18n data-en="Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0." data-zh="上海交通大学交换，GPA 4.0 / 4.0。"></li>
-      </ul>
-    </section>
-  </div>
-
-  <!--============================ EXPERIENCE ============================-->
-  <div data-panel="experience">
-    <section class="wrap sec">
-      <p class="marker">05 / <span data-i18n data-en="Experience" data-zh="履历">Experience</span></p>
-      <h2 class="sec-h" data-i18n data-en="Two tracks, <span class='dim'>one body of work</span>" data-zh="两条线，<span class='dim'>同一份工作</span>">Two tracks, <span class="dim">one body of work</span></h2>
-
-      <ul class="tracks">
-        <li class="track">
-          <p class="track-lab" data-i18n data-en="As a researcher" data-zh="作为研究者">As a researcher</p>
-          <ul>
-            <li data-i18n data-en="Three first-author papers under review, all on validation rather than architecture." data-zh="三篇一作论文在投，主题都是验证，而不是新架构。"></li>
-            <li data-i18n data-en="Moved IVUS evaluation from pixel overlap to clinical measurement agreement: CCC 0.94 and 0.96, 84% agreement on the treatment threshold." data-zh="把 IVUS 的评估从像素重叠换成临床测量一致性：CCC 0.94 与 0.96，治疗阈值上一致率 84%。"></li>
-            <li data-i18n data-en="Pre-training an ultrasound foundation model on 49.6M frames." data-zh="正在用 4,960 万帧数据预训练超声基础模型。"></li>
-            <li data-i18n data-en="I publish what did not work: five falsified directions shipped with the tracking paper." data-zh="我也写没走通的部分：追踪那篇附了五个被证伪的方向。"></li>
-          </ul>
-        </li>
-        <li class="track">
-          <p class="track-lab" data-i18n data-en="As an engineer" data-zh="作为工程师">As an engineer</p>
-          <ul>
-            <li data-i18n data-en="I came to research from software engineering, and I build for the machine the work has to land on." data-zh="我是从软件工程转到研究的，写代码时想的是这套东西最后落在什么机器上。"></li>
-            <li data-i18n data-en="A distilled model 2.6× smaller and 3× faster on CPU, so a hospital without GPUs can run it." data-zh="蒸馏后小 2.6 倍、CPU 快 3 倍的模型，让没有 GPU 的医院也跑得动。"></li>
-            <li data-i18n data-en="A cell analysis platform in daily production use, and a PyQt interface handed to biologists." data-zh="一个每天在生产环境使用的细胞分析平台，以及交给生物学家的 PyQt 界面。"></li>
-            <li data-i18n data-en="Versioned data lineage, crash-safe multi-GPU evaluation, and audits that caught corruption inside widely used public datasets." data-zh="版本化数据血统、崩溃安全的多卡评测，以及在常用公开数据集里查出损坏的审计。"></li>
-          </ul>
-        </li>
-      </ul>
-
-      <div class="tl">
-        <div class="tl-group">
-          <h3 data-i18n data-en="Research" data-zh="研究经历">Research</h3>
-          <div class="tl-item">
-            <p class="tl-when">Jun 2025 – Present</p>
-            <p class="tl-what" data-i18n data-en="Coronary IVUS segmentation and clinical validation" data-zh="冠脉 IVUS 分割与临床验证">Coronary IVUS segmentation and clinical validation</p>
-            <p class="tl-desc" data-i18n data-en="Monash University with the Victorian Heart Institute, on the CARAT and Huygens cohorts." data-zh="蒙纳士大学与维多利亚心脏研究所合作，基于 CARAT 与 Huygens 队列。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">Mar 2026 – Present</p>
-            <p class="tl-what" data-i18n data-en="Ultrasound foundation model" data-zh="超声基础模型">Ultrasound foundation model</p>
-            <p class="tl-desc" data-i18n data-en="Multi-scale vendor-locked supervision. I built the pre-training infrastructure end to end." data-zh="多尺度 vendor-locked 监督。预训练基础设施由我从零搭起。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">2026 – Present</p>
-            <p class="tl-what" data-i18n data-en="LLM-orchestrated clinical decision support" data-zh="LLM 编排的临床决策支持">LLM-orchestrated clinical decision support</p>
-            <p class="tl-desc" data-i18n data-en="Clinician-reviewed across 35 cases, hosted locally because patient data cannot leave the network." data-zh="已由医生复核 35 例；因患者数据不能出内网，全部本地部署。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">Feb 2025 – Feb 2026</p>
-            <p class="tl-what" data-i18n data-en="Cell instance segmentation foundation model" data-zh="细胞实例分割基础模型">Cell instance segmentation foundation model</p>
-            <p class="tl-desc" data-i18n data-en="Monash University with Lead Healthcare. 100K+ images, 8M+ instances, deployed as a production web application." data-zh="蒙纳士大学与 Lead Healthcare 合作。10 万+ 图像、800 万+ 实例，已部署为生产环境 web 应用。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">Apr 2024 – Present</p>
-            <p class="tl-what" data-i18n data-en="Cell tracking and zebrafish myotome segmentation" data-zh="细胞追踪与斑马鱼肌节分割">Cell tracking and zebrafish myotome segmentation</p>
-            <p class="tl-desc" data-i18n data-en="Zebrafish work with the Australian Regenerative Medicine Institute, delivered with a PyQt analysis interface." data-zh="斑马鱼方向与澳大利亚再生医学研究所合作，配套交付 PyQt 分析界面。"></p>
-          </div>
-        </div>
-
-        <div class="tl-group">
-          <h3 data-i18n data-en="Industry" data-zh="业界经历">Industry</h3>
-          <div class="tl-item">
-            <p class="tl-when">Jul 2022 – Dec 2022</p>
-            <p class="tl-what" data-i18n data-en="Speech Recognition Algorithm Engineer, Intern (Full-time), NIO" data-zh="语音识别算法工程师（全职实习）· 蔚来">Speech Recognition Algorithm Engineer, Intern (Full-time), NIO</p>
-            <p class="tl-desc" data-i18n data-en="Multilingual recognition accuracy up 5%, 60+ production failures resolved, models shipped into production vehicles." data-zh="多语种识别准确率提升 5%，解决 60+ 个量产问题，模型进入量产车系统。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">Mar 2022 – Jul 2022</p>
-            <p class="tl-what" data-i18n data-en="Research Intern, Institute of Psychology, Chinese Academy of Sciences" data-zh="研究实习生 · 中国科学院心理研究所">Research Intern, Institute of Psychology, Chinese Academy of Sciences</p>
-            <p class="tl-desc" data-i18n data-en="MRI experiment design and an automated small-sample MRI pipeline in Python and FSL." data-zh="MRI 实验设计，用 Python 与 FSL 搭建小样本 MRI 自动化流程。"></p>
-          </div>
-        </div>
-
-        <div class="tl-group">
-          <h3 data-i18n data-en="Education" data-zh="教育背景">Education</h3>
-          <div class="tl-item">
-            <p class="tl-when">Oct 2023 – Apr 2027</p>
-            <p class="tl-what" data-i18n data-en="PhD, Data Science &amp; Artificial Intelligence, Monash University" data-zh="博士 · 数据科学与人工智能 · 蒙纳士大学">PhD, Data Science &amp; Artificial Intelligence, Monash University</p>
-            <p class="tl-desc" data-i18n data-en="Supervised by Dr Deval Mehta. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute." data-zh="导师 Deval Mehta。合作方：维多利亚心脏研究所、Apollo 医学影像、Lead Healthcare、澳大利亚再生医学研究所。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">Feb 2019 – Jun 2023</p>
-            <p class="tl-what" data-i18n data-en="BAdvComputing (Honours II-1), The University of Sydney" data-zh="高级计算学士（荣誉二等一级）· 悉尼大学">BAdvComputing (Honours II-1), The University of Sydney</p>
-            <p class="tl-desc" data-i18n data-en="Software Development and Computational Data Science. Honours thesis: a blind cloud storage app where the server never sees plaintext." data-zh="软件开发与计算数据科学。荣誉论文：服务端永远看不到明文的盲云存储应用。"></p>
-          </div>
-        </div>
-
-        <div class="tl-group">
-          <h3 data-i18n data-en="Teaching &amp; service" data-zh="教学与学术服务">Teaching &amp; service</h3>
-          <div class="tl-item">
-            <p class="tl-when">Jul 2025 – Present</p>
-            <p class="tl-what" data-i18n data-en="Teaching Assistant (Sessional Academic), Monash University" data-zh="兼职助教 · 蒙纳士大学">Teaching Assistant (Sessional Academic), Monash University</p>
-            <p class="tl-desc" data-i18n data-en="FIT5196 and FIT5145, 60+ postgraduate students, 92/100 student satisfaction. Student Representative since February 2026." data-zh="FIT5196 与 FIT5145，60+ 名研究生，学生满意度 92/100。2026 年 2 月起任学生代表。"></p>
-          </div>
-          <div class="tl-item">
-            <p class="tl-when">2021 – 2022</p>
-            <p class="tl-what" data-i18n data-en="General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney" data-zh="第94届学生代表理事会常务执行委员 · 学术委员会学生代表 · 悉尼大学">General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney</p>
-            <p class="tl-desc" data-i18n data-en="Elected with 434 primary votes, among the highest in the SRC's history. Contributed to the Sydney in 2032 strategy and a new academic integrity framework." data-zh="以 434 张首选票当选，是理事会历史上得票最高的候选人之一。参与 Sydney in 2032 战略与新的学术诚信框架。"></p>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="sub-h" data-i18n data-en="Technical skills" data-zh="技术能力">Technical skills</h3>
-      <div class="skills">
-        <div class="skill-row"><p data-i18n data-en="Machine learning" data-zh="机器学习">Machine learning</p><div><span>PyTorch</span><span>scikit-learn</span><span>SAM / SAM2</span><span>DINOv3</span><span>ViT</span><span>MAE pre-training</span><span>nnU-Net</span><span>UNETR</span><span>MONAI</span><span>LoRA</span><span>Distillation</span></div></div>
-        <div class="skill-row"><p data-i18n data-en="LLM &amp; agents" data-zh="大模型与智能体">LLM &amp; agents</p><div><span>ReAct orchestration</span><span>vLLM</span><span>Qwen2.5</span><span>JSON-Schema tool contracts</span><span>Local deployment</span></div></div>
-        <div class="skill-row"><p data-i18n data-en="Medical &amp; bio imaging" data-zh="医学与生物影像">Medical &amp; bio imaging</p><div><span>IVUS / NIRS-IVUS</span><span>CT perfusion</span><span>MRI / fMRI</span><span>DICOM</span><span>Fluorescence / H&amp;E / EM</span><span>Cell tracking (CHOTA)</span></div></div>
-        <div class="skill-row"><p data-i18n data-en="Validation &amp; statistics" data-zh="验证与统计">Validation &amp; statistics</p><div><span>ICC / CCC</span><span>Bland–Altman</span><span>Cohen's κ</span><span>AUROC</span><span>Paired Wilcoxon</span><span>Patient-disjoint CV</span><span>LASSO / Random Forest</span></div></div>
-        <div class="skill-row"><p data-i18n data-en="Data &amp; MLOps" data-zh="数据与 MLOps">Data &amp; MLOps</p><div><span>Large-scale DICOM pipelines</span><span>Data lineage</span><span>Multi-GPU training</span><span>pandas</span><span>pytest</span><span>Docker</span><span>Kubernetes</span><span>Jenkins CI/CD</span><span>AWS</span><span>Azure</span><span>Linux</span></div></div>
-        <div class="skill-row"><p data-i18n data-en="Software" data-zh="软件工程">Software</p><div><span>Python</span><span>Java</span><span>C++</span><span>SQL</span><span>R</span><span>MATLAB</span><span>React Native</span><span>Spring Boot</span><span>Node.js</span><span>PyQt</span><span>LaTeX</span></div></div>
-        <div class="skill-row"><p data-i18n data-en="Languages" data-zh="语言">Languages</p><div><span data-i18n data-en="English (professional)" data-zh="英语（专业工作能力）">English (professional)</span><span data-i18n data-en="Mandarin (native)" data-zh="普通话（母语）">Mandarin (native)</span></div></div>
-      </div>
-    </section>
-  </div>
-
-  </main>
-
-  <footer class="foot-bar">
-    <div class="wrap foot-in">
-      <a class="foot-mail" href="#" data-email-link data-email>[ enable JavaScript ]</a>
-      <ul class="hc-links">
-        <li><a href="https://github.com/CHEN-Yunshu" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/yunshu-chen-22917915a/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://scholar.google.com/citations?user=-mTqfsEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-        <li><a href="https://orcid.org/0009-0004-4772-4054" target="_blank" rel="noopener">ORCID</a></li>
-        <li><a href="./assets/Yunshu_Chen_CV.pdf" target="_blank" rel="noopener" data-i18n data-en="Research CV" data-zh="研究版简历">Research CV</a></li>
-        <li><a href="./assets/Yunshu_Chen_Resume.pdf" target="_blank" rel="noopener" data-i18n data-en="Industry résumé" data-zh="业界版简历">Industry résumé</a></li>
-      </ul>
-      <p class="mono-note">© <span data-year>2026</span> Yunshu Chen · Melbourne, Australia</p>
+    <div class="wrap affiliation-strip">
+     <span class="strip-label">
+      <span class="" data-en="CURRENTLY" data-i18n="" data-zh="目前">
+       CURRENTLY
+      </span>
+     </span>
+     <span>
+      Monash University
+      <small>
+       PhD
+      </small>
+     </span>
+     <span>
+      PredictX Health
+      <small>
+       ML Engineer
+      </small>
+     </span>
+     <span class="strip-cv">
+      <a href="./assets/Yunshu_Chen_CV.pdf" rel="noopener" target="_blank">
+       <span class="" data-en="Research CV" data-i18n="" data-zh="研究版简历">
+        Research CV
+       </span>
+       ↗
+      </a>
+      <a href="./assets/Yunshu_Chen_Resume.pdf" rel="noopener" target="_blank">
+       <span class="" data-en="Industry résumé" data-i18n="" data-zh="业界版简历">
+        Industry résumé
+       </span>
+       ↗
+      </a>
+     </span>
     </div>
+    <section class="wrap home-selected">
+     <div class="section-title">
+      <div>
+       <p class="eyebrow" data-en="01 / SELECTED WORK" data-i18n="" data-zh="01 / 代表工作">
+        01 / SELECTED WORK
+       </p>
+       <h2 class="" data-en="Built around real questions." data-i18n="" data-zh="从真实问题出发。">
+        Built around real questions.
+       </h2>
+      </div>
+      <a class="text-link" data-tab="work" href="#work">
+       <span class="" data-en="View all work" data-i18n="" data-zh="查看全部工作">
+        View all work
+       </span>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+     </div>
+     <div class="selected-grid">
+      <a class="selected-card selected-ivus" data-section="ivus" data-tab="work" href="#work/ivus">
+       <div class="selected-image">
+        <img alt="Three coronary ultrasound sections with vessel contours." loading="lazy" src="./assets/images/work/ivus-gallery.png"/>
+        <span class="image-label">
+         01 / CLINICAL IMAGING
+        </span>
+       </div>
+       <div class="selected-body">
+        <div class="selected-title">
+         <h3 class="" data-en="Coronary ultrasound" data-i18n="" data-zh="冠脉超声">
+          Coronary ultrasound
+         </h3>
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </div>
+        <p class="" data-en="Models that measure vessels. Software that prepares reports for cardiologist review." data-i18n="" data-zh="测量血管的模型，以及整理报告、支持心脏科医生复核的软件。">
+         Models that measure vessels. Software that prepares reports for cardiologist review.
+        </p>
+        <div class="tags">
+         <span>
+          GeoCat
+         </span>
+         <span>
+          IVUS Agent
+         </span>
+         <span>
+          IVUS-FM
+         </span>
+        </div>
+       </div>
+      </a>
+      <a class="selected-card selected-cell" data-section="cells" data-tab="work" href="#work/cells">
+       <div class="selected-image">
+        <img alt="LeadCell microscopy examples and cell representations." loading="lazy" src="./assets/images/work/leadcell.png"/>
+        <span class="image-label">
+         02 / BIOLOGICAL IMAGING
+        </span>
+       </div>
+       <div class="selected-body">
+        <div class="selected-title">
+         <h3 class="" data-en="Cell analysis, in practice" data-i18n="" data-zh="走进实验室的细胞分析">
+          Cell analysis, in practice
+         </h3>
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </div>
+        <p class="" data-en="LeadCell software in use at Lead Healthcare, alongside research into tracking and image resolution." data-i18n="" data-zh="Lead Healthcare 已使用的 LeadCell 软件，以及细胞追踪与图像分辨率研究。">
+         LeadCell software in use at Lead Healthcare, alongside research into tracking and image resolution.
+        </p>
+        <div class="tags">
+         <span>
+          LeadCell
+         </span>
+         <span>
+          SAM2
+         </span>
+         <span class="" data-en="Evaluation" data-i18n="" data-zh="模型评估">
+          Evaluation
+         </span>
+        </div>
+       </div>
+      </a>
+     </div>
+    </section>
+    <section class="wrap beyond">
+     <div>
+      <p class="eyebrow" data-en="02 / BEYOND THE MODELS" data-i18n="" data-zh="02 / 模型之外">
+       02 / BEYOND THE MODELS
+      </p>
+      <h2 class="" data-en="Software is a team sport." data-i18n="" data-zh="和使用者一起，把软件做好。">
+       Software is a team sport.
+      </h2>
+     </div>
+     <div>
+      <p class="" data-en="At PredictX Health, I work with clinical collaborators on data for colorectal cancer research. I also teach tutorials in postgraduate data science at Monash and build open-source tools for everyday research." data-i18n="" data-zh="在 PredictX Health，我与临床伙伴合作，为结直肠癌研究构建数据管线。我也在蒙纳士大学担任研究生数据科学课程助教，并开发支持日常科研的开源工具。">
+       At PredictX Health, I work with clinical collaborators on data for colorectal cancer research. I also teach tutorials in postgraduate data science at Monash and build open-source tools for everyday research.
+      </p>
+      <div class="beyond-links">
+       <a class="text-link" data-section="other" data-tab="work" href="#work/other">
+        <span class="" data-en="Clinical data engineering" data-i18n="" data-zh="临床数据工程">
+         Clinical data engineering
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+       <a class="text-link" data-section="tools" data-tab="work" href="#work/tools">
+        <span class="" data-en="Open-source tools" data-i18n="" data-zh="开源工具">
+         Open-source tools
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+       <a class="text-link" data-tab="background" href="#background">
+        <span class="" data-en="Teaching &amp; background" data-i18n="" data-zh="教学与经历">
+         Teaching &amp; background
+        </span>
+        ↗
+       </a>
+      </div>
+     </div>
+    </section>
+   </div>
+   <!--============================ PROJECTS ============================-->
+   <div data-panel="work" id="work">
+    <div class="wrap projects-page">
+     <header class="page-intro">
+      <div>
+       <p class="eyebrow" data-en="RESEARCH × ENGINEERING" data-i18n="" data-zh="研究 × 工程">
+        RESEARCH × ENGINEERING
+       </p>
+       <h1 class="" data-en="Work, with&lt;br&gt;&lt;em&gt;purpose.&lt;/em&gt;" data-i18n="" data-zh="研究有方向。&lt;br&gt;&lt;em&gt;工作有成果。&lt;/em&gt;">
+        Work, with
+        <br/>
+        <em>
+         purpose.
+        </em>
+       </h1>
+      </div>
+      <div class="intro-aside">
+       <p class="" data-en="Imaging models, software people use, and the data that connects them. A selection of my work with clinical, research and industry partners." data-i18n="" data-zh="影像模型、投入使用的软件，以及支撑它们的数据。这里展示我与临床、科研及行业伙伴共同完成的工作。">
+        Imaging models, software people use, and the data that connects them. A selection of my work with clinical, research and industry partners.
+       </p>
+       <div class="intro-key">
+        <span class="status green" data-en="Software delivered" data-i18n="" data-zh="软件已交付">
+         Software delivered
+        </span>
+        <span class="status" data-en="Research ongoing" data-i18n="" data-zh="研究进行中">
+         Research ongoing
+        </span>
+       </div>
+      </div>
+     </header>
+     <nav aria-label="Project sections" class="project-nav">
+      <a class="text-link" data-section="ivus" data-tab="work" href="#work/ivus">
+       <span class="" data-en="01  Coronary imaging" data-i18n="" data-zh="01  冠脉影像">
+        01  Coronary imaging
+       </span>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a class="text-link" data-section="cells" data-tab="work" href="#work/cells">
+       <span class="" data-en="02  Cell analysis" data-i18n="" data-zh="02  细胞分析">
+        02  Cell analysis
+       </span>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a class="text-link" data-section="fish" data-tab="work" href="#work/fish">
+       <span class="" data-en="03  Zebrafish" data-i18n="" data-zh="03  斑马鱼">
+        03  Zebrafish
+       </span>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a class="text-link" data-section="other" data-tab="work" href="#work/other">
+       <span class="" data-en="04  Clinical data" data-i18n="" data-zh="04  临床数据">
+        04  Clinical data
+       </span>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a class="text-link" data-section="tools" data-tab="work" href="#work/tools">
+       <span class="" data-en="05  Open source" data-i18n="" data-zh="05  开源工具">
+        05  Open source
+       </span>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+     </nav>
+     <div class="role-context">
+      <div>
+       <span aria-hidden="true" class="live-dot">
+       </span>
+       <strong>
+        Monash University
+       </strong>
+       <span class="" data-en="PhD research &amp; engineering" data-i18n="" data-zh="博士研究与工程开发">
+        PhD research &amp; engineering
+       </span>
+      </div>
+      <p class="" data-en="October 2023–present · Three collaborations below" data-i18n="" data-zh="2023 年 10 月至今 · 以下三组合作项目">
+       October 2023–present · Three collaborations below
+      </p>
+     </div>
+     <section class="case-section" id="ivus">
+      <div class="chapter-heading">
+       <span class="chapter-number">
+        01
+       </span>
+       <p class="eyebrow" data-en="VICTORIAN HEART INSTITUTE × MONASH" data-i18n="" data-zh="维多利亚心脏研究所 × 蒙纳士大学">
+        VICTORIAN HEART INSTITUTE × MONASH
+       </p>
+      </div>
+      <div class="case-cover case-ivus">
+       <div class="case-cover-copy">
+        <span class="status dark" data-en="Clinical imaging" data-i18n="" data-zh="临床影像">
+         Clinical imaging
+        </span>
+        <h2 class="" data-en="Inside the vessel.&lt;br&gt;Beyond the image." data-i18n="" data-zh="看见血管。&lt;br&gt;读懂影像。">
+         Inside the vessel.
+         <br/>
+         Beyond the image.
+        </h2>
+        <p class="case-subtitle" data-en="Coronary ultrasound analysis" data-i18n="" data-zh="冠脉超声分析">
+         Coronary ultrasound analysis
+        </p>
+        <p class="" data-en="I build models that measure vessels and software that organises the results for cardiologists to review." data-i18n="" data-zh="我开发血管测量模型，并将分析结果整理成心脏科医生可以复核的软件与报告。">
+         I build models that measure vessels and software that organises the results for cardiologists to review.
+        </p>
+        <div class="cover-tags">
+         <span>
+          GeoCat
+         </span>
+         <span>
+          IVUS Agent
+         </span>
+         <span>
+          IVUS-FM
+         </span>
+        </div>
+       </div>
+       <div class="case-cover-art">
+        <div class="scan-visual">
+         <img alt="A coronary ultrasound section with vessel boundary contours." loading="lazy" src="./assets/images/work/ivus-gallery.png"/>
+        </div>
+        <p class="art-caption">
+         <span class="" data-en="IVUS · vessel boundary overlay" data-i18n="" data-zh="IVUS · 血管边界叠加结果">
+          IVUS · vessel boundary overlay
+         </span>
+        </p>
+       </div>
+      </div>
+      <div class="evidence-strip">
+       <div class="evidence-item">
+        <strong>
+         0.94 / 0.96
+        </strong>
+        <span class="" data-en="Lumen / vessel area agreement (CCC)" data-i18n="" data-zh="管腔 / 血管面积一致性（CCC）">
+         Lumen / vessel area agreement (CCC)
+        </span>
+       </div>
+       <div class="evidence-item">
+        <strong>
+         35
+        </strong>
+        <span class="" data-en="Cases prepared for clinician review" data-i18n="" data-zh="已准备供医生复核的病例">
+         Cases prepared for clinician review
+        </span>
+       </div>
+      </div>
+      <div class="case-overview">
+       <div>
+        <h3 class="eyebrow" data-en="THE QUESTION" data-i18n="" data-zh="研究问题">
+         THE QUESTION
+        </h3>
+        <p data-en="Intravascular ultrasound (IVUS) captures a sequence of cross-sectional images from inside a coronary artery. My work concerns the next steps: outlining the vessel, calculating measurements and presenting the results for a cardiologist to review." data-i18n="" data-zh="血管内超声（IVUS）从冠状动脉内部采集一系列横截面图像。我的工作围绕接下来的分析展开：识别血管边界、计算测量值，再将结果整理给心脏科医生复核。">
+         Intravascular ultrasound (IVUS) captures a sequence of cross-sectional images from inside a coronary artery. My work concerns the next steps: outlining the vessel, calculating measurements and presenting the results for a cardiologist to review.
+        </p>
+       </div>
+       <div>
+        <h3 class="eyebrow" data-en="MY CONTRIBUTION" data-i18n="" data-zh="我的工作">
+         MY CONTRIBUTION
+        </h3>
+        <p data-en="I build the data processing, models and review software. Our cardiology partners provide the cohorts, annotations and clinical judgement. The three projects below address different parts of this work and are at different stages." data-i18n="" data-zh="我负责数据处理、模型和复核软件，心脏科合作伙伴提供队列、标注与临床判断。下面三个项目分别处理其中不同的部分，进度也各不相同。">
+         I build the data processing, models and review software. Our cardiology partners provide the cohorts, annotations and clinical judgement. The three projects below address different parts of this work and are at different stages.
+        </p>
+       </div>
+      </div>
+      <div class="methods-grid">
+       <div class="method-card">
+        <span class="status" data-en="Measurement model" data-i18n="" data-zh="测量模型">
+         Measurement model
+        </span>
+        <h3 data-en="GeoCat" data-i18n="" data-zh="GeoCat">
+         GeoCat
+        </h3>
+        <p data-en="I developed the segmentation and measurement pipeline with agreement against expert readings as a goal from the start. Knowledge distillation made the model smaller and faster on CPU, so deployment would not depend on a GPU. The paper is under review." data-i18n="" data-zh="我从一开始就围绕与专家读片的一致性开发分割和测量流程。通过知识蒸馏缩小模型并提高 CPU 速度，使部署不依赖 GPU。论文目前在审。">
+         I developed the segmentation and measurement pipeline with agreement against expert readings as a goal from the start. Knowledge distillation made the model smaller and faster on CPU, so deployment would not depend on a GPU. The paper is under review.
+        </p>
+       </div>
+       <div class="method-card">
+        <span class="status" data-en="Clinician review ongoing" data-i18n="" data-zh="医生复核中">
+         Clinician review ongoing
+        </span>
+        <h3 data-en="IVUS Agent" data-i18n="" data-zh="IVUS Agent">
+         IVUS Agent
+        </h3>
+        <p data-en="I built an agent that calls measurement tools and drafts a report from their outputs. A local Qwen model organises these steps, while the review interface lets cardiologists inspect the images and report together. I have prepared 35 cases; cardiologist review is ongoing." data-i18n="" data-zh="我开发的智能体调用测量工具，并依据输出起草报告。本地 Qwen 模型组织这些步骤，复核界面让医生结合影像检查报告。目前已准备 35 例，医生正在复核。">
+         I built an agent that calls measurement tools and drafts a report from their outputs. A local Qwen model organises these steps, while the review interface lets cardiologists inspect the images and report together. I have prepared 35 cases; cardiologist review is ongoing.
+        </p>
+       </div>
+       <div class="method-card">
+        <span class="status" data-en="Research in progress" data-i18n="" data-zh="研究进行中">
+         Research in progress
+        </span>
+        <h3 data-en="IVUS-FM" data-i18n="" data-zh="IVUS-FM">
+         IVUS-FM
+        </h3>
+        <p data-en="I am pre-training a model on an image collection from two scanner platforms. The research asks how detailed supervision available from one platform can help analyse images from the other. I built the DICOM processing and training infrastructure. This project is ongoing." data-i18n="" data-zh="我正在使用两个设备平台的影像数据预训练模型，研究如何利用其中一个平台提供的详细标注分析另一个平台的图像。我负责 DICOM 处理和训练基础设施。这项研究仍在进行。">
+         I am pre-training a model on an image collection from two scanner platforms. The research asks how detailed supervision available from one platform can help analyse images from the other. I built the DICOM processing and training infrastructure. This project is ongoing.
+        </p>
+       </div>
+      </div>
+      <details class="technical-details">
+       <summary>
+        <span class="" data-en="Explore the software &amp; evaluation" data-i18n="" data-zh="查看软件与验证细节">
+         Explore the software &amp; evaluation
+        </span>
+        <span aria-hidden="true">
+         +
+        </span>
+       </summary>
+       <div class="detail-content">
+        <figure class="project-figure zoomable reader-figure">
+         <button aria-label="Enlarge figure" data-zoom="" type="button">
+          <img alt="IVUS review interface: images, measurements and a report in one workspace." loading="lazy" src="./assets/images/work/ivus-reader.png"/>
+          <span aria-hidden="true" class="zoom-hint">
+           ↗
+          </span>
+         </button>
+         <figcaption class="" data-en="IVUS review interface: images, measurements and a report in one workspace." data-i18n="" data-zh="IVUS 复核界面：在同一工作区查看影像、测量与报告。">
+          IVUS review interface: images, measurements and a report in one workspace.
+         </figcaption>
+        </figure>
+        <p data-en="GeoCat was evaluated using five-fold patient-disjoint cross-validation. Distillation reduced model size by 2.6× and improved CPU speed by 3×. The separate pre-training corpus contains 49.6 million frames from 28,753 pullbacks." data-i18n="" data-zh="GeoCat 使用患者互不重叠的五折交叉验证。蒸馏后模型缩小 2.6 倍，CPU 速度提高 3 倍。独立的预训练语料包含来自 28,753 条 pullback 的 4,960 万帧。">
+         GeoCat was evaluated using five-fold patient-disjoint cross-validation. Distillation reduced model size by 2.6× and improved CPU speed by 3×. The separate pre-training corpus contains 49.6 million frames from 28,753 pullbacks.
+        </p>
+        <p data-en="The agent uses JSON Schema tool definitions, Pydantic state records and retrieval of previous clinician feedback. Eight decision tools include guideline citations. Qwen2.5-7B runs locally with vLLM." data-i18n="" data-zh="智能体使用 JSON Schema 定义工具，通过 Pydantic 记录状态，并检索此前的医生反馈。八个决策工具包含指南引用。Qwen2.5-7B 通过 vLLM 在本地运行。">
+         The agent uses JSON Schema tool definitions, Pydantic state records and retrieval of previous clinician feedback. Eight decision tools include guideline citations. Qwen2.5-7B runs locally with vLLM.
+        </p>
+        <p data-en="For GeoCat, agreement with expert lumen and vessel area measurements was CCC 0.94 and 0.96. Agreement at the evaluated plaque-burden threshold was 84% (κ 0.67). These results describe the measurement model; the reporting agent is still being reviewed." data-i18n="" data-zh="GeoCat 与专家管腔和血管面积测量的一致性（CCC）分别为 0.94 和 0.96。在所评估斑块负荷阈值下的一致率为 84%（κ 0.67）。这些结果针对测量模型；报告智能体仍在复核中。">
+         For GeoCat, agreement with expert lumen and vessel area measurements was CCC 0.94 and 0.96. Agreement at the evaluated plaque-burden threshold was 84% (κ 0.67). These results describe the measurement model; the reporting agent is still being reviewed.
+        </p>
+       </div>
+      </details>
+     </section>
+     <section class="case-section" id="cells">
+      <div class="chapter-heading">
+       <span class="chapter-number">
+        02
+       </span>
+       <p class="eyebrow" data-en="LEAD HEALTHCARE × MONASH" data-i18n="" data-zh="LEAD HEALTHCARE × 蒙纳士大学">
+        LEAD HEALTHCARE × MONASH
+       </p>
+      </div>
+      <div class="case-cover case-cells">
+       <div class="case-cover-copy">
+        <span class="status green" data-en="Software in use" data-i18n="" data-zh="软件已投入使用">
+         Software in use
+        </span>
+        <h2 class="" data-en="A closer look&lt;br&gt;at every cell." data-i18n="" data-zh="从每个细胞，&lt;br&gt;看得更清楚。">
+         A closer look
+         <br/>
+         at every cell.
+        </h2>
+        <p class="case-subtitle" data-en="LeadCell &amp; cell-analysis research" data-i18n="" data-zh="LeadCell 与细胞分析研究">
+         LeadCell &amp; cell-analysis research
+        </p>
+        <p class="" data-en="Cell-segmentation models, packaged as software for laboratory use. Related research explores tracking and evaluation." data-i18n="" data-zh="将细胞分割模型打包成实验室使用的软件，并开展细胞追踪与模型评估研究。">
+         Cell-segmentation models, packaged as software for laboratory use. Related research explores tracking and evaluation.
+        </p>
+        <div class="cover-tags">
+         <span>
+          PyTorch
+         </span>
+         <span>
+          React
+         </span>
+         <span>
+          LoRA
+         </span>
+        </div>
+       </div>
+       <figure class="project-figure zoomable cell-cover-figure">
+        <button aria-label="Enlarge figure" data-zoom="" type="button">
+         <img alt="LeadCell · microscopy across imaging modalities" loading="lazy" src="./assets/images/work/leadcell.png"/>
+         <span aria-hidden="true" class="zoom-hint">
+          ↗
+         </span>
+        </button>
+        <figcaption class="" data-en="LeadCell · microscopy across imaging modalities" data-i18n="" data-zh="LeadCell · 不同成像模态下的显微图像">
+         LeadCell · microscopy across imaging modalities
+        </figcaption>
+       </figure>
+      </div>
+      <div class="evidence-strip">
+       <div class="evidence-item">
+        <strong>
+         100K+
+        </strong>
+        <span class="" data-en="Training images across imaging modalities" data-i18n="" data-zh="覆盖不同成像模态的训练图像">
+         Training images across imaging modalities
+        </span>
+       </div>
+       <div class="evidence-item">
+        <strong>
+         5–10
+        </strong>
+        <span class="" data-en="Samples for new cell-type adaptation with LoRA" data-i18n="" data-zh="通过 LoRA 适配新细胞类型的样本数">
+         Samples for new cell-type adaptation with LoRA
+        </span>
+       </div>
+      </div>
+      <div class="case-overview">
+       <div>
+        <h3 class="eyebrow" data-en="THE WORK" data-i18n="" data-zh="工作内容">
+         THE WORK
+        </h3>
+        <p data-en="The main deliverable is LeadCell, cell-segmentation software used at Lead Healthcare. Around it, I work on three practical questions: how to separate cells in an image, how to follow them through a video, and how to evaluate a model when cell size and imaging conditions change." data-i18n="" data-zh="主要交付成果是 LeadCell，目前已在 Lead Healthcare 使用的细胞分割软件。围绕细胞分析，我研究三个实际问题：如何分开图像中的细胞、如何在视频中持续追踪它们，以及细胞尺寸和成像条件变化时该如何评估模型。">
+         The main deliverable is LeadCell, cell-segmentation software used at Lead Healthcare. Around it, I work on three practical questions: how to separate cells in an image, how to follow them through a video, and how to evaluate a model when cell size and imaging conditions change.
+        </p>
+       </div>
+       <div>
+        <h3 class="eyebrow" data-en="WHAT I DELIVERED" data-i18n="" data-zh="我的交付">
+         WHAT I DELIVERED
+        </h3>
+        <p data-en="I developed the segmentation model and packaged it as software, with a React interface and an API for internal laboratory use. The training data covers more than 100,000 images and eight million cell instances. LoRA fine-tuning supports new cell types with 5–10 samples. Software is in use; model development continues." data-i18n="" data-zh="我开发了分割模型并将其打包成软件，配有 React 界面及供实验室内部使用的 API。训练数据包含 10 万多张图像和 800 多万个细胞实例。LoRA 微调支持用 5–10 个样本适配新细胞类型。软件已投入使用，模型仍在继续开发。">
+         I developed the segmentation model and packaged it as software, with a React interface and an API for internal laboratory use. The training data covers more than 100,000 images and eight million cell instances. LoRA fine-tuning supports new cell types with 5–10 samples. Software is in use; model development continues.
+        </p>
+       </div>
+      </div>
+      <div class="subsection-heading">
+       <h3 class="" data-en="Related research" data-i18n="" data-zh="相关研究">
+        Related research
+       </h3>
+       <p class="" data-en="Separate projects. Shared questions about cell analysis." data-i18n="" data-zh="围绕细胞分析展开的独立研究项目。">
+        Separate projects. Shared questions about cell analysis.
+       </p>
+      </div>
+      <div class="related-grid">
+       <div class="related-card">
+        <h3 data-en="Following cells over time" data-i18n="" data-zh="持续追踪细胞">
+         Following cells over time
+        </h3>
+        <p data-en="The tracking project links cell detections across video frames using SAM2 memory without retraining. In this project’s evaluation, it achieved CHOTA 0.8603 against a Trackastra baseline of 0.8511. I also examined errors such as merged cells and missed daughter cells. The paper is under review." data-i18n="" data-zh="追踪项目使用 SAM2 的记忆机制关联视频帧中的细胞，无需重新训练。在该项目的评估中，CHOTA 为 0.8603，Trackastra 基线为 0.8511。我也分析了细胞合并、分裂后的子细胞漏检等错误。论文目前在审。">
+         The tracking project links cell detections across video frames using SAM2 memory without retraining. In this project’s evaluation, it achieved CHOTA 0.8603 against a Trackastra baseline of 0.8511. I also examined errors such as merged cells and missed daughter cells. The paper is under review.
+        </p>
+        <figure class="project-figure zoomable">
+         <button aria-label="Enlarge figure" data-zoom="" type="button">
+          <img alt="An example frame with SAM2 cell masks." loading="eager" src="./assets/images/work/tracking.png"/>
+          <span aria-hidden="true" class="zoom-hint">
+           ↗
+          </span>
+         </button>
+         <figcaption data-en="An example frame with SAM2 cell masks." data-i18n="" data-zh="叠加 SAM2 细胞掩码的示例帧。">
+          An example frame with SAM2 cell masks.
+         </figcaption>
+        </figure>
+       </div>
+       <div class="related-card">
+        <h3 data-en="Understanding resolution effects" data-i18n="" data-zh="理解分辨率的影响">
+         Understanding resolution effects
+        </h3>
+        <p data-en="I evaluated nine pre-trained models across 19 datasets to study how cell size, resolution, blur and field of view affect segmentation. This work helps explain when changing the input image can alter performance, even with the same model." data-i18n="" data-zh="我在 19 个数据集上评估了九个预训练模型，研究细胞尺寸、分辨率、模糊和视野范围如何影响分割。它帮助解释：即使模型相同，输入图像的变化也会改变结果。">
+         I evaluated nine pre-trained models across 19 datasets to study how cell size, resolution, blur and field of view affect segmentation. This work helps explain when changing the input image can alter performance, even with the same model.
+        </p>
+        <figure class="project-figure zoomable">
+         <button aria-label="Enlarge figure" data-zoom="" type="button">
+          <img alt="Segmentation performance varies with cell size and model." loading="eager" src="./assets/images/work/resolution.png"/>
+          <span aria-hidden="true" class="zoom-hint">
+           ↗
+          </span>
+         </button>
+         <figcaption data-en="Segmentation performance varies with cell size and model." data-i18n="" data-zh="细胞尺寸和模型不同，分割表现也不同。">
+          Segmentation performance varies with cell size and model.
+         </figcaption>
+        </figure>
+       </div>
+      </div>
+      <details>
+       <summary data-en="Data preparation, organoids and synthesis" data-i18n="" data-zh="数据准备、类器官与图像合成">
+        Data preparation, organoids and synthesis
+       </summary>
+       <div class="work-block">
+        <h3 data-en="Dataset curation and organoid evaluation" data-i18n="" data-zh="数据整理与类器官评估">
+         Dataset curation and organoid evaluation
+        </h3>
+        <p data-en="Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. I also prepared organoid datasets and a common evaluation format that preserves overlapping masks. These tools support model comparison." data-i18n="" data-zh="Cell_Collection 收集和标准化显微图像数据集，检查重复图像及基准之间的重叠。我也整理了类器官数据，并建立保留重叠掩码的统一评测格式，为模型比较提供支持。">
+         Cell_Collection gathers and standardises microscopy datasets, with checks for duplicate images and overlap between benchmarks. I also prepared organoid datasets and a common evaluation format that preserves overlapping masks. These tools support model comparison.
+        </p>
+       </div>
+       <div class="work-block">
+        <h3 data-en="Synthetic data research" data-i18n="" data-zh="合成数据研究">
+         Synthetic data research
+        </h3>
+        <p data-en="I explored microscopy image synthesis using spatial statistics and imaging physics. Pilot experiments exposed limitations in appearance realism; subsequent work studies changes in cell shape and motion between frames. This remains research in progress." data-i18n="" data-zh="我探索了用空间统计和成像物理合成显微图像的方法。先导实验显示外观真实性仍有限，后续研究转向细胞在相邻帧中的形状与运动变化。这部分仍在研究中。">
+         I explored microscopy image synthesis using spatial statistics and imaging physics. Pilot experiments exposed limitations in appearance realism; subsequent work studies changes in cell shape and motion between frames. This remains research in progress.
+        </p>
+       </div>
+      </details>
+     </section>
+     <section class="case-section" id="fish">
+      <div class="chapter-heading">
+       <span class="chapter-number">
+        03
+       </span>
+       <p class="eyebrow" data-en="AUSTRALIAN REGENERATIVE MEDICINE INSTITUTE × MONASH" data-i18n="" data-zh="澳大利亚再生医学研究所 × 蒙纳士大学">
+        AUSTRALIAN REGENERATIVE MEDICINE INSTITUTE × MONASH
+       </p>
+      </div>
+      <div class="support-case">
+       <div>
+        <span class="status" data-en="Paper under review" data-i18n="" data-zh="论文在审">
+         Paper under review
+        </span>
+        <h2 class="" data-en="Making muscle&lt;br&gt;&lt;em&gt;structure visible.&lt;/em&gt;" data-i18n="" data-zh="让肌节结构&lt;br&gt;&lt;em&gt;清晰可见。&lt;/em&gt;">
+         Making muscle
+         <br/>
+         <em>
+          structure visible.
+         </em>
+        </h2>
+        <p class="case-subtitle" data-en="Zebrafish segmentation &amp; analysis software" data-i18n="" data-zh="斑马鱼肌节分割与分析软件">
+         Zebrafish segmentation &amp; analysis software
+        </p>
+        <p data-en="With the Australian Regenerative Medicine Institute, I developed a method for separating muscle segments in zebrafish images and delivered a PyQt analysis interface to biologists. Evaluation covered 121 images from 35 fish, with healthy and muscular-dystrophy images. The paper is under review." data-i18n="" data-zh="与澳大利亚再生医学研究所合作，我开发了斑马鱼肌节分割方法，并将 PyQt 分析界面交付给生物学家。评估涵盖 35 条鱼的 121 张图像，包括健康和肌营养不良影像。论文目前在审。">
+         With the Australian Regenerative Medicine Institute, I developed a method for separating muscle segments in zebrafish images and delivered a PyQt analysis interface to biologists. Evaluation covered 121 images from 35 fish, with healthy and muscular-dystrophy images. The paper is under review.
+        </p>
+        <div class="tags">
+         <span>
+          121 images · 35 fish
+         </span>
+         <span>
+          PyQt
+         </span>
+        </div>
+       </div>
+       <figure class="project-figure zoomable fish-figure">
+        <button aria-label="Enlarge figure" data-zoom="" type="button">
+         <img alt="Zebrafish myotome segmentation from the CAT project." loading="lazy" src="./assets/images/work/fish.png"/>
+         <span aria-hidden="true" class="zoom-hint">
+          ↗
+         </span>
+        </button>
+        <figcaption class="" data-en="Zebrafish myotome segmentation from the CAT project." data-i18n="" data-zh="CAT 项目中的斑马鱼肌节分割结果。">
+         Zebrafish myotome segmentation from the CAT project.
+        </figcaption>
+       </figure>
+      </div>
+     </section>
+     <section class="case-section" id="other">
+      <div class="chapter-heading">
+       <span class="chapter-number">
+        04
+       </span>
+       <p class="eyebrow" data-en="PREDICTX HEALTH × WESTERN HEALTH" data-i18n="" data-zh="PREDICTX HEALTH × WESTERN HEALTH">
+        PREDICTX HEALTH × WESTERN HEALTH
+       </p>
+      </div>
+      <div class="clinical-layout">
+       <div>
+        <span class="status green" data-en="Current role" data-i18n="" data-zh="当前任职">
+         Current role
+        </span>
+        <h2 class="" data-en="Good research starts&lt;br&gt;with &lt;em&gt;good data.&lt;/em&gt;" data-i18n="" data-zh="可靠的研究，&lt;br&gt;始于&lt;em&gt;可靠的数据。&lt;/em&gt;">
+         Good research starts
+         <br/>
+         with
+         <em>
+          good data.
+         </em>
+        </h2>
+        <p class="case-subtitle" data-en="Machine Learning Engineer · Part-time" data-i18n="" data-zh="机器学习工程师 · 兼职">
+         Machine Learning Engineer · Part-time
+        </p>
+        <p class="role-date" data-en="January 2026–present" data-i18n="" data-zh="2026 年 1 月至今">
+         January 2026–present
+        </p>
+        <div class="work-block">
+         <p data-en="As a part-time machine learning engineer, I build and check datasets for a colorectal cancer study. The pipeline combines registry, CT body-composition and chemotherapy records for a 302-patient cohort. I added regression tests and a data dictionary, and review data questions with clinical collaborators in weekly meetings." data-i18n="" data-zh="我作为兼职机器学习工程师，为结直肠癌研究构建和检查数据集。管线整合了包含 302 名患者的队列的登记表、CT 体成分和化疗记录。我编写了回归测试和数据字典，并在每周会议中与临床合作者讨论数据问题。">
+          As a part-time machine learning engineer, I build and check datasets for a colorectal cancer study. The pipeline combines registry, CT body-composition and chemotherapy records for a 302-patient cohort. I added regression tests and a data dictionary, and review data questions with clinical collaborators in weekly meetings.
+         </p>
+        </div>
+       </div>
+       <div class="data-card">
+        <p class="eyebrow" data-en="COLORECTAL CANCER RESEARCH" data-i18n="" data-zh="结直肠癌研究">
+         COLORECTAL CANCER RESEARCH
+        </p>
+        <div class="cohort-number">
+         302
+         <span>
+          <span class="" data-en="patients in the cohort" data-i18n="" data-zh="名队列患者">
+           patients in the cohort
+          </span>
+         </span>
+        </div>
+        <ul class="data-sources">
+         <li>
+          <span>
+           01
+          </span>
+          <span class="" data-en="Cancer registry" data-i18n="" data-zh="肿瘤登记数据">
+           Cancer registry
+          </span>
+         </li>
+         <li>
+          <span>
+           02
+          </span>
+          <span class="" data-en="CT body composition" data-i18n="" data-zh="CT 体成分数据">
+           CT body composition
+          </span>
+         </li>
+         <li>
+          <span>
+           03
+          </span>
+          <span class="" data-en="Chemotherapy records" data-i18n="" data-zh="化疗记录">
+           Chemotherapy records
+          </span>
+         </li>
+        </ul>
+        <div class="data-quality">
+         <span class="" data-en="Regression tests · Data dictionary · Clinical review" data-i18n="" data-zh="回归测试 · 数据字典 · 临床协作复核">
+          Regression tests · Data dictionary · Clinical review
+         </span>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="case-section" id="tools">
+      <div class="chapter-heading">
+       <span class="chapter-number">
+        05
+       </span>
+       <p class="eyebrow" data-en="OPEN SOURCE / BUILT FOR EVERYDAY RESEARCH" data-i18n="" data-zh="开源 / 为日常科研而开发">
+        OPEN SOURCE / BUILT FOR EVERYDAY RESEARCH
+       </p>
+      </div>
+      <div class="section-title">
+       <h2 class="" data-en="Small tools.&lt;br&gt;&lt;em&gt;Less friction.&lt;/em&gt;" data-i18n="" data-zh="让日常科研，&lt;br&gt;&lt;em&gt;更顺手。&lt;/em&gt;">
+        Small tools.
+        <br/>
+        <em>
+         Less friction.
+        </em>
+       </h2>
+       <p class="" data-en="Tools I built to keep research organised and reproducible." data-i18n="" data-zh="我开发的工具，用于组织研究工作、保留可追溯的记录。">
+        Tools I built to keep research organised and reproducible.
+       </p>
+      </div>
+      <div class="tool-grid">
+       <article class="tool-card tool-dark">
+        <div aria-hidden="true" class="tool-symbol">
+         &gt;_
+        </div>
+        <div class="work-block">
+         <h3 data-en="Genius Labbook" data-i18n="" data-zh="Genius Labbook">
+          Genius Labbook
+         </h3>
+         <p data-en="I wrote this command-line logbook to keep experiment results, figures and decisions together. It saves Markdown and YAML files with Git history and integrates with Claude Code." data-i18n="" data-zh="我写了这个命令行日志工具，用来集中记录实验结果、图表和决策。内容保存为 Markdown 和 YAML 文件，通过 Git 管理历史，并与 Claude Code 集成。">
+          I wrote this command-line logbook to keep experiment results, figures and decisions together. It saves Markdown and YAML files with Git history and integrates with Claude Code.
+         </p>
+        </div>
+        <div class="tags">
+         <span>
+          CLI
+         </span>
+         <span>
+          Markdown / YAML
+         </span>
+         <span>
+          Git
+         </span>
+        </div>
+        <a class="text-link" href="https://github.com/CHEN-Yunshu/Genius_Labbook" rel="noopener" target="_blank">
+         Genius Labbook on GitHub ↗
+        </a>
+       </article>
+       <article class="tool-card">
+        <div aria-hidden="true" class="tool-symbol">
+         [ ]
+        </div>
+        <div class="work-block">
+         <h3 data-en="Cell_Collection" data-i18n="" data-zh="Cell_Collection">
+          Cell_Collection
+         </h3>
+         <p data-en="Tools for collecting and organising cell-segmentation data. The collection covers 186 public datasets from seven sources, with an audit of duplicate data and potential benchmark leakage." data-i18n="" data-zh="用于收集和整理细胞分割数据的工具，涵盖七个来源的 186 个公开数据集，并审计重复数据和潜在的评测数据泄漏。">
+          Tools for collecting and organising cell-segmentation data. The collection covers 186 public datasets from seven sources, with an audit of duplicate data and potential benchmark leakage.
+         </p>
+        </div>
+        <div class="tags">
+         <span>
+          186 datasets
+         </span>
+         <span>
+          7 sources
+         </span>
+        </div>
+        <a class="text-link" href="https://github.com/CHEN-Yunshu/Cell_Collection" rel="noopener" target="_blank">
+         Cell_Collection on GitHub ↗
+        </a>
+       </article>
+      </div>
+     </section>
+    </div>
+   </div>
+   <!--============================ PAPERS ============================-->
+   <div data-panel="papers" id="papers">
+    <section class="wrap sec supporting-page">
+     <p class="eyebrow" data-en="PUBLICATIONS &amp; RESEARCH" data-i18n="" data-zh="论文与研究">
+      PUBLICATIONS &amp; RESEARCH
+     </p>
+     <h1 class="sec-h" data-en="Questions, investigated." data-i18n="" data-zh="在研究中，寻找答案。">
+      Questions, investigated.
+     </h1>
+     <p class="sec-lead" data-en="Three first-author manuscripts under review, spanning coronary imaging, cell tracking and zebrafish segmentation." data-i18n="" data-zh="三篇第一作者论文在审，涵盖冠脉影像、细胞追踪与斑马鱼分割。">
+      Three first-author manuscripts under review, spanning coronary imaging, cell tracking and zebrafish segmentation.
+     </p>
+     <h2 class="publication-group" data-en="MANUSCRIPTS UNDER REVIEW" data-i18n="" data-zh="在审论文">
+      MANUSCRIPTS UNDER REVIEW
+     </h2>
+     <ul class="pubs" style="margin-top:24px">
+      <li class="pub">
+       <span class="pub-number">
+        01
+       </span>
+       <h4>
+        From Pixels to Decisions: Validating Deployable Coronary IVUS Analysis at the Level That Informs Treatment
+       </h4>
+       <p class="meta">
+        Y. Chen, et al. ·
+        <b data-en="First author · Under review" data-i18n="" data-zh="第一作者 · 在审">
+         First author · Under review
+        </b>
+       </p>
+       <a class="publication-link" data-section="ivus" data-tab="work" href="#work/ivus">
+        <span class="" data-en="Related work" data-i18n="" data-zh="相关工作">
+         Related work
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+      </li>
+      <li class="pub">
+       <span class="pub-number">
+        02
+       </span>
+       <h4>
+        Cell tracking with SAM2 memory
+       </h4>
+       <p class="meta">
+        Y. Chen, et al. ·
+        <b data-en="First author · Under review" data-i18n="" data-zh="第一作者 · 在审">
+         First author · Under review
+        </b>
+       </p>
+       <a class="publication-link" data-section="cells" data-tab="work" href="#work/cells">
+        <span class="" data-en="Related work" data-i18n="" data-zh="相关工作">
+         Related work
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+      </li>
+      <li class="pub">
+       <span class="pub-number">
+        03
+       </span>
+       <h4>
+        Confidence-Adaptive Trimap for Boundary-Precise Zebrafish Myotome Segmentation
+       </h4>
+       <p class="meta">
+        Y. Chen, et al. ·
+        <b data-en="First author · Under review" data-i18n="" data-zh="第一作者 · 在审">
+         First author · Under review
+        </b>
+       </p>
+       <a class="publication-link" data-section="fish" data-tab="work" href="#work/fish">
+        <span class="" data-en="Related work" data-i18n="" data-zh="相关工作">
+         Related work
+        </span>
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+      </li>
+     </ul>
+     <p class="editorial-note" data-en="The cell-tracking entry uses a project title; the formal manuscript title will be added when available." data-i18n="" data-zh="细胞追踪条目暂用项目名称，正式论文题目待补。">
+      The cell-tracking entry uses a project title; the formal manuscript title will be added when available.
+     </p>
+     <h2 class="publication-group" data-en="PUBLISHED" data-i18n="" data-zh="已发表">
+      PUBLISHED
+     </h2>
+     <ul class="pubs published-list">
+      <li class="pub published">
+       <span class="pub-number">
+        04
+       </span>
+       <h4>
+        Efficient Conformer-Based CTC Model for Intelligent Cockpit Speech Recognition
+       </h4>
+       <p class="meta">
+        H. Guo, Y. Chen, X. Xie, G. Xu, W. Guo · IEEE ISCSLP 2022, pp. 522–526 ·
+        <a href="https://doi.org/10.1109/ISCSLP57327.2022.10037993" rel="noopener" target="_blank">
+         doi
+        </a>
+       </p>
+      </li>
+     </ul>
+     <h3 class="sub-h" data-en="Ongoing research" data-i18n="" data-zh="进行中的研究">
+      Ongoing research
+     </h3>
+     <ul class="prep">
+      <li data-en="Lead cell segmentation" data-i18n="" data-zh="Lead 细胞分割">
+       Lead cell segmentation
+      </li>
+      <li data-en="IVUS foundation model" data-i18n="" data-zh="IVUS 基础模型">
+       IVUS foundation model
+      </li>
+      <li data-en="IVUS-China" data-i18n="" data-zh="IVUS-China">
+       IVUS-China
+      </li>
+     </ul>
+    </section>
+   </div>
+   <!--============================ EXPERIENCE ============================-->
+   <div data-panel="background" id="background">
+    <section class="wrap sec supporting-page">
+     <p class="eyebrow" data-en="THE PATH SO FAR" data-i18n="" data-zh="经历与背景">
+      THE PATH SO FAR
+     </p>
+     <h1 class="sec-h" data-en="A builder, by background." data-i18n="" data-zh="从软件开发，一路走来。">
+      A builder, by background.
+     </h1>
+     <div class="background-intro">
+      <div class="background-intro-text">
+       <p class="sec-lead" data-en="I studied software development at the University of Sydney, where I built an encrypted mobile storage app for my honours project. After working on speech recognition at NIO, I began my PhD at Monash. My current work brings that software background into medical and biological imaging." data-i18n="" data-zh="我在悉尼大学学习软件开发，荣誉毕业项目是一个加密移动存储应用。曾在蔚来参与语音识别工作，之后到蒙纳士大学攻读博士。现在的工作将这段软件开发背景用于医学与生物影像。">
+        I studied software development at the University of Sydney, where I built an encrypted mobile storage app for my honours project. After working on speech recognition at NIO, I began my PhD at Monash. My current work brings that software background into medical and biological imaging.
+       </p>
+       <p class="profile-caption" data-en="Melbourne, Australia · Software engineering → medical AI" data-i18n="" data-zh="澳大利亚墨尔本 · 从软件工程到医学 AI">
+        Melbourne, Australia · Software engineering → medical AI
+       </p>
+      </div>
+      <figure class="profile-photo">
+       <img alt="Yunshu Chen" height="280" loading="lazy" src="./assets/images/avatar.jpg" width="280"/>
+       <figcaption>
+        Yunshu Chen
+        <span>
+         陈云舒
+        </span>
+       </figcaption>
+      </figure>
+     </div>
+     <div class="tl">
+      <div class="tl-group">
+       <h3 data-en="Education" data-i18n="" data-zh="教育背景">
+        Education
+       </h3>
+       <div class="tl-item">
+        <p class="tl-when" data-en="Oct 2023 – Apr 2027 (expected)" data-i18n="" data-zh="2023 年 10 月 – 2027 年 4 月（预计）">
+         Oct 2023 – Apr 2027 (expected)
+        </p>
+        <p class="tl-what" data-en="PhD, Data Science &amp; Artificial Intelligence, Monash University" data-i18n="" data-zh="博士 · 数据科学与人工智能 · 蒙纳士大学">
+         PhD, Data Science &amp; Artificial Intelligence, Monash University
+        </p>
+        <p class="tl-desc" data-en="Supervised by Dr Deval Mehta. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute." data-i18n="" data-zh="导师 Deval Mehta。合作方：维多利亚心脏研究所、Apollo 医学影像、Lead Healthcare、澳大利亚再生医学研究所。">
+         Supervised by Dr Deval Mehta. Partners: Victorian Heart Institute, Apollo Medical Imaging, Lead Healthcare, Australian Regenerative Medicine Institute.
+        </p>
+       </div>
+       <div class="tl-item">
+        <p class="tl-when">
+         Feb 2019 – Jun 2023
+        </p>
+        <p class="tl-what" data-en="BAdvComputing (Honours II-1), The University of Sydney" data-i18n="" data-zh="高级计算学士（荣誉二等一级）· 悉尼大学">
+         BAdvComputing (Honours II-1), The University of Sydney
+        </p>
+        <p class="tl-desc" data-en="Honours project: built and delivered an encrypted mobile storage app using React Native, Spring Boot and AWS S3." data-i18n="" data-zh="荣誉毕业项目：使用 React Native、Spring Boot 和 AWS S3 开发并交付加密移动存储应用。">
+         Honours project: built and delivered an encrypted mobile storage app using React Native, Spring Boot and AWS S3.
+        </p>
+       </div>
+      </div>
+      <div class="tl-group">
+       <h3 data-en="Earlier experience" data-i18n="" data-zh="早期经历">
+        Earlier experience
+       </h3>
+       <div class="tl-item">
+        <p class="tl-when">
+         Jul 2022 – Dec 2022
+        </p>
+        <p class="tl-what" data-en="Speech Recognition Algorithm Engineer, Intern (Full-time), NIO" data-i18n="" data-zh="语音识别算法工程师（全职实习）· 蔚来">
+         Speech Recognition Algorithm Engineer, Intern (Full-time), NIO
+        </p>
+        <p class="tl-desc" data-en="Worked on multilingual speech recognition, automated diagnostics for more than 60 production recognition issues, and model integration with product, UX and language-understanding teams." data-i18n="" data-zh="参与多语种语音识别开发，为 60 多个量产识别问题编写自动诊断工具，并与产品、用户体验和语言理解团队合作集成模型。">
+         Worked on multilingual speech recognition, automated diagnostics for more than 60 production recognition issues, and model integration with product, UX and language-understanding teams.
+        </p>
+       </div>
+       <div class="tl-item">
+        <p class="tl-when">
+         Mar 2022 – Jul 2022
+        </p>
+        <p class="tl-what" data-en="Research Intern, Institute of Psychology, Chinese Academy of Sciences" data-i18n="" data-zh="研究实习生 · 中国科学院心理研究所">
+         Research Intern, Institute of Psychology, Chinese Academy of Sciences
+        </p>
+        <p class="tl-desc" data-en="MRI experiment design and an automated small-sample MRI pipeline in Python and FSL." data-i18n="" data-zh="MRI 实验设计，用 Python 与 FSL 搭建小样本 MRI 自动化流程。">
+         MRI experiment design and an automated small-sample MRI pipeline in Python and FSL.
+        </p>
+       </div>
+      </div>
+      <div class="tl-group">
+       <h3 data-en="Teaching &amp; service" data-i18n="" data-zh="教学与学术服务">
+        Teaching &amp; service
+       </h3>
+       <div class="tl-item">
+        <p class="tl-when">
+         Jul 2025 – Present
+        </p>
+        <p class="tl-what" data-en="Teaching Assistant (Sessional Academic), Monash University" data-i18n="" data-zh="兼职助教 · 蒙纳士大学">
+         Teaching Assistant (Sessional Academic), Monash University
+        </p>
+        <p class="tl-desc" data-en="FIT5196 and FIT5145, 60+ postgraduate students, 92/100 student satisfaction. Student Representative since February 2026." data-i18n="" data-zh="FIT5196 与 FIT5145，60+ 名研究生，学生满意度 92/100。2026 年 2 月起任学生代表。">
+         FIT5196 and FIT5145, 60+ postgraduate students, 92/100 student satisfaction. Student Representative since February 2026.
+        </p>
+       </div>
+       <div class="tl-item">
+        <p class="tl-when">
+         2021 – 2022
+        </p>
+        <p class="tl-what" data-en="General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney" data-i18n="" data-zh="第94届学生代表理事会常务执行委员 · 学术委员会学生代表 · 悉尼大学">
+         General Executive, 94th SRC &amp; Student Member of Academic Board, The University of Sydney
+        </p>
+        <p class="tl-desc" data-en="Elected to the SRC executive and served as a student member of the Academic Board. Contributed to the Sydney in 2032 strategy and a new academic integrity framework." data-i18n="" data-zh="经选举担任学生代表理事会常务执行委员，并作为学生代表参与学术委员会工作，参与 Sydney in 2032 战略及新学术诚信框架的制定。">
+         Elected to the SRC executive and served as a student member of the Academic Board. Contributed to the Sydney in 2032 strategy and a new academic integrity framework.
+        </p>
+       </div>
+      </div>
+     </div>
+     <h3 class="sub-h" data-en="Technical skills" data-i18n="" data-zh="技术能力">
+      Technical skills
+     </h3>
+     <div class="skills">
+      <div class="skill-row">
+       <p data-en="Software" data-i18n="" data-zh="软件开发">
+        Software
+       </p>
+       <div>
+        <span>
+         Python
+        </span>
+        <span>
+         React / React Native
+        </span>
+        <span>
+         Java
+        </span>
+        <span>
+         SQL
+        </span>
+        <span>
+         Spring Boot
+        </span>
+        <span>
+         Node.js
+        </span>
+        <span>
+         PyQt
+        </span>
+       </div>
+      </div>
+      <div class="skill-row">
+       <p data-en="Models and agents" data-i18n="" data-zh="模型与智能体">
+        Models and agents
+       </p>
+       <div>
+        <span>
+         PyTorch
+        </span>
+        <span>
+         scikit-learn
+        </span>
+        <span>
+         SAM / SAM2
+        </span>
+        <span>
+         LoRA
+        </span>
+        <span>
+         vLLM
+        </span>
+        <span>
+         Pydantic
+        </span>
+        <span>
+         RAG
+        </span>
+       </div>
+      </div>
+      <div class="skill-row">
+       <p data-en="Data and deployment" data-i18n="" data-zh="数据与部署">
+        Data and deployment
+       </p>
+       <div>
+        <span>
+         DICOM
+        </span>
+        <span>
+         pandas
+        </span>
+        <span>
+         pytest
+        </span>
+        <span>
+         Docker
+        </span>
+        <span>
+         Linux
+        </span>
+        <span>
+         Git
+        </span>
+        <span>
+         AWS S3
+        </span>
+        <span>
+         Jenkins
+        </span>
+       </div>
+      </div>
+      <div class="skill-row">
+       <p data-en="Development tools" data-i18n="" data-zh="开发工具">
+        Development tools
+       </p>
+       <div>
+        <span>
+         Claude Code
+        </span>
+        <span>
+         GitHub Copilot
+        </span>
+        <span>
+         Cursor
+        </span>
+       </div>
+      </div>
+     </div>
+     <h3 class="sub-h" data-en="Awards and recognition" data-i18n="" data-zh="奖项与认可">
+      Awards and recognition
+     </h3>
+     <ul class="awards">
+      <li data-en="2nd place, Track II (CER 9.86%) and 3rd place, Track I (CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022." data-i18n="" data-zh="智能座舱语音识别挑战赛 Track II（CER 9.86%）第二名、Track I（CER 13.39%）第三名，新加坡，2022。">
+       2nd place, Track II (CER 9.86%) and 3rd place, Track I (CER 13.39%), Intelligent Cockpit Speech Recognition Challenge, Singapore 2022.
+      </li>
+      <li data-en="Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022." data-i18n="" data-zh="悉尼大学学术委员会主席正式致谢，2022。">
+       Formal acknowledgement from the Chair of the Academic Board, The University of Sydney, 2022.
+      </li>
+      <li data-en="Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0." data-i18n="" data-zh="上海交通大学交换，GPA 4.0 / 4.0。">
+       Shanghai Jiao Tong University exchange, GPA 4.0 / 4.0.
+      </li>
+     </ul>
+     <details>
+      <summary data-en="Earlier projects" data-i18n="" data-zh="早期项目">
+       Earlier projects
+      </summary>
+      <div class="work-block">
+       <h3 data-en="Stroke outcome prediction · Apollo Medical Imaging" data-i18n="" data-zh="卒中预后预测 · Apollo Medical Imaging">
+        Stroke outcome prediction · Apollo Medical Imaging
+       </h3>
+       <p data-en="Combined CT perfusion images with clinical variables to study stroke outcomes, with separate models for endovascular-treatment and non-treatment pathways." data-i18n="" data-zh="结合 CT 灌注影像与临床变量研究卒中预后，分别为接受血管内治疗及未接受该治疗的患者建模。">
+        Combined CT perfusion images with clinical variables to study stroke outcomes, with separate models for endovascular-treatment and non-treatment pathways.
+       </p>
+      </div>
+      <div class="work-block">
+       <h3 data-en="Encrypted mobile storage · Honours project" data-i18n="" data-zh="加密移动存储 · 荣誉毕业项目">
+        Encrypted mobile storage · Honours project
+       </h3>
+       <p data-en="Built and delivered a cross-platform mobile app using React Native, Spring Boot, Node.js and AWS S3, with Jenkins for continuous integration and delivery." data-i18n="" data-zh="使用 React Native、Spring Boot、Node.js 和 AWS S3 开发并交付跨平台手机应用，通过 Jenkins 进行持续集成与交付。">
+        Built and delivered a cross-platform mobile app using React Native, Spring Boot, Node.js and AWS S3, with Jenkins for continuous integration and delivery.
+       </p>
+      </div>
+     </details>
+    </section>
+   </div>
+  </main>
+  <footer class="foot-bar">
+   <div class="wrap">
+    <div class="footer-main">
+     <div>
+      <p class="eyebrow" data-en="LET’S CONNECT" data-i18n="" data-zh="保持联系">
+       LET’S CONNECT
+      </p>
+      <h2 class="" data-en="Have something&lt;br&gt;&lt;em&gt;in mind?&lt;/em&gt;" data-i18n="" data-zh="有想一起&lt;br&gt;&lt;em&gt;做的事？&lt;/em&gt;">
+       Have something
+       <br/>
+       <em>
+        in mind?
+       </em>
+      </h2>
+      <p class="" data-en="Open to research and engineering opportunities." data-i18n="" data-zh="欢迎交流研究合作与工程岗位机会。">
+       Open to research and engineering opportunities.
+      </p>
+     </div>
+     <div class="footer-contact">
+      <a class="foot-mail" data-email="" data-email-link="" href="#">
+       [ enable JavaScript ]
+      </a>
+      <button class="copy-email" data-copy-email="" type="button">
+       <span data-copy-label="">
+        <span class="" data-en="Copy email" data-i18n="" data-zh="复制邮箱">
+         Copy email
+        </span>
+       </span>
+       <span aria-hidden="true">
+        ⧉
+       </span>
+      </button>
+      <div class="footer-social">
+       <a href="https://github.com/CHEN-Yunshu" rel="noopener" target="_blank">
+        GitHub ↗
+       </a>
+       <a href="https://www.linkedin.com/in/yunshu-chen-22917915a/" rel="noopener" target="_blank">
+        LinkedIn ↗
+       </a>
+       <a href="https://scholar.google.com/citations?user=-mTqfsEAAAAJ&amp;hl=en" rel="noopener" target="_blank">
+        Google Scholar ↗
+       </a>
+       <a href="https://orcid.org/0009-0004-4772-4054" rel="noopener" target="_blank">
+        ORCID ↗
+       </a>
+      </div>
+      <div class="footer-downloads">
+       <a href="./assets/Yunshu_Chen_CV.pdf" rel="noopener" target="_blank">
+        <span class="" data-en="Research CV" data-i18n="" data-zh="研究版简历">
+         Research CV
+        </span>
+        ↓
+       </a>
+       <a href="./assets/Yunshu_Chen_Resume.pdf" rel="noopener" target="_blank">
+        <span class="" data-en="Industry résumé" data-i18n="" data-zh="业界版简历">
+         Industry résumé
+        </span>
+        ↓
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <span>
+      ©
+      <span data-year="">
+       2026
+      </span>
+      Yunshu Chen
+     </span>
+     <span>
+      Melbourne, Australia
+     </span>
+     <span>
+      Research × Engineering
+     </span>
+    </div>
+   </div>
   </footer>
-
-  <script src="./assets/js/site.js"></script>
-</body>
+  <button aria-label="Back to top" class="back-top" data-back-top="" hidden="" type="button">
+   ↑
+  </button>
+  <dialog aria-label="Figure preview" class="image-dialog">
+   <button aria-label="Close figure" data-close-zoom="" type="button">
+    ×
+   </button>
+   <img alt=""/>
+   <p>
+   </p>
+  </dialog>
+  <script src="./assets/js/site.js">
+  </script>
+ </body>
 </html>

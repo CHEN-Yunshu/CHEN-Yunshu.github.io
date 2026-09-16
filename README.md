@@ -1,32 +1,30 @@
-# chen-yunshu.github.io
+# Yunshu Chen — personal website
 
-Source for my personal site: **https://chen-yunshu.github.io**
+A bilingual static website. No build step or dependencies.
 
-Static: no build step, no dependencies, no framework. Everything lives in
-`index.html`; the five pages are tabs, not separate files.
+## Structure
 
-```
-index.html              all content
-assets/css/style.css    template styles + a #CUSTOM ADDITIONS block at the end
-assets/js/script.js     nav, project filters, language switch, email assembly
-assets/images/          avatar, icons, project thumbnails, link-preview cover
-```
+- Home: personal introduction, a real IVUS image and two selected research programmes.
+- Work: five numbered chapters. IVUS and LeadCell lead the page; zebrafish analysis, clinical data engineering and open-source tools follow. Monash research and the PredictX role retain their employment context.
+- Papers: manuscripts under review and published work, with links to related cases.
+- Background: software-engineering background, education, earlier experience, teaching and service.
 
-## Editing
+## Files
 
-Text is bilingual. One element carries both languages, and the visible text
-between the tags is what non-JS visitors and search engines get:
+- `index.html`: content and translations (`data-en` / `data-zh`).
+- `assets/css/site.css`: warm-white and forest-green visual system, responsive layouts and reduced-motion support.
+- `assets/js/site.js`: hash routes, language switching, chapter navigation, menus, figure previews, reading progress and contact utilities.
+- `assets/images/work/`: original IVUS, LeadCell, tracking, resolution and zebrafish figures. The hero uses a CSS crop of the original IVUS gallery; enlarged figures retain their original images.
+- `assets/Yunshu_Chen_CV.pdf` / `assets/Yunshu_Chen_Resume.pdf`: downloadable CVs.
 
-```html
-<p data-i18n data-en="Hello" data-zh="你好">Hello</p>
-```
+Serve this directory with a static HTTP server for preview, for example `python3 -m http.server 8816 --bind 127.0.0.1`. Work sections have direct links: `#work/ivus`, `#work/cells`, `#work/fish`, `#work/other` and `#work/tools`. Legacy `#projects` and `#experience` links still resolve.
 
-Push to `main` and GitHub Pages redeploys in about a minute.
+English text is available in the HTML; all four pages are readable without JavaScript. Keep translated attributes and visible fallback text in sync when editing. Figures use a native dialog for enlargement. Technical detail sections use native disclosure controls. Menus and previews support keyboard navigation and focus restoration. Clipboard copying requires a supported secure browser context; the email link remains available.
 
-## Notes
+No build step is needed. Inter and IBM Plex Mono are optional Google Fonts, with local system-font fallbacks.
 
-- The email address is assembled in JavaScript at runtime, so it is not in the
-  HTML source for crawlers, but it is still a normal clickable `mailto:` for humans.
-- Language choice persists in `localStorage`; English is the default.
-- Built on the [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
-  template by codewithsadee, MIT. The original licence is kept in `LICENSE`.
+Local edits do not publish the website. Review changes before committing and pushing to the configured GitHub Pages branch.
+
+## Content status — 16 September 2026
+
+35 IVUS cases prepared; cardiologist review ongoing. LeadCell is packaged software in use, with an internal laboratory API. Qwen is local; DeepSeek and Gemini are accessed through APIs. Three first-author manuscripts under review: IVUS, tracking and zebrafish segmentation. Tracking uses a project description pending the exact manuscript title. PredictX currently describes confirmed data engineering responsibilities.
