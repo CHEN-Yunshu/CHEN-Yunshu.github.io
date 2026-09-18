@@ -5,7 +5,7 @@ A bilingual static website. No build step or dependencies.
 ## Structure
 
 - Home: personal introduction, a real IVUS image and two selected research programmes.
-- Work: five numbered chapters. IVUS and LeadCell lead the page; zebrafish analysis, clinical data engineering and open-source tools follow. Monash research and the PredictX role retain their employment context.
+- Work: five numbered chapters. IVUS and LeadCell lead the page; zebrafish analysis, clinical data engineering and open-source tools follow. Monash research retains its affiliation; clinical data work is presented as a project.
 - Papers: manuscripts under review and published work, with links to related cases.
 - Background: software-engineering background, education, earlier experience, teaching and service.
 
@@ -35,6 +35,6 @@ Local edits do not publish the website. Review changes before committing and pus
 
 ## Content status — 16 September 2026
 
-35 IVUS cases prepared; cardiologist review ongoing. LeadCell is packaged software in use, with an internal laboratory API. Qwen is local; DeepSeek and Gemini are accessed through APIs. Three first-author manuscripts under review: IVUS, tracking and zebrafish segmentation. Tracking uses a project description pending the exact manuscript title. PredictX currently describes confirmed data engineering responsibilities.
+35 IVUS cases prepared; cardiologist review ongoing. LeadCell is packaged software in use, with an internal laboratory API. Qwen is local; DeepSeek and Gemini are accessed through APIs. Three first-author manuscripts under review: IVUS, tracking and zebrafish segmentation. Tracking uses a project description pending the exact manuscript title. The clinical data project describes confirmed data engineering responsibilities.
 
 The IVUS recording includes lumen, EEM and plaque cross-sectional areas and plaque burden read directly from the source tool for every captured frame. Organoid and image-synthesis research have separate cards; CLE is labelled as annotation in progress. The synthesis image is a user-supplied early example, not a validated result.
