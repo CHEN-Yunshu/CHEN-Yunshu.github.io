@@ -38,3 +38,7 @@ Local edits do not publish the website. Review changes before committing and pus
 35 IVUS cases prepared; cardiologist review ongoing. LeadCell is packaged software in use, with an internal laboratory API. Qwen is local; DeepSeek and Gemini are accessed through APIs. Three first-author manuscripts under review: IVUS, tracking and zebrafish segmentation. Tracking uses a project description pending the exact manuscript title. The clinical data project describes confirmed data engineering responsibilities.
 
 The IVUS recording includes lumen, EEM and plaque cross-sectional areas and plaque burden read directly from the source tool for every captured frame. Organoid and image-synthesis research have separate cards; CLE is labelled as annotation in progress. The synthesis image is a user-supplied early example, not a validated result.
+
+## Public profile and résumé scope
+
+The downloadable Research CV and Industry résumé may include PredictX experience. Keep the employer name and role out of the website copy and GitHub profile introduction; retain the clinical data project without an employer attribution on the website.
