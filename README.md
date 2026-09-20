@@ -41,4 +41,4 @@ The IVUS recording includes lumen, EEM and plaque cross-sectional areas and plaq
 
 ## Public profile and résumé scope
 
-The downloadable Research CV and Industry résumé may include PredictX experience. Keep the employer name and role out of the website copy and GitHub profile introduction; retain the clinical data project without an employer attribution on the website.
+The downloadable Research CV and Industry résumé retain their full employment history. Employment details omitted from the website copy and GitHub profile introduction remain excluded there; the website retains the clinical data project without an employer attribution.
