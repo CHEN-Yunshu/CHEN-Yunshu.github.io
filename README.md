@@ -5,8 +5,8 @@ A bilingual static website. No build step or dependencies.
 ## Structure
 
 - Home: personal introduction, a real IVUS image and two selected research programmes.
-- Work: five numbered chapters. IVUS and LeadCell lead the page; zebrafish analysis, clinical data engineering and open-source tools follow. Monash research retains its affiliation; clinical data work is presented as a project.
-- Papers: manuscripts under review and published work, with links to related cases.
+- Work: five numbered chapters. IVUS and LeadCell lead the page; zebrafish analysis, clinical data engineering and open-source tools follow. Monash research retains its affiliation; PredicTx Health is described briefly by role, broad technical area and stack.
+- Papers: accepted work, research manuscripts and published work, with distinct status labels and links to related cases.
 - Background: software-engineering background, education, earlier experience, teaching and service.
 
 ## Files
@@ -27,18 +27,22 @@ No build step is needed. Inter and IBM Plex Mono are optional Google Fonts, with
 
 - The selected IVUS card uses `ivus-cover.jpg`, an oblique view of the original 3D reconstruction paired with its corresponding ultrasound cross-section. The home hero retains the original ultrasound visual.
 - `assets/media/ivus-linked-view.mp4` records the original tool's linked reconstruction and cross-section display. `ivus-spatial.jpg` is its static poster. Exported visuals omit case identifiers and clinical report text; the source report is not part of the site.
-- `cell-preannotation.mp4` and its poster show a recent VERO pre-annotation workflow, with the source header removed. The caption explicitly separates this preview from the reported SAM2 benchmark.
+- `cell-preannotation.mp4` and its poster show a recent VERO pre-annotation workflow, with the source header removed. The caption labels this as an earlier preview, separate from the current CellTopo evaluation.
 - The organoid example is a candidate event: masks are manually annotated, but the automatic track associations and event interpretation await review.
-- Videos load on demand, start only when requested, and pause when the reader changes pages. Existing corpus sizes, cohort counts and evaluation results are unchanged by this media update.
+- Videos load on demand, start only when requested, and pause when the reader changes pages. Older figures are explicitly labelled where the current project has advanced beyond the depicted experiment.
 
 Local edits do not publish the website. Review changes before committing and pushing to the configured GitHub Pages branch.
 
-## Content status — 16 September 2026
+## Content status — 22 November 2026
 
-35 IVUS cases prepared; cardiologist review ongoing. LeadCell is packaged software in use, with an internal laboratory API. Qwen is local; DeepSeek and Gemini are accessed through APIs. Three first-author manuscripts under review: IVUS, tracking and zebrafish segmentation. Tracking uses a project description pending the exact manuscript title. The clinical data project describes confirmed data engineering responsibilities.
+- IVUS: full-pullback review, contour editing, geometry measurements, 3D display and annotation exports. The offline Apple Silicon pipeline passed a two-pullback, 5,629-frame engineering test; clinical evaluation remains ongoing. Local Qwen report generation is separate from the offline imaging portability test. Mac/server numerical agreement is not clinical accuracy.
+- LeadCell remains software in laboratory use. The newer cell/organoid tracking package is a tested release candidate; division and fusion analysis is ongoing. CellTopo and MitoSync are described as research manuscripts without an unverified submission or acceptance claim.
+- Resolution now describes input-scale calibration: three frozen pipelines, eight scales and 17 tasks from 15 source families. This is retrospective benchmark research, not deployment validation.
+- FishScope is accepted at IEEE BIBM 2026, not yet labelled as published in proceedings. The current manuscript uses 121 images from 61 fish. Its Python/PyTorch/Gradio research demo is linked at `https://github.com/CHEN-Yunshu/fishscope`; the non-commercial research license is not described as an open-source license.
+- GeoCat remains under review after its AAAI 2027 rebuttal. ISCSLP 2022 remains the published entry. No blanket count of manuscripts under review is used.
 
-The IVUS recording includes lumen, EEM and plaque cross-sectional areas and plaque burden read directly from the source tool for every captured frame. Organoid and image-synthesis research have separate cards; CLE is labelled as annotation in progress. The synthesis image is a user-supplied early example, not a validated result.
+The IVUS recording shows outputs from the source tool. Physical lengths and volumes require verified calibration. The organoid example remains a candidate event; the zebrafish figure is labelled as an earlier example rather than current performance evidence. The older synthesis figure is omitted from the MitoSync section. CLE remains annotation in progress.
 
 ## Public profile and résumé scope
 
-The downloadable Research CV and Industry résumé retain their full employment history. Employment details omitted from the website copy and GitHub profile introduction remain excluded there; the website retains the clinical data project without an employer attribution.
+The **PredicTx Health** experience summarises the Machine Learning Engineer role, its broad focus on medical imaging and clinical data engineering, and the technology stack. Downloadable industry and research CVs are available in `assets/`.
