@@ -544,7 +544,7 @@
        </summary>
        <div class="detail-content">
         <p data-en="The packaged imaging pipeline processed 5,629 frames across two complete pullbacks on an Apple M2 Pro with 16 GB memory in about 51 minutes. Checks covered segmentation, side-branch and calcium inference, 3D exports and geometry measurements. This was an engineering portability test, not clinical validation." data-i18n="" data-zh="打包后的影像流程在配备 16 GB 内存的 Apple M2 Pro 上，用约 51 分钟处理了两条完整回撤的 5,629 帧。检查涵盖分割、侧支与钙化推理、三维导出及几何测量。这是工程可移植性测试，不是临床验证。">The packaged imaging pipeline processed 5,629 frames across two complete pullbacks on an Apple M2 Pro with 16 GB memory in about 51 minutes. Checks covered segmentation, side-branch and calcium inference, 3D exports and geometry measurements. This was an engineering portability test, not clinical validation.</p>
-        <p data-en="The reporting prototype uses JSON Schema tool contracts, Pydantic state records and Qwen2.5-7B served locally with vLLM. Measurements come from deterministic tools. Live Qwen or VLM inference was not part of the Mac portability test." data-i18n="" data-zh="报告原型使用 JSON Schema 工具契约、Pydantic 状态记录，以及通过 vLLM 本地运行的 Qwen2.5-7B。测量数值来自确定性工具。Mac 可移植性测试未包含实时 Qwen 或 VLM 推理。">The reporting prototype uses JSON Schema tool contracts, Pydantic state records and Qwen2.5-7B served locally with vLLM. Measurements come from deterministic tools. Live Qwen or VLM inference was not part of the Mac portability test.</p>
+        <p data-en="The local prototype runs Qwen2.5-7B with Transformers/PyTorch and JSON tool schemas. Deterministic tools calculate measurements; structured facts, fallback execution and JSONL call logs support reviewable reports. Live Qwen or VLM inference was not part of the Mac portability test." data-i18n="" data-zh="本地原型通过 Transformers/PyTorch 运行 Qwen2.5-7B，并使用 JSON 工具定义。测量由确定性工具计算，结构化事实、回退机制和 JSONL 调用记录支持报告复核。Mac 可移植性测试未包含实时 Qwen 或 VLM 推理。">The local prototype runs Qwen2.5-7B with Transformers/PyTorch and JSON tool schemas. Deterministic tools calculate measurements; structured facts, fallback execution and JSONL call logs support reviewable reports. Live Qwen or VLM inference was not part of the Mac portability test.</p>
         <p data-en="Reader tools distinguish original AI outputs from human corrections and retain annotation provenance. Clinician evaluation and independent reference review are ongoing; exploratory encoder results are not presented as established clinical performance." data-i18n="" data-zh="读片工具区分原始 AI 输出与人工修正，并保留标注来源记录。医生评价与独立参考复核仍在进行；探索性编码器结果不作为已确立的临床性能展示。">Reader tools distinguish original AI outputs from human corrections and retain annotation provenance. Clinician evaluation and independent reference review are ongoing; exploratory encoder results are not presented as established clinical performance.</p>
        </div>
       </details>
@@ -1138,13 +1138,13 @@
          LoRA
         </span>
         <span>
-         vLLM
+         Transformers
         </span>
         <span>
-         Pydantic
+         JSON Schema
         </span>
         <span>
-         RAG
+         Tool calling
         </span>
        </div>
       </div>
